@@ -23,15 +23,16 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 exec --no-startup-id nm-applet
 
+set $refresh_monitors xrandr --output eDP-1 --auto --output HDMI-1 --auto && xrandr --output eDP-1 --off --output HDMI-1 --off
 
-bindsym $mod+Ctrl+$left  exec xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --output HDMI-1 --off 																
-bindsym $mod+Ctrl+$right exec xrandr --output eDP-1 --off     													 --output HDMI-1 --pos 0x0 --primary --mode 2560x1440    
+bindsym $mod+Ctrl+$left  exec $refresh_monitors && xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --output HDMI-1 --off 																
+bindsym $mod+Ctrl+$right exec $refresh_monitors && xrandr --output eDP-1 --off     													 --output HDMI-1 --pos 0x0 --primary --mode 2560x1440 --rate 144
 
-bindsym $mod+Ctrl+$up  	 exec xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --output HDMI-1 --mode 2560x1440 --pos 1920x0 
-bindsym $mod+Ctrl+$down  exec xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --output HDMI-1 --pos 1920x0 --mode 1920x1080 --same-as eDP-1 			 
+bindsym $mod+Ctrl+$up  	 exec $refresh_monitors && xrandr --output eDP-1 --mode 1920x1080 --pos 0x0 					 --output HDMI-1 --primary --mode 2560x1440 --pos 1920x0 --rate 144
+bindsym $mod+Ctrl+$down  exec $refresh_monitors && xrandr --output eDP-1 --mode 1920x1080 --pos 0x0 --output HDMI-1 --pos 1920x0 --mode 1920x1080 --same-as eDP-1 			 
 
-bindsym $mod+Ctrl+x      exec xrandr --output eDP-1 --off     													 --output HDMI-1 --off																	  
-
+bindsym $mod+Ctrl+x      exec xrandr --output eDP-1 --auto --output HDMI-1 --auto && xrandr --output eDP-1 --off --output HDMI-1 --off																	  
+bindsym $mod+Ctrl+a      exec $refresh_monitors
  
 
 # Use pactl to adjust volume in PulseAudio.
