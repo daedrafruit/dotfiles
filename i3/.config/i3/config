@@ -4,6 +4,10 @@ bar {
         status_command polybar
 }
 
+workspace 2 output HDMI-1
+
+exec xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-1 --off
+
 set $mod Mod4
 set $super Shift
 
@@ -18,6 +22,14 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 exec --no-startup-id nm-applet
+
+bindsym $mod+Ctrl+$up  	 exec xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --output HDMI-1 --mode 2560x1440 --pos 1920x0           && sleep 1 && $refresh_i3status
+bindsym $mod+Ctrl+$left  exec xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --output HDMI-1 --off 																	 && sleep 1 && $refresh_i3status
+bindsym $mod+Ctrl+$right exec xrandr --output eDP-1 --off     													 --output HDMI-1 --primary --mode 2560x1440 --pos 1920x0 && sleep 1 && $refresh_i3status
+bindsym $mod+Ctrl+$down  exec xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --output HDMI-1 --mode 1920x1080 --same-as eDP-1 			 && sleep 1 && $refresh_i3status
+bindsym $mod+Ctrl+x      exec xrandr --output eDP-1 --off     													 --output HDMI-1 --off																	 && sleep 1 && $refresh_i3status 
+
+ 
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
