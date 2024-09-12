@@ -25,6 +25,8 @@ exec --no-startup-id nm-applet
 
 set $refresh_monitors xrandr --output eDP-1 --auto --output HDMI-1 --auto && xrandr --output eDP-1 --off --output HDMI-1 --off
 
+bindsym $mod+$super+s exec flameshot gui
+
 bindsym $mod+Ctrl+$left  exec $refresh_monitors && xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --output HDMI-1 --off 																
 bindsym $mod+Ctrl+$right exec $refresh_monitors && xrandr --output eDP-1 --off     													 --output HDMI-1 --pos 0x0 --primary --mode 2560x1440 --rate 144
 
