@@ -15,6 +15,7 @@ default_border pixel 2
 
 # tabborder focused text curr-split
 client.focused $mantle $lavender $mantle $pink
+client.unfocused $mantle $surface2 $mantle $pink
 
 #corner_radius 8
 
@@ -44,7 +45,7 @@ set $menu rofi -show drun -matching prefix -drun-match-fields name
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Catppuccin_Mocha_Mauve_Horizontal.png fill
+output * bg /usr/share/backgrounds/sway/catppuccin-3d.jpg fill
 #
 # Example configuration:
 #
