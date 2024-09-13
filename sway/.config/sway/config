@@ -4,7 +4,7 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-include catppuccin-mocha
+include catppuccin-mocha.css
 
 # Gaps
 gaps inner 15px
@@ -13,10 +13,10 @@ gaps outer 8px
 # remove title from windows and set border to 2px
 default_border pixel 2
 
-# tabborder focused
-client.focused $mantle $lavender $mantle $mantle
+# tabborder focused text curr-split
+client.focused $mantle $lavender $mantle $pink
 
-corner_radius 8
+#corner_radius 8
 
 # settings for touchpad
 input "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" {
