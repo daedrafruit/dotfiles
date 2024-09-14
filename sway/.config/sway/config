@@ -24,8 +24,8 @@ set $color13 #b4befe
 set $color14 #b9dceb
 set $color15 #cdd6f4
 
-set $active #76b4aa
-set $inactive #517c75
+set $active #c39bb8
+set $inactive #866a7f
 
 # tabborder focused text curr-split
 client.focused $color0 $color13 $color0 $color6

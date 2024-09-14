@@ -18,8 +18,8 @@
 @define-color color14 #b9dceb;
 @define-color color15 #cdd6f4;
 
-@define-color active #76b4aa;
-@define-color inactive #517c75;
+@define-color active #c39bb8;
+@define-color inactive #866a7f;
 
 * {
     border: none;
@@ -46,6 +46,8 @@ window#waybar {
 */
 
 #workspaces button {
+		font-size: 3px;
+		border-radius: 3px;
     padding: 0 5px;
     background: transparent;
     color: @color13;
