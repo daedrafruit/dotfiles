@@ -6,6 +6,7 @@
 
 export VISUAL=nvim;
 export EDITOR=nvim;
+#export GTK_THEME=Tokyonight-Dark
 
 [[ $- != *i* ]] && return
 

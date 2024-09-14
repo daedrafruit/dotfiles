@@ -1,0 +1,64 @@
+{color0} // background
+{color1} // red -- error -- urgent
+{color2} // green -- success
+{color3} // yellow -- warnings -- highlighting
+{color4} // blue -- information -- commands
+{color5} // purple -- seccondary info
+{color6} // cyan -- secondary info -- prompts
+{color7} // white -- text
+
+//same as above but bright
+{color8}
+{color9}
+{color10}
+{color11}
+{color12}
+{color13}
+{color14}
+{color15}
+
+{active}
+{inactive}
+
+set $color0 {color0}
+set $color1 {color1}
+set $color2 {color2}
+set $color3 {color3}
+set $color4 {color4}
+set $color5 {color5}
+set $color6 {color6}
+set $color7 {color7}
+
+set $color8 {color8}
+set $color9 {color9}
+set $color10 {color10}
+set $color11 {color11}
+set $color12 {color12}
+set $color13 {color13}
+set $color14 {color14}
+set $color15 {color15}
+
+set $active {active}
+set $inactive {inactive}
+
+
+@define-color color0 {color0};
+@define-color color1 {color1};
+@define-color color2 {color2};
+@define-color color3 {color3};
+@define-color color4 {color4};
+@define-color color5 {color5};
+@define-color color6 {color6};
+@define-color color7 {color7};
+
+@define-color color8 {color8};
+@define-color color9 {color9};
+@define-color color10 {color10};
+@define-color color11 {color11};
+@define-color color12 {color12};
+@define-color color13 {color13};
+@define-color color14 {color14};
+@define-color color15 {color15};
+
+@define-color active {active};
+@define-color inactive {inactive};

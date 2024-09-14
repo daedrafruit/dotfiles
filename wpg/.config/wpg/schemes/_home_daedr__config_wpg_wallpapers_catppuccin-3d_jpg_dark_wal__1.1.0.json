@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/daedr/.config/wpg/wallpapers/catppuccin-3d.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#11111b",
+        "foreground": "#cdd6f4",
+        "cursor": "#cdd6f4"
+    },
+    "colors": {
+        "color0": "#11111b",
+        "color1": "#f38ba8",
+        "color2": "#a6e3a1",
+        "color3": "#f9e2af",
+        "color4": "#89b4fa",
+        "color5": "#cba6f7",
+        "color6": "#89dceb",
+        "color7": "#a6adc8",
+        "color8": "#1e1e2e",
+        "color9": "#f5c2e7",
+        "color10": "#94e2d5",
+        "color11": "#f5e0dc",
+        "color12": "#74c7ec",
+        "color13": "#b4befe",
+        "color14": "#b9dceb",
+        "color15": "#cdd6f4"
+    }
+}

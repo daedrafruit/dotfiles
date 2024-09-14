@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daedr/.config/wpg/wallpapers/kurz-mocha.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0E101F",
+        "foreground": "#b5b9c8",
+        "cursor": "#b5b9c8"
+    },
+    "colors": {
+        "color0": "#0E101F",
+        "color1": "#42465C",
+        "color2": "#50556C",
+        "color3": "#5E637B",
+        "color4": "#6B708A",
+        "color5": "#7C7EA1",
+        "color6": "#8C7890",
+        "color7": "#b5b9c8",
+        "color8": "#7e818c",
+        "color9": "#42465C",
+        "color10": "#50556C",
+        "color11": "#5E637B",
+        "color12": "#6B708A",
+        "color13": "#7C7EA1",
+        "color14": "#8C7890",
+        "color15": "#b5b9c8"
+    }
+}

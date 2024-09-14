@@ -1,0 +1,29 @@
+{
+    "wallpaper": "/home/daedr/.config/wpg/wallpapers/Konachan.com_-_191428_sakamoto.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#07090D",
+        "foreground": "#cde6ff",
+        "cursor": "#cde6ff"
+    },
+    "colors": {
+        "color0": "#07090D",
+        "color1": "#463652",
+        "color2": "#4C5462",
+        "color3": "#062966",
+        "color4": "#3B65AB",
+        "color5": "#445067",
+        "color6": "#39588D",
+        "color7": "#99acc5",
+
+        "color8": "#171f2e",
+        "color9": "#5c3d73",
+        "color10": "#576a8a",
+        "color11": "#01338b",
+        "color12": "#3d7fed",
+        "color13": "#4d6490",
+        "color14": "#3d6fc4",
+        "color15": "#cde6ff"
+    }
+}

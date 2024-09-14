@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/daedr/.config/wpg/wallpapers/Konachan.com_-_363773_hatsune_miku_headphones_jiuyesang_long_hair_sketch_vocaloid.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0A0B0C",
+        "foreground": "#fffffb",
+        "cursor": "#fffffb"
+    },
+    "colors": {
+        "color0": "#0A0B0C",
+        "color1": "#706F6C",
+        "color2": "#81807F",
+        "color3": "#A7AB63",
+        "color4": "#5D5997",
+        "color5": "#D0C6BC",
+        "color6": "#9D9E9D",
+        "color7": "#e7e7e0",
+        "color8": "#202427",
+        "color9": "#9f977e",
+        "color10": "#b8a694",
+        "color11": "#e8ef6f",
+        "color12": "#6b64d3",
+        "color13": "#ffffd8",
+        "color14": "#b7e1b7",
+        "color15": "#fffffb"
+    }
+}

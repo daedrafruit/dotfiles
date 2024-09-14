@@ -6,26 +6,26 @@
 
 include catppuccin-mocha.css
 
-set $color0 #11111b
-set $color1 #f38ba8
-set $color2 #a6e3a1
-set $color3 #f9e2af
-set $color4 #89b4fa
-set $color5 #cba6f7
-set $color6 #89dceb
-set $color7 #a6adc8
+set $color0 {color0}
+set $color1 {color1}
+set $color2 {color2}
+set $color3 {color3}
+set $color4 {color4}
+set $color5 {color5}
+set $color6 {color6}
+set $color7 {color7}
 
-set $color8 #1e1e2e
-set $color9 #f5c2e7
-set $color10 #94e2d5
-set $color11 #f5e0dc
-set $color12 #74c7ec
-set $color13 #b4befe
-set $color14 #b9dceb
-set $color15 #cdd6f4
+set $color8 {color8}
+set $color9 {color9}
+set $color10 {color10}
+set $color11 {color11}
+set $color12 {color12}
+set $color13 {color13}
+set $color14 {color14}
+set $color15 {color15}
 
-set $active #76b4aa
-set $inactive #517c75
+set $active {active}
+set $inactive {inactive}
 
 # tabborder focused text curr-split
 client.focused $color0 $color13 $color0 $color6
@@ -43,11 +43,11 @@ default_dim_inactive 0.1
 shadows enable
 
 # settings for touchpad
-input "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" {
+input "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" {{
 	natural_scroll enabled
 	scroll_factor 0.2
 	tap enabled
-}
+}}
 
 
 ### Variables
@@ -183,7 +183,7 @@ output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
 #
 # Resizing containers:
 #
-mode "resize" {
+mode "resize" {{
     # left will shrink the containers width
     # right will grow the containers width
     # up will shrink the containers height
@@ -202,15 +202,15 @@ mode "resize" {
     # Return to default mode
     bindsym Return mode "default"
     bindsym Escape mode "default"
-}
+}}
 bindsym $mod+r mode "resize"
 
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
+bar {{
 		swaybar_command waybar
-}
+}}
 
 include /etc/sway/config.d/*

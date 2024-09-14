@@ -6,30 +6,11 @@
 
 include catppuccin-mocha.css
 
-set $color0 #11111b
-set $color1 #f38ba8
-set $color2 #a6e3a1
-set $color3 #f9e2af
-set $color4 #89b4fa
-set $color5 #cba6f7
-set $color6 #89dceb
-set $color7 #a6adc8
-
-set $color8 #1e1e2e
-set $color9 #f5c2e7
-set $color10 #94e2d5
-set $color11 #f5e0dc
-set $color12 #74c7ec
-set $color13 #b4befe
-set $color14 #b9dceb
-set $color15 #cdd6f4
-
-set $active #76b4aa
-set $inactive #517c75
+set $color1 '#ffffff'
 
 # tabborder focused text curr-split
-client.focused $color0 $color13 $color0 $color6
-client.unfocused $color0 $color8 $color15 $color6
+client.focused $color1 $color1 $mantle $pink
+client.unfocused $mantle $surface2 $mantle $pink
 
 # Gaps
 gaps inner 15px
@@ -68,7 +49,7 @@ set $menu rofi -show drun -matching prefix -drun-match-fields name
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Tokyo_Pink.png fill
+output * bg /usr/share/backgrounds/sway/catppuccin-3d.jpg fill
 #
 # Example configuration:
 #

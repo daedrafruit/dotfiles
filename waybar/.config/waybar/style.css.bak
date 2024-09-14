@@ -1,26 +1,5 @@
 @import "mocha.css";
 
-@define-color color0 #11111b;
-@define-color color1 #f38ba8;
-@define-color color2 #a6e3a1;
-@define-color color3 #f9e2af;
-@define-color color4 #89b4fa;
-@define-color color5 #cba6f7;
-@define-color color6 #89dceb;
-@define-color color7 #a6adc8;
-
-@define-color color8 #1e1e2e;
-@define-color color9 #f5c2e7;
-@define-color color10 #94e2d5;
-@define-color color11 #f5e0dc;
-@define-color color12 #74c7ec;
-@define-color color13 #b4befe;
-@define-color color14 #b9dceb;
-@define-color color15 #cdd6f4;
-
-@define-color active #76b4aa;
-@define-color inactive #517c75;
-
 * {
     border: none;
     border-radius: 0;
@@ -30,9 +9,9 @@
 }
 
 window#waybar {
-    background: @color0;
-		border: @color12;
-    color: @color7;
+    background: @mantle;
+		border: @green;
+    color: @text;
 }
 
 #window {
@@ -48,17 +27,18 @@ window#waybar {
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: @color13;
+    color: @text;
+    border-top: 2px solid transparent;
 }
 
 #workspaces button.focused {
-    color: @color0;
-		background: @color13;
+    color: @lavender;
+    border-top: 2px solid @lavender;
 }
 
 #mode {
-    background: @color0;
-    border-bottom: 3px solid @color7;
+    background: @overlay0;
+    border-bottom: 3px solid @text;
 }
 
 #clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {
@@ -74,7 +54,7 @@ window#waybar {
 }
 
 #battery icon {
-    color: @color1;
+    color: @red;
 }
 
 #battery.charging {
@@ -82,13 +62,13 @@ window#waybar {
 
 @keyframes blink {
     to {
-        background-color: @color1;
-        color: @color0;
+        background-color: @text;
+        color: @mantle;
     }
 }
 
 #battery.warning:not(.charging) {
-    color: @color9;
+    color: @text;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -106,7 +86,7 @@ window#waybar {
 }
 
 #network.disconnected {
-    background: @color9;
+    background: @red;
 }
 
 #pulseaudio {
