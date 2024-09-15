@@ -4,32 +4,9 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-include catppuccin-mocha.css
-
-set $color0 {color0}
-set $color1 {color1}
-set $color2 {color2}
-set $color3 {color3}
-set $color4 {color4}
-set $color5 {color5}
-set $color6 {color6}
-set $color7 {color7}
-
-set $color8 {color8}
-set $color9 {color9}
-set $color10 {color10}
-set $color11 {color11}
-set $color12 {color12}
-set $color13 {color13}
-set $color14 {color14}
-set $color15 {color15}
-
-set $active {active}
-set $inactive {inactive}
-
 # tabborder focused text curr-split
-client.focused $color0 $color13 $color0 $color6
-client.unfocused $color0 $color8 $color15 $color6
+client.focused {background} {primary} {background} {highlight}
+client.unfocused {background} {background2} {text} {highlight}
 
 # Gaps
 gaps inner 15px
@@ -89,6 +66,8 @@ output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
+
+		bindsym $mod+Shift+g exec wpg -s Tokyo_Pink.png --no-terminal
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'

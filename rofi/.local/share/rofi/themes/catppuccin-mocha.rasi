@@ -5,8 +5,8 @@
     selected-col: #11111b;
     blue: #b4befe;
     fg-col: #cdd6f4;
-    fg-col2: #f5c2e7;
-    grey: #cdd6f4;
+    fg-col2: #f38ba8;
+    grey: #a6adc8;
 
 //    bg-col:  #1e1e2e;
 //    bg-col-light: #1e1e2e;

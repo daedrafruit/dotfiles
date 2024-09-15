@@ -1,12 +1,12 @@
 * {{
-    bg-col: {color0};
-    bg-col-light: {color0};
-    border-col: {color13};
-    selected-col: {color0};
-    blue: {color13};
-    fg-col: {color15};
-    fg-col2: {color9};
-    grey: {color15};
+    bg-col: {background};
+    bg-col-light: {background};
+    border-col: {primary};
+    selected-col: {background};
+    blue: {primary};
+    fg-col: {text};
+    fg-col2: {highlight};
+    grey: {text2};
 
 //    bg-col:  #1e1e2e;
 //    bg-col-light: #1e1e2e;

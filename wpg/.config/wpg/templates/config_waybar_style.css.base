@@ -1,26 +1,5 @@
 @import "mocha.css";
 
-@define-color color0 {color0};
-@define-color color1 {color1};
-@define-color color2 {color2};
-@define-color color3 {color3};
-@define-color color4 {color4};
-@define-color color5 {color5};
-@define-color color6 {color6};
-@define-color color7 {color7};
-
-@define-color color8 {color8};
-@define-color color9 {color9};
-@define-color color10 {color10};
-@define-color color11 {color11};
-@define-color color12 {color12};
-@define-color color13 {color13};
-@define-color color14 {color14};
-@define-color color15 {color15};
-
-@define-color active {active};
-@define-color inactive {inactive};
-
 * {{
     border: none;
     border-radius: 0;
@@ -30,9 +9,9 @@
 }}
 
 window#waybar {{
-    background: @color0;
-		border: @color12;
-    color: @color7;
+    background: {background};
+		border: {primary};
+    color: {text};
 }}
 
 #window {{
@@ -49,17 +28,17 @@ window#waybar {{
 		border-radius: 3px;
     padding: 0 5px;
     background: transparent;
-    color: @color13;
+    color: {text};
 }}
 
 #workspaces button.focused {{
-    color: @color0;
-		background: @color13;
+    color: {background};
+		background: {highlight};
 }}
 
 #mode {{
-    background: @color0;
-    border-bottom: 3px solid @color7;
+    background: {background};
+    border-bottom: 3px solid {text};
 }}
 
 #clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {{
@@ -75,21 +54,22 @@ window#waybar {{
 }}
 
 #battery icon {{
-    color: @color1;
+    color: {red};
 }}
 
 #battery.charging {{
+		color: {light-green};
 }}
 
 @keyframes blink {{
     to {{
-        background-color: @color1;
-        color: @color0;
+        background-color: {red};
+        color: {background};
     }}
 }}
 
 #battery.warning:not(.charging) {{
-    color: @color9;
+    color: {light-red};
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -107,7 +87,7 @@ window#waybar {{
 }}
 
 #network.disconnected {{
-    background: @color9;
+    background: {light-red};
 }}
 
 #pulseaudio {{

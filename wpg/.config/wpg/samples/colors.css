@@ -17,8 +17,16 @@
 #b9dceb
 #cdd6f4
 
-#c39bb8
-#866a7f
+#11111b; //background
+#1e1e2e;//background2
+#cdd6f4        //text
+#a6adc8;			//text2
+#b4befe;		//primary
+#74c7ec;  //secondary
+#f38ba8;  //highlight
+
+#c3b3b0
+#867b79
 
 set $color0 #11111b
 set $color1 #f38ba8
@@ -38,8 +46,8 @@ set $color13 #b4befe
 set $color14 #b9dceb
 set $color15 #cdd6f4
 
-set $active #c39bb8
-set $inactive #866a7f
+set $active #c3b3b0
+set $inactive #867b79
 
 
 @define-color color0 #11111b;
@@ -60,5 +68,5 @@ set $inactive #866a7f
 @define-color color14 #b9dceb;
 @define-color color15 #cdd6f4;
 
-@define-color active #c39bb8;
-@define-color inactive #866a7f;
+@define-color active #c3b3b0;
+@define-color inactive #867b79;

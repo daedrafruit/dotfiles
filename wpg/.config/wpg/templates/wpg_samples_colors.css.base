@@ -17,6 +17,14 @@
 {color14}
 {color15}
 
+{background}; //background
+{background2};//background2
+{text}        //text
+{text2};			//text2
+{primary};		//primary
+{secondary};  //secondary
+{highlight};  //highlight
+
 {active}
 {inactive}
 
