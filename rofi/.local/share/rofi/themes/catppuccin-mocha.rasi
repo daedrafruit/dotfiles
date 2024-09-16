@@ -1,12 +1,16 @@
 * {
-    bg-col: #11111b;
-    bg-col-light: #11111b;
-    border-col: #b4befe;
-    selected-col: #11111b;
-    blue: #b4befe;
-    fg-col: #cdd6f4;
-    fg-col2: #f38ba8;
-    grey: #a6adc8;
+	//background
+    bg-col: #111111;
+	//unselected tabs
+    bg-col-light: #000000;
+    border-col: #ffffff;
+    selected-col: #000000;
+	//top icon
+    blue: #ffffff;
+    fg-col: #ffffff;
+	//selected text
+    fg-col2: #36feb0;
+    grey: #6d6d6d;
 
 //    bg-col:  #1e1e2e;
 //    bg-col-light: #1e1e2e;
@@ -28,7 +32,7 @@ element-text, element-icon , mode-switcher {
 
 window {
     height: 360px;
-    border: 1;
+    border: 3px;
 //		border-radius: 5px;
     border-color: @border-col;
     background-color: @bg-col;
@@ -85,6 +89,7 @@ element-icon {
 }
 
 element selected {
+	border-radius: 7px;
     background-color:  @selected-col ;
     text-color: @fg-col2  ;
 }

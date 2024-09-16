@@ -1,4 +1,23 @@
-@import "mocha.css";
+@define-color bar-background #bbbbbb;
+@define-color bar-border #ffffff;
+@define-color bar-text #111111;
+
+@define-color button-text #111111;
+@define-color button-text-focused #36feb0;
+@define-color button-background-focused #010101;
+@define-color button-border-focused #ffffff;
+
+@define-color mode-background #101010;
+@define-color mode-border-bottom #8c4df2;
+
+@define-color battery #ff4d87;
+@define-color battery-low-background #ff4d87;
+@define-color battery-low-text #000000;
+@define-color battery-charging #8c4dff;
+@define-color battery-charging-background #010101;
+
+@define-color battery-not-charging #ff4d87;
+@define-color network-disconnected #ff4d87;
 
 * {
     border: none;
@@ -9,67 +28,101 @@
 }
 
 window#waybar {
-    background: #11111b;
-		border: #b4befe;
-    color: #cdd6f4;
+    background: @bar-background;
+		border-top: 2px solid #ffffff;
+		border-left: 2px solid #ffffff;
+		border-right: 2px solid #000000;
+		border-bottom: 2px solid #000000;
+    color: @bar-text;
 }
 
 #window {
     font-weight: bold;
-    font-family: "Ubuntu";
+		background: #b5b5b5;
+		margin: 4px 3px;
+		padding: 2px 20px;
+		border-bottom: 2px solid #dddddd;
+		border-right: 2px solid #dddddd;
+		border-top: 2px solid #333333;
+		border-left: 2px solid #333333;
 }
-/*
-#workspaces {
-    padding: 0 5px;
-}
-*/
 
 #workspaces button {
-		border-radius: 3px;
+	margin: 3px 2px;
+	padding: 2px 1px;
+		border-radius: 0px;
+		border-top: 2px solid #ffffff;
+		border-left: 2px solid #ffffff;
+		border-right: 2px solid #000000;
+		border-bottom: 2px solid #000000;
+    color: @button-text;
     padding: 0 5px;
     background: transparent;
-    color: #cdd6f4;
 }
 
 #workspaces button.focused {
-    color: #11111b;
-		background: #f38ba8;
+		border-radius: 0px;
+		border-bottom: 2px solid #ffffff;
+		border-right: 2px solid #ffffff;
+		border-top: 2px solid #000000;
+		border-left: 2px solid #000000;
+		font-weight: bold;
+    color: #000000;
+		background: #cccccc;
 }
 
 #mode {
-    background: #11111b;
-    border-bottom: 3px solid #cdd6f4;
+	margin: 3px 2px;
+	padding: 2px 1px;
+    background: #cccccc;
+		border-bottom: 2px solid #ffffff;
+		border-right: 2px solid #ffffff;
+		border-top: 2px solid #000000;
+		border-left: 2px solid #000000;
 }
 
 #clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {
-    padding: 0 3px;
-    margin: 0 2px;
+	margin: 3px 2px;
+	padding: 2px 5px;
 }
 
-#clock {
-    font-weight: bold;
+#mode {
+		padding: 2px 10px;
+    background: #cccccc;
+		border-bottom: 2px solid #ffffff;
+		border-right: 2px solid #ffffff;
+		border-top: 2px solid #000000;
+		border-left: 2px solid #000000;
+}
+
+#clock, #tray {
+		background: #b5b5b5;
+		border-bottom: 2px solid #dddddd;
+		border-right: 2px solid #dddddd;
+		border-top: 2px solid #333333;
+		border-left: 2px solid #333333;
 }
 
 #battery {
 }
 
 #battery icon {
-    color: #f38ba8;
+    color: @battery;
 }
 
 #battery.charging {
-		color: #94e2d5;
+		color: @battery-charging;
 }
 
 @keyframes blink {
     to {
-        background-color: #f38ba8;
-        color: #11111b;
+        background-color: @battery-low-background;
+        color: @battery-low-text;
     }
 }
 
 #battery.warning:not(.charging) {
-    color: #f5c2e7;
+    color: @battery-not-charging;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -87,7 +140,7 @@ window#waybar {
 }
 
 #network.disconnected {
-    background: #f5c2e7;
+    background: @network-disconnected;
 }
 
 #pulseaudio {
