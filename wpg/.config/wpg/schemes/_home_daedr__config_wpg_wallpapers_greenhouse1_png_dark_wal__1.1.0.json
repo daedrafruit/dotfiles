@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/daedr/.config/wpg/wallpapers/greenhouse1.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0f201b",
+        "foreground": "#cbcbcc",
+        "cursor": "#cbcbcc"
+    },
+    "colors": {
+        "color0": "#000000",
+        "color1": "#ff4d87",
+        "color2": "#13f274",
+        "color3": "#d8fc72",
+        "color4": "#037db7",
+        "color5": "#0DA6C8",
+        "color6": "#20cbc4",
+        "color7": "#a6a6a6",
+        "color8": "#6d6d6e",
+        "color9": "#ff81f1",
+        "color10": "#98f252",
+        "color11": "#f6f97c",
+        "color12": "#0da6c8",
+        "color13": "#8c4dff",
+        "color14": "#36feb0",
+        "color15": "#ffffff"
+    }
+}

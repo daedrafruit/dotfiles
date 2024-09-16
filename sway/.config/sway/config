@@ -4,9 +4,13 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
 # tabborder focused text curr-split
-client.focused #11111b #b4befe #11111b #f38ba8
-client.unfocused #11111b #1e1e2e #cdd6f4 #f38ba8
+client.focused #11111b #f38ba8 #11111b #f38ba8
+client.unfocused #11111b #b4befe #11111b #f38ba8
 
 # Gaps
 gaps inner 15px
@@ -66,8 +70,11 @@ output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
+		
+    bindsym $mod+Shift+s exec flameshot gui --raw | wl-copy
+    bindsym print exec flameshot full --raw | wl-copy
 
-		bindsym $mod+Shift+g exec wpg -s Tokyo_Pink.png --no-terminal
+		bindsym $mod+Shift+g exec wpg -s Tokyo_Pink.png --noterminal
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
@@ -128,8 +135,8 @@ output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
+    bindsym $mod+v splith
+    bindsym $mod+b splitv
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking

@@ -9,9 +9,7 @@
 font_size 18.0
 background_opacity 0.9
 
-# background {background}
-
-background #0b0b12
+background {background3}
 
 # The 16 terminal colors
 
