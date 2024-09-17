@@ -9,10 +9,11 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 # tabborder focused text curr-split
-client.focused #000000 #bebebe #000000 #7e7e7e
-client.unfocused #11111b #7e7e7e #11111b #f38ba8
+client.focused #000000 #f9efe4 #000000 #c2b9c1
+client.unfocused #11111b #c2b9b1 #11111b #f38ba8
 
-shadow_color #000000
+output * bg /usr/share/backgrounds/sway/poolside-fm-pacific-breeze.png fill
+
 # Gaps
 gaps inner 15px
 gaps outer 8px
@@ -23,7 +24,9 @@ default_dim_inactive 0.1
 
 #corner_radius 8
 shadows enable
-shadow_blur_radius 25
+shadow_blur_radius 5
+
+shadow_color #000000ff
 
 # settings for touchpad
 input "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" {
@@ -50,7 +53,6 @@ set $menu wofi -I --show drun
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/greenhouse1.png fill
 #
 # Example configuration:
 #

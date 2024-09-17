@@ -17,7 +17,7 @@ window {
 #input {
   padding: 5px 5px;
   margin: 5px 3px;
-  background-color: #bebebe;
+  background-color: #f9efe4;
   color: #000000;
   border-radius: 0px;
   font-family: "Sans Serif", "Font Awesome 5 Free";
@@ -30,13 +30,13 @@ window {
 }
 
 #input:selected {
-  background-color: #bebebe;
+  background-color: #f9efe4;
 }
 
 #inner-box {
   padding: 3px 3px;
   margin: 5px 5px;
-  background-color: #bebebe;
+  background-color: #f9efe4;
   color: #000000;
   font-family: "Sans Serif", "Font Awesome 5 Free";
   font-size: medium;
@@ -52,13 +52,13 @@ window {
 #outer-box {
   padding: 5px 5px;
   margin: 5px 3px;
-  background-color: #bebebe;
+  background-color: #f9efe4;
   color: #000000;
   font-family: "Sans Serif", "Font Awesome 5 Free";
   border-top: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
-  border-right: 2px solid #7e7e7e;
-  border-bottom: 2px solid #7e7e7e;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
   box-shadow: 2px 2px 0px 0px #000000;
   margin-right: 5px;
 }
@@ -81,14 +81,14 @@ window {
 #entry.activatable #text {
   padding: 5px 5px;
   margin: 5px 3px;
-  background-color: #bebebe;
+  background-color: #f9efe4;
   color: #000000;
   font-family: "Sans Serif", "Font Awesome 5 Free";
   font-size: small;
   border-top: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
-  border-right: 2px solid #7e7e7e;
-  border-bottom: 2px solid #7e7e7e;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
   box-shadow: 2px 2px 0px 0px #000000;
   outline: none;
   width: 90%;
@@ -96,13 +96,13 @@ window {
 
 #entry {
   margin: 3px 1px;
-  background-color: #bebebe;
+  background-color: #f9efe4;
   color: #000000;
   font-family: "Sans Serif", "Font Awesome 5 Free";
   border-top: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
-  border-right: 2px solid #7e7e7e;
-  border-bottom: 2px solid #7e7e7e;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
   box-shadow: 2px 2px 0px 0px #000000;
   outline: none;
   width: 90%;
@@ -110,13 +110,13 @@ window {
 
 #entry:selected {
   color: #000000;
-  border-top: 2px solid #000000;
-  border-left: 2px solid #000000;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   box-shadow: 1px 1px 0px 0px #000000 inset;
   text-shadow: none;
-  background-color: #bebebe;
+  background-color: #f9efe4;
   outline: none;
   width: 90%;
 }
@@ -139,7 +139,7 @@ window {
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #000000;
   border-right: 1px solid #000000;
-  background: #bebebe;
+  background: #f9efe4;
   outline: none;
 }
 
@@ -148,7 +148,7 @@ window {
   font-size: small;
   color: #000000;
   text-shadow: none;
-  background: #bebebe;
+  background: #f9efe4;
   outline: none;
   width: 90%;
 }
