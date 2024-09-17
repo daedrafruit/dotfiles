@@ -1,3 +1,4 @@
+
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar at the bottom of your screen
@@ -18,7 +19,7 @@
             "4:work": "",
             "5:music": "",
             "6:docs": "",
-            "urgent": "",
+            "urgent": ". ",
             //"focused": "",
             "default": "",
 						"1": "1",
@@ -31,7 +32,7 @@
 						"8": "8",
 						"9": "9",
 						"10": "10",
-        }
+        },
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -41,7 +42,7 @@
         "spacing": 10
     },
     "clock": {
-        "format-alt": "{:%Y-%m-%d}"
+				"format": "{:%F | %I:%M %p }"
     },
     "cpu": {
         "format": "{usage}% "

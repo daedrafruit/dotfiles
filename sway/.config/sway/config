@@ -9,8 +9,9 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 # tabborder focused text curr-split
-client.focused #000000 #ffffff #000000 #a6a6a6
-client.unfocused #11111b #a6a6a6 #11111b #f38ba8
+client.focused #000000 #bebebe #000000 #7e7e7e
+client.unfocused #11111b #7e7e7e #11111b #f38ba8
+
 shadow_color #000000
 # Gaps
 gaps inner 15px
@@ -45,8 +46,7 @@ set $right l
 set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened on the original workspace that the command was run on.
-set $menu rofi -show drun -matching prefix -drun-match-fields name
-
+set $menu wofi -I --show drun 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
