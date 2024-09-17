@@ -43,7 +43,7 @@ window#waybar {
 	border-left: 2px solid #000000;
 	border-right: 2px solid #ffffff;
 	border-bottom: 2px solid #ffffff;
-	box-shadow: 1px 1px 0px 0px #000000 inset;
+	box-shadow: 1px 1px 0px 0px @grey inset;
 }
 
 #workspaces button, #workspaces button.focused {

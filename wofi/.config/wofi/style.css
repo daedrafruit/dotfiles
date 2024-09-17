@@ -26,7 +26,7 @@ window {
   border-left: 2px solid #000000;
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
-  box-shadow: 1px 1px 0px 0px #000000 inset;
+  box-shadow: 1px 1px 0px 0px #c2b9b1 inset;
 }
 
 #input:selected {
@@ -44,7 +44,7 @@ window {
   border-left: 2px solid #000000;
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
-  box-shadow: 1px 1px 0px 0px #000000 inset;
+  box-shadow: 1px 1px 0px 0px #c2b9b1 inset;
   outline: none;
   width: 100%;
 }
@@ -57,8 +57,8 @@ window {
   font-family: "Mx437 IGS VGA 8x16";
   border-top: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
-  border-right: 2px solid #808080;
-  border-bottom: 2px solid #808080;
+  border-right: 2px solid #c2b9b1;
+  border-bottom: 2px solid #c2b9b1;
   box-shadow: 2px 2px 0px 0px #000000;
   margin-right: 5px;
 }
@@ -87,8 +87,8 @@ window {
   font-size: small;
   border-top: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
-  border-right: 2px solid #808080;
-  border-bottom: 2px solid #808080;
+  border-right: 2px solid #c2b9b1;
+  border-bottom: 2px solid #c2b9b1;
   box-shadow: 2px 2px 0px 0px #000000;
   outline: none;
   width: 90%;
@@ -101,8 +101,8 @@ window {
   font-family: "Mx437 IGS VGA 8x16";
   border-top: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
-  border-right: 2px solid #808080;
-  border-bottom: 2px solid #808080;
+  border-right: 2px solid #c2b9b1;
+  border-bottom: 2px solid #c2b9b1;
   box-shadow: 2px 2px 0px 0px #000000;
   outline: none;
   width: 90%;
@@ -110,11 +110,11 @@ window {
 
 #entry:selected {
   color: #000000;
-  border-top: 1px solid #000000;
-  border-left: 1px solid #000000;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
-  box-shadow: 1px 1px 0px 0px #000000 inset;
+  box-shadow: 1px 1px 0px 0px #c2b9b1 inset;
   text-shadow: none;
   background-color: #f9efe4;
   outline: none;
@@ -126,8 +126,8 @@ window {
   padding: 2px 2px;
   border-left: 1px solid #ffffff;
   border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #000000;
-  border-right: 1px solid #000000;
+  border-bottom: 1px solid #c2b9b1;
+  border-right: 1px solid #c2b9b1;
   box-shadow: 1px 1px 1px 0px #000000;
   background: none;
   outline: none;

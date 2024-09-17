@@ -9,10 +9,12 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 # tabborder focused text curr-split
-client.focused #000000 #f9efe4 #000000 #c2b9c1
+client.focused #000000 #f9efe4 #000000 #c2b9b1
 client.unfocused #11111b #c2b9b1 #11111b #f38ba8
 
-output * bg /usr/share/backgrounds/sway/poolside-fm-pacific-breeze.png fill
+output * bg /usr/share/backgrounds/tiling/tiling-cats.png tile
+#output * bg /usr/share/backgrounds/sway/poolside-fm-poolsuite-os.png fill
+#output * bg /usr/share/backgrounds/sway/poolside-fm-pacific-breeze.png fill
 
 # Gaps
 gaps inner 15px
