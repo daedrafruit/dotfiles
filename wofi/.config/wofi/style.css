@@ -147,7 +147,6 @@ window {
 
 #img:selected {
   box-shadow: 2px 2px 1px 0px #141414;
-  background-color: #c2b9b1;
 }
 
 #entry:selected #text {
