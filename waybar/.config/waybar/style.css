@@ -1,7 +1,7 @@
 @define-color grey #c2b9b1;
-@define-color red #800000;
-@define-color light-red #ff0000;
-@define-color green #008000;
+@define-color red #f25a67;
+@define-color light-red #f25a67;
+@define-color green #26b562;
 
 
 * {
@@ -10,12 +10,18 @@
     font-family: "Mx437 IGS VGA 8x16";
     font-size: 17px;
     min-height: 0;
-	background: #f9efe4;
-    color: #000000;
+    color: #141414;
 }
 
 
-window#waybar,
+window#waybar {
+  background-color: #c2b9b1;
+  background-image: 
+    linear-gradient(to right, #f9efe4 1px, transparent 1px),
+    linear-gradient(to bottom, #f9efe4 1px, transparent 1px);
+  background-size: 2px 2px; 
+}
+
 #workspaces button,
 #mode,
 #battery,
@@ -23,17 +29,18 @@ window#waybar,
 #memory,
 #network,
 #pulseaudio {
+	background: #f9efe4;
 	margin: 3px 2px;
 	padding: 2px 16px 2px 6px;
 	border-top: 2px solid #ffffff;
 	border-left: 2px solid #ffffff;
 	border-right: 2px solid @grey;
 	border-bottom: 2px solid @grey;
-	box-shadow: 2px 2px 0px 0px #000000;
+	box-shadow: 2px 2px 0px 0px #141414;
 }
 
 window#waybar {
-	border-bottom: 2px solid #000000;
+	border-bottom: 2px solid #141414;
 }
 
 #workspaces button.focused,
@@ -42,17 +49,25 @@ window#waybar {
 #window,
 #mode,
 #custom-spotify {
+	background: #f9efe4;
 	padding: 1px 10px;
-	border-top: 2px solid #000000;
-	border-left: 2px solid #000000;
+	border-top: 2px solid #141414;
+	border-left: 2px solid #141414;
 	border-right: 2px solid #ffffff;
 	border-bottom: 2px solid #ffffff;
+
+	
 	box-shadow: 1px 1px 0px 0px @grey inset;
 }
 
 #workspaces button, #workspaces button.focused {
 	margin: 1px 3px 1px 2px;
 	padding: 3px 4px;
+}
+
+#workspaces button.focused {
+	background: #f9efe4;
+	font-weight: bold;
 }
 
 #custom-spotify {

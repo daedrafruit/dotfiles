@@ -4,28 +4,35 @@
 
 window {
   padding: 0px 0px 0px 2px;
-  color: #000000;
+  color: #141414;
   font-family: "Mx437 IGS VGA 8x16";
-  font-size: medium;
+  font-size: 17px;
+
+  background-color: #c2b9b1;
+  background-image: 
+    linear-gradient(to right, #f9efe4 1px, transparent 1px),
+    linear-gradient(to bottom, #f9efe4 1px, transparent 1px);
+  background-size: 2px 2px; 
+
   border-left: 1px solid #ffffff;
   border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #000000;
-  border-right: 2px solid #000000;
-  box-shadow: 1px 1px 1px 0px #000000;
+  border-bottom: 1px solid #141414;
+  border-right: 2px solid #141414;
+  box-shadow: 1px 1px 1px 0px #141414;
 }
 
 #input {
   padding: 5px 5px;
   margin: 5px 3px;
-  background-color: #f9efe4;
-  color: #000000;
+  background-color: #ffffff;
+  color: #141414;
   border-radius: 0px;
   font-family: "Mx437 IGS VGA 8x16";
-  font-size: medium;
-  border-top: 2px solid #000000;
-  border-left: 2px solid #000000;
-  border-right: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
+  font-size: 17px;
+  border-top: 2px solid #141414;
+  border-left: 2px solid #141414;
+  border-right: 2px solid #e4e7e7;
+  border-bottom: 2px solid #e4e7e7;
   box-shadow: 1px 1px 0px 0px #c2b9b1 inset;
 }
 
@@ -36,12 +43,17 @@ window {
 #inner-box {
   padding: 3px 3px;
   margin: 5px 5px;
-  background-color: #f9efe4;
-  color: #000000;
+  background-color: #c2b9b1;
+
+  background-image: 
+    linear-gradient(to right, #f9efe4 1px, transparent 1px),
+    linear-gradient(to bottom, #f9efe4 1px, transparent 1px);
+  background-size: 2px 2px; 
+  color: #141414;
   font-family: "Mx437 IGS VGA 8x16";
-  font-size: medium;
-  border-top: 2px solid #000000;
-  border-left: 2px solid #000000;
+  font-size: 17px;
+  border-top: 2px solid #141414;
+  border-left: 2px solid #141414;
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   box-shadow: 1px 1px 0px 0px #c2b9b1 inset;
@@ -53,13 +65,13 @@ window {
   padding: 5px 5px;
   margin: 5px 3px;
   background-color: #f9efe4;
-  color: #000000;
+  color: #141414;
   font-family: "Mx437 IGS VGA 8x16";
   border-top: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
   border-right: 2px solid #c2b9b1;
   border-bottom: 2px solid #c2b9b1;
-  box-shadow: 2px 2px 0px 0px #000000;
+  box-shadow: 2px 2px 0px 0px #141414;
   margin-right: 5px;
 }
 
@@ -71,9 +83,9 @@ window {
 #text {
   margin-left: 10px;
 	font-family: "Mx437 IGS VGA 8x16";
-  font-size: small;
+  font-size: 15px;
   border: none;
-  color: #000000;
+  color: #141414;
   outline: none;
   word-wrap: break-word;
 }
@@ -82,14 +94,14 @@ window {
   padding: 5px 5px;
   margin: 5px 3px;
   background-color: #f9efe4;
-  color: #000000;
+  color: #141414;
   font-family: "Mx437 IGS VGA 8x16";
-  font-size: small;
+  font-size: 15px;
   border-top: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
   border-right: 2px solid #c2b9b1;
   border-bottom: 2px solid #c2b9b1;
-  box-shadow: 2px 2px 0px 0px #000000;
+  box-shadow: 2px 2px 0px 0px #141414;
   outline: none;
   width: 90%;
 }
@@ -97,21 +109,21 @@ window {
 #entry {
   margin: 3px 1px;
   background-color: #f9efe4;
-  color: #000000;
+  color: #141414;
   font-family: "Mx437 IGS VGA 8x16";
   border-top: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
   border-right: 2px solid #c2b9b1;
   border-bottom: 2px solid #c2b9b1;
-  box-shadow: 2px 2px 0px 0px #000000;
+  box-shadow: 2px 2px 0px 0px #141414;
   outline: none;
   width: 90%;
 }
 
 #entry:selected {
-  color: #000000;
-  border-top: 2px solid #000000;
-  border-left: 2px solid #000000;
+  color: #141414;
+  border-top: 2px solid #141414;
+  border-left: 2px solid #141414;
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   box-shadow: 1px 1px 0px 0px #c2b9b1 inset;
@@ -128,27 +140,21 @@ window {
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #c2b9b1;
   border-right: 1px solid #c2b9b1;
-  box-shadow: 1px 1px 1px 0px #000000;
+  box-shadow: 1px 1px 1px 0px #141414;
   background: none;
   outline: none;
 }
 
 #img:selected {
-  filter: grayscale(100%);
-  border-left: 1px solid #ffffff;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #000000;
-  border-right: 1px solid #000000;
-  background: #f9efe4;
-  outline: none;
+  box-shadow: 2px 2px 1px 0px #141414;
+  background-color: #c2b9b1;
 }
 
 #entry:selected #text {
   font-family: "Mx437 IGS VGA 8x16";
-  font-size: small;
-  color: #000000;
+  font-size: 15px;
+  color: #141414;
   text-shadow: none;
-  background: #f9efe4;
   outline: none;
   width: 90%;
 }
