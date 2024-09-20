@@ -30,6 +30,8 @@ shadow_blur_radius 5
 
 shadow_color #000000ff
 
+for_window [class="Pavucontrol"] floating enable
+
 # settings for touchpad
 input "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" {
 	natural_scroll enabled

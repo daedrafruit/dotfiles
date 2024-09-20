@@ -39,6 +39,12 @@ window#waybar {
 	box-shadow: 2px 2px 0px 0px #141414;
 }
 
+tooltip {
+	font-size: 12px;
+  background-color: #f9efe4;
+  border: 1px solid #141414; 
+}
+
 window#waybar {
 	border-bottom: 2px solid #141414;
 }
@@ -74,6 +80,10 @@ window#waybar {
 	padding: 0px 6px;
 }
 
+#custom-spotify#text {
+	background-color: #000000;
+	padding: 0px 3px;
+}
 
 #workspaces button.focused {
 	font-weight: bold;
