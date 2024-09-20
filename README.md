@@ -1,8 +1,4 @@
-wip/experimental
-
-mostly catppuccin
-
-using stow to manage
+using stow
 
 nvim config in dedicated repository
 
