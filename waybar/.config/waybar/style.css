@@ -1,21 +1,25 @@
+@define-color red #f38ba8;
+@define-color light-red #eba0ac;
+@define-color green #a6e3a1;
+
+@define-color text #cdd6f4;
+@define-color background #1e1e2e;
+@define-color background2 #313244;
+@define-color shadow #11111b;
+@define-color sheen #585b70;
+/*
+
 @define-color grey #c2b9b1;
 @define-color red #f25a67;
 @define-color light-red #f25a67;
 @define-color green #26b562;
 
-/*
-@define-color text #ffffff;
-@define-color background #333333;
-@define-color background2 #555555;
-@define-color shadow #141414;
-@define-color shine #444444;
-*/
-
 @define-color text #141414;
 @define-color background #c2b9b1;
 @define-color background2 #f9efe4;
 @define-color shadow #141414;
-@define-color shine #ffffff;
+@define-color sheen #ffffff;
+*/
 
 * {
 	margin: 1px 2px 2px 1px;
@@ -34,8 +38,8 @@ window#waybar {
     linear-gradient(to right, @background2 1px, transparent 1px),
     linear-gradient(to bottom, @background2 1px, transparent 1px);
   background-size: 2px 2px; 
-	border-top: 2px solid @shine;
-	border-left: 2px solid @shine;
+	border-top: 2px solid @sheen;
+	border-left: 2px solid @sheen;
 	border-right: 2px solid @background;
 	border-bottom: 2px solid @background;
 }
@@ -50,8 +54,8 @@ window#waybar {
 	background: @background2;
 	margin: 3px 2px;
 	padding: 2px 16px 2px 6px;
-	border-top: 2px solid @shine;
-	border-left: 2px solid @shine;
+	border-top: 2px solid @sheen;
+	border-left: 2px solid @sheen;
 	border-right: 2px solid @background;
 	border-bottom: 2px solid @background;
 	box-shadow: 2px 2px 0px 0px @shadow;
@@ -74,8 +78,8 @@ tooltip {
 	padding: 1px 10px;
 	border-top: 2px solid @shadow;
 	border-left: 2px solid @shadow;
-	border-right: 2px solid @shine;
-	border-bottom: 2px solid @shine;
+	border-right: 2px solid @sheen;
+	border-bottom: 2px solid @sheen;
 
 	
 	box-shadow: 1px 1px 0px 0px @background inset;

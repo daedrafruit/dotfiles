@@ -1,64 +1,72 @@
 		/* https://int10h.org/oldschool-pc-fonts/download/ */
 
+/*
+text = color0
+background = color1
+background2 = color2
+shadow = color3
+sheen = color4
+*/
+
 * {
   outline: none;
 }
 
 window {
   padding: 0px 0px 0px 2px;
-  color: #141414;
+  color: --wofi-color0;
   font-family: "Mx437 IGS VGA 8x16";
   font-size: 17px;
 
-  background-color: #c2b9b1;
+  background-color: --wofi-color1;
   background-image: 
-    linear-gradient(to right, #f9efe4 1px, transparent 1px),
-    linear-gradient(to bottom, #f9efe4 1px, transparent 1px);
+    linear-gradient(to right, --wofi-color2 1px, transparent 1px),
+    linear-gradient(to bottom, --wofi-color2 1px, transparent 1px);
   background-size: 2px 2px; 
 
-	border-top: 2px solid #ffffff;
-	border-left: 2px solid #ffffff;
-	border-right: 2px solid #c2b9b1;
-	border-bottom: 2px solid #141414;
-	border-bottom: 2px solid #c2b9b1;
+	border-top: 2px solid --wofi-color4;
+	border-left: 2px solid --wofi-color4;
+	border-right: 2px solid --wofi-color1;
+	border-bottom: 2px solid --wofi-color3;
+	border-bottom: 2px solid --wofi-color1;
 }
 
 #input {
   padding: 5px 5px;
   margin: 5px 3px;
-  background-color: #ffffff;
-  color: #141414;
+  background-color: --wofi-color4;
+  color: --wofi-color0;
   border-radius: 0px;
   font-family: "Mx437 IGS VGA 8x16";
   font-size: 17px;
-  border-top: 2px solid #141414;
-  border-left: 2px solid #141414;
-  border-right: 2px solid #e4e7e7;
-  border-bottom: 2px solid #e4e7e7;
-  box-shadow: 1px 1px 0px 0px #c2b9b1 inset;
+  border-top: 2px solid --wofi-color3;
+  border-left: 2px solid --wofi-color3;
+  border-right: 2px solid --wofi-color4;
+  border-bottom: 2px solid --wofi-color4;
+  box-shadow: 1px 1px 0px 0px --wofi-color1 inset;
 }
 
 #input:selected {
-  background-color: #f9efe4;
+  background-color: --wofi-color2;
 }
 
 #inner-box {
   padding: 3px 3px;
   margin: 5px 5px;
-  background-color: #c2b9b1;
+  background-color: --wofi-color1;
 
   background-image: 
-    linear-gradient(to right, #f9efe4 1px, transparent 1px),
-    linear-gradient(to bottom, #f9efe4 1px, transparent 1px);
+    linear-gradient(to right, --wofi-color2 1px, transparent 1px),
+    linear-gradient(to bottom, --wofi-color2 1px, transparent 1px);
   background-size: 2px 2px; 
-  color: #141414;
+  color: --wofi-color0;
   font-family: "Mx437 IGS VGA 8x16";
   font-size: 17px;
-  border-top: 2px solid #141414;
-  border-left: 2px solid #141414;
-  border-right: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-  box-shadow: 1px 1px 0px 0px #c2b9b1 inset;
+  border-top: 2px solid --wofi-color3;
+  border-left: 2px solid --wofi-color3;
+  border-right: 2px solid --wofi-color4;
+  border-bottom: 2px solid --wofi-color4;
+  box-shadow: 1px 1px 0px 0px --wofi-color1 inset;
   outline: none;
   width: 100%;
 }
@@ -66,14 +74,14 @@ window {
 #outer-box {
   padding: 5px 5px;
   margin: 5px 3px;
-  background-color: #f9efe4;
-  color: #141414;
+  background-color: --wofi-color2;
+  color: --wofi-color0;
   font-family: "Mx437 IGS VGA 8x16";
-  border-top: 2px solid #ffffff;
-  border-left: 2px solid #ffffff;
-  border-right: 2px solid #c2b9b1;
-  border-bottom: 2px solid #c2b9b1;
-  box-shadow: 2px 2px 0px 0px #141414;
+  border-top: 2px solid --wofi-color4;
+  border-left: 2px solid --wofi-color4;
+  border-right: 2px solid --wofi-color1;
+  border-bottom: 2px solid --wofi-color1;
+  box-shadow: 2px 2px 0px 0px --wofi-color3;
   margin-right: 5px;
 }
 
@@ -87,7 +95,7 @@ window {
 	font-family: "Mx437 IGS VGA 8x16";
   font-size: 15px;
   border: none;
-  color: #141414;
+  color: --wofi-color0;
   outline: none;
   word-wrap: break-word;
 }
@@ -95,42 +103,42 @@ window {
 #entry.activatable #text {
   padding: 5px 5px;
   margin: 5px 3px;
-  background-color: #f9efe4;
-  color: #141414;
+  background-color: --wofi-color2;
+  color: --wofi-color0;
   font-family: "Mx437 IGS VGA 8x16";
   font-size: 15px;
-  border-top: 2px solid #ffffff;
-  border-left: 2px solid #ffffff;
-  border-right: 2px solid #c2b9b1;
-  border-bottom: 2px solid #c2b9b1;
-  box-shadow: 2px 2px 0px 0px #141414;
+  border-top: 2px solid --wofi-color4;
+  border-left: 2px solid --wofi-color4;
+  border-right: 2px solid --wofi-color1;
+  border-bottom: 2px solid --wofi-color1;
+  box-shadow: 2px 2px 0px 0px --wofi-color3;
   outline: none;
   width: 90%;
 }
 
 #entry {
   margin: 3px 1px;
-  background-color: #f9efe4;
-  color: #141414;
+  background-color: --wofi-color2;
+  color: --wofi-color0;
   font-family: "Mx437 IGS VGA 8x16";
-  border-top: 2px solid #ffffff;
-  border-left: 2px solid #ffffff;
-  border-right: 2px solid #c2b9b1;
-  border-bottom: 2px solid #c2b9b1;
-  box-shadow: 2px 2px 0px 0px #141414;
+  border-top: 2px solid --wofi-color4;
+  border-left: 2px solid --wofi-color4;
+  border-right: 2px solid --wofi-color1;
+  border-bottom: 2px solid --wofi-color1;
+  box-shadow: 2px 2px 0px 0px --wofi-color3;
   outline: none;
   width: 90%;
 }
 
 #entry:selected {
-  color: #141414;
-  border-top: 2px solid #141414;
-  border-left: 2px solid #141414;
-  border-right: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-  box-shadow: 1px 1px 0px 0px #c2b9b1 inset;
+  color: --wofi-color0;
+  border-top: 2px solid --wofi-color3;
+  border-left: 2px solid --wofi-color3;
+  border-right: 2px solid --wofi-color4;
+  border-bottom: 2px solid --wofi-color4;
+  box-shadow: 1px 1px 0px 0px --wofi-color1 inset;
   text-shadow: none;
-  background-color: #f9efe4;
+  background-color: --wofi-color2;
   outline: none;
   width: 90%;
 }
@@ -138,23 +146,23 @@ window {
 #img {
   filter: grayscale(100%);
   padding: 2px 2px;
-  border-left: 1px solid #ffffff;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #c2b9b1;
-  border-right: 1px solid #c2b9b1;
-  box-shadow: 1px 1px 1px 0px #141414;
+  border-left: 1px solid --wofi-color4;
+  border-top: 1px solid --wofi-color4;
+  border-bottom: 1px solid --wofi-color1;
+  border-right: 1px solid --wofi-color1;
+  box-shadow: 1px 1px 1px 0px --wofi-color3;
   background: none;
   outline: none;
 }
 
 #img:selected {
-  box-shadow: 2px 2px 1px 0px #141414;
+  box-shadow: 2px 2px 1px 0px --wofi-color3;
 }
 
 #entry:selected #text {
   font-family: "Mx437 IGS VGA 8x16";
   font-size: 15px;
-  color: #141414;
+  color: --wofi-color0;
   text-shadow: none;
   outline: none;
   width: 90%;

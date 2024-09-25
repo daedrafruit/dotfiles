@@ -1,10 +1,11 @@
 hide_scroll=true
 line_wrap = word_char
+colors = /home/daedr/.config/wofi/catppuccin.css
 dynamic_lines = true
 image_size = 20
 insensitive=true
 matching = multi-contains
-term = foot
+term = kitty
 prompt = Run...
 location = top_left
 y = 0
