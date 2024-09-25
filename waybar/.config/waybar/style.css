@@ -3,24 +3,41 @@
 @define-color light-red #f25a67;
 @define-color green #26b562;
 
+/*
+@define-color text #ffffff;
+@define-color background #333333;
+@define-color background2 #555555;
+@define-color shadow #141414;
+@define-color shine #444444;
+*/
+
+@define-color text #141414;
+@define-color background #c2b9b1;
+@define-color background2 #f9efe4;
+@define-color shadow #141414;
+@define-color shine #ffffff;
 
 * {
 	margin: 1px 2px 2px 1px;
-    border-radius: 0;
-		/* https://int10h.org/oldschool-pc-fonts/download/ */
-    font-family: "Mx437 IGS VGA 8x16";
-    font-size: 17px;
-    min-height: 0;
-    color: #141414;
+	border-radius: 0;
+	/* https://int10h.org/oldschool-pc-fonts/download/ */
+	font-family: "Mx437 IGS VGA 8x16";
+	font-size: 17px;
+	min-height: 0;
+	color: @text;
 }
 
 
 window#waybar {
-  background-color: #c2b9b1;
+  background-color: @background;
   background-image: 
-    linear-gradient(to right, #f9efe4 1px, transparent 1px),
-    linear-gradient(to bottom, #f9efe4 1px, transparent 1px);
+    linear-gradient(to right, @background2 1px, transparent 1px),
+    linear-gradient(to bottom, @background2 1px, transparent 1px);
   background-size: 2px 2px; 
+	border-top: 2px solid @shine;
+	border-left: 2px solid @shine;
+	border-right: 2px solid @background;
+	border-bottom: 2px solid @background;
 }
 
 #workspaces button,
@@ -30,25 +47,22 @@ window#waybar {
 #memory,
 #network,
 #pulseaudio {
-	background: #f9efe4;
+	background: @background2;
 	margin: 3px 2px;
 	padding: 2px 16px 2px 6px;
-	border-top: 2px solid #ffffff;
-	border-left: 2px solid #ffffff;
-	border-right: 2px solid @grey;
-	border-bottom: 2px solid @grey;
-	box-shadow: 2px 2px 0px 0px #141414;
+	border-top: 2px solid @shine;
+	border-left: 2px solid @shine;
+	border-right: 2px solid @background;
+	border-bottom: 2px solid @background;
+	box-shadow: 2px 2px 0px 0px @shadow;
 }
 
 tooltip {
 	font-size: 12px;
-  background-color: #f9efe4;
-  border: 1px solid #141414; 
+  background-color: @background2;
+  border: 1px solid @shadow; 
 }
 
-window#waybar {
-	border-bottom: 2px solid #141414;
-}
 
 #workspaces button.focused,
 #clock,
@@ -56,15 +70,15 @@ window#waybar {
 #window,
 #mode,
 #custom-spotify {
-	background: #f9efe4;
+	background: @background2;
 	padding: 1px 10px;
-	border-top: 2px solid #141414;
-	border-left: 2px solid #141414;
-	border-right: 2px solid #ffffff;
-	border-bottom: 2px solid #ffffff;
+	border-top: 2px solid @shadow;
+	border-left: 2px solid @shadow;
+	border-right: 2px solid @shine;
+	border-bottom: 2px solid @shine;
 
 	
-	box-shadow: 1px 1px 0px 0px @grey inset;
+	box-shadow: 1px 1px 0px 0px @background inset;
 }
 
 #workspaces button, #workspaces button.focused {
@@ -73,7 +87,7 @@ window#waybar {
 }
 
 #workspaces button.focused {
-	background: #f9efe4;
+	background: @background2;
 	font-weight: bold;
 }
 
@@ -103,7 +117,7 @@ window#waybar {
 }
 
 #battery.critical:not(.charging) {
-	background: @grey;
+	background: @background;
 	color: @light-red;
 }
 

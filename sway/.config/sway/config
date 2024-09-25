@@ -12,23 +12,28 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
 client.focused #000000 #f9efe4 #000000 #c2b9b1
 client.unfocused #000000 #c2b9b1 #000000 #c2b9b1
 
-output * bg /usr/share/backgrounds/tiling/tiling-cats.png tile
-#output * bg /usr/share/backgrounds/sway/poolside-fm-poolsuite-os.png fill
-#output * bg /usr/share/backgrounds/sway/poolside-fm-pacific-breeze.png fill
+#output * bg /usr/share/backgrounds/tiling/tiling-cats.png tile
+#output * bg /usr/share/backgrounds/poolsuite/poolside-fm-poolsuite-os.png fill
+#output * bg /usr/share/backgrounds/poolsuite/poolside-fm-pacific-breeze.png fill
+output * bg /usr/share/backgrounds/Konachan.com - 191428 sakamoto.jpg fill
+#output * bg /usr/share/backgrounds/lapfox/edited/greenhouse1.png fill
+#output * bg /usr/share/backgrounds/miku/Konachan.com - 380881 aqua_eyes aqua_hair bodysuit camera earth garter hatsune_miku kelezi long_hair planet space stars thighhighs twintails vocaloid.jpg fill
+#output * bg /usr/share/backgrounds/catppuccin/Catppuccin_Mocha_Mauve_Horizontal.png fill
+#output * bg /home/daedr/Pictures/backgrounds/lapfox/_SNDWRK-gh/greenhouse - _SNDWRK-gh - Wallpaper G.png fill
 
 # Gaps
-gaps inner 15px
-gaps outer 8px
+gaps inner 10px
+gaps outer 3px
 
 # remove title from windows and set border to 2px
-default_border pixel 3
+default_border pixel 1
 default_dim_inactive 0.1
 
 #corner_radius 8
 shadows enable
 shadow_blur_radius 5
 
-shadow_color #000000ff
+shadow_color #000000
 
 for_window [class="Pavucontrol"] floating enable
 
@@ -86,6 +91,7 @@ output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
 		bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 		bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 		bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+		bindsym XF86AudioMicMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 		bindsym XF86MonBrightnessUp exec brightnessctl set +20%
 		bindsym XF86MonBrightnessDown exec brightnessctl set 20%-
