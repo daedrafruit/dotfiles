@@ -29,7 +29,7 @@
 	margin: 1px 2px 2px 1px;
 	border-radius: 0;
 	/* https://int10h.org/oldschool-pc-fonts/download/ */
-	font-family: "Mx437 IBM VGA 8x16", "JetBrains Mono Nerd Font";
+	font-family: "MxPlus IBM VGA 8x16", "JetBrains Mono Nerd Font";
 	font-size: 17px;
 	min-height: 0;
 	color: @text;
