@@ -86,6 +86,8 @@ output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
 
     floating_modifier $mod normal
 
+		input * xkb_options "ctrl:nocaps"
+
     # Reload the configuration file
     bindsym $mod+Shift+c reload
 		
