@@ -15,6 +15,9 @@ export RANGER_LOAD_DEFAULT_RC=false;
 
 export EDITOR=nvim;
 
+# ensure gtk theme doesnt effect waybar appearance
+alias waybar="GTK_THEME=Adwaita waybar"
+
 #for flameshot
 export SDL_VIDEODRIVER=wayland;
 export _JAVA_AWT_WM_NONREPARENTING=1;
@@ -22,7 +25,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1;
 export XDG_CURRENT_DESKTOP=sway;
 export XDG_SESSION_DESKTOP=sway;
 
-#export GTK_THEME=Tokyonight-Dark
+# export GTK_THEME=Tokyonight-Dark
 
 [[ $- != *i* ]] && return
 

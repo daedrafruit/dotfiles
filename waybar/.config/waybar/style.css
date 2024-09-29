@@ -57,7 +57,6 @@ window#waybar {
 #pulseaudio {
 	background: @background2;
 	margin: 3px 2px;
-	padding: 2px 16px 2px 6px;
 	border-top: 2px solid @sheen;
 	border-left: 2px solid @sheen;
 	border-right: 2px solid @background;
@@ -65,12 +64,22 @@ window#waybar {
 	box-shadow: 2px 2px 0px 0px @shadow;
 }
 
+#mode,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio {
+	padding: 2px 16px 2px 6px;
+}
+
+#network.disconnected { padding: 2px 8px 2px 12px; }
+
 tooltip {
 	font-size: 12px;
   background-color: @background2;
   border: 1px solid @shadow; 
 }
-
 
 #workspaces button.focused,
 #clock,
@@ -79,15 +88,22 @@ tooltip {
 #mode,
 #custom-spotify {
 	background: @background2;
-	padding: 1px 10px;
 	border-top: 2px solid @shadow;
 	border-left: 2px solid @shadow;
 	border-right: 2px solid @sheen;
 	border-bottom: 2px solid @sheen;
-
-	
 	box-shadow: 1px 1px 0px 0px @background inset;
 }
+
+#clock,
+#tray,
+#window,
+#mode,
+#custom-spotify {
+	padding: 1px 10px;
+} 
+
+#window { margin: 3px 100px 3px 100px; }
 
 #workspaces button, #workspaces button.focused {
 	margin: 1px 3px 1px 2px;
@@ -108,27 +124,14 @@ tooltip {
 	padding: 0px 3px;
 }
 
-#workspaces button.focused {
-	font-weight: bold;
-}
-#window {
-	margin: 3px 100px 3px 100px;
-	padding: 2px 10px;
-}
-
 #battery.charging {
 	color: @green;
 }
 
-#battery.warning:not(.charging) {
-	color: @red;
-}
+#battery.warning:not(.charging) { color: @red; }
 
 #battery.critical:not(.charging) {
 	background: @background;
 	color: @light-red;
 }
 
-#network.disconnected {
-	padding: 2px 8px 2px 12px;
-}
