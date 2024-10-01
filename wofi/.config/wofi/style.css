@@ -5,7 +5,8 @@ text = color0
 background = color1
 background2 = color2
 shadow = color3
-sheen = color4
+shadow2 = color4
+sheen = color5
 */
 
 * {
@@ -24,26 +25,25 @@ window {
     linear-gradient(to bottom, --wofi-color2 1px, transparent 1px);
   background-size: 2px 2px; 
 
-	border-top: 2px solid --wofi-color4;
-	border-left: 2px solid --wofi-color4;
-	border-right: 2px solid --wofi-color1;
-	border-bottom: 2px solid --wofi-color3;
-	border-bottom: 2px solid --wofi-color1;
+	border-top: 2px solid --wofi-color5;
+	border-left: 2px solid --wofi-color5;
+	border-right: 2px solid --wofi-color4;
+	border-bottom: 2px solid --wofi-color4;
 }
 
 #input {
   padding: 5px 5px;
   margin: 5px 3px;
-  background-color: --wofi-color2;
+  background-color: --wofi-color5;
   color: --wofi-color0;
   border-radius: 0px;
   font-family: "MxPlus IBM VGA 8x16";
   font-size: 17px;
   border-top: 2px solid --wofi-color3;
   border-left: 2px solid --wofi-color3;
-  border-right: 2px solid --wofi-color4;
-  border-bottom: 2px solid --wofi-color4;
-  box-shadow: 1px 1px 0px 0px --wofi-color1 inset;
+  border-right: 2px solid --wofi-color5;
+  border-bottom: 2px solid --wofi-color5;
+  box-shadow: 1px 1px 0px 0px --wofi-color4 inset;
 }
 
 #input:selected {
@@ -64,8 +64,8 @@ window {
   font-size: 17px;
   border-top: 2px solid --wofi-color3;
   border-left: 2px solid --wofi-color3;
-  border-right: 2px solid --wofi-color4;
-  border-bottom: 2px solid --wofi-color4;
+  border-right: 2px solid --wofi-color5;
+  border-bottom: 2px solid --wofi-color5;
   box-shadow: 1px 1px 0px 0px --wofi-color1 inset;
   outline: none;
   width: 100%;
@@ -77,8 +77,8 @@ window {
   background-color: --wofi-color2;
   color: --wofi-color0;
   font-family: "MxPlus IBM VGA 8x16";
-  border-top: 2px solid --wofi-color4;
-  border-left: 2px solid --wofi-color4;
+  border-top: 2px solid --wofi-color5;
+  border-left: 2px solid --wofi-color5;
   border-right: 2px solid --wofi-color1;
   border-bottom: 2px solid --wofi-color1;
   box-shadow: 2px 2px 0px 0px --wofi-color3;
@@ -107,8 +107,8 @@ window {
   color: --wofi-color0;
   font-family: "MxPlus IBM VGA 8x16";
   font-size: 17px;
-  border-top: 2px solid --wofi-color4;
-  border-left: 2px solid --wofi-color4;
+  border-top: 2px solid --wofi-color5;
+  border-left: 2px solid --wofi-color5;
   border-right: 2px solid --wofi-color1;
   border-bottom: 2px solid --wofi-color1;
   box-shadow: 2px 2px 0px 0px --wofi-color3;
@@ -122,8 +122,8 @@ window {
   background-color: --wofi-color2;
   color: --wofi-color0;
   font-family: "MxPlus IBM VGA 8x16";
-  border-top: 2px solid --wofi-color4;
-  border-left: 2px solid --wofi-color4;
+  border-top: 2px solid --wofi-color5;
+  border-left: 2px solid --wofi-color5;
   border-right: 2px solid --wofi-color1;
   border-bottom: 2px solid --wofi-color1;
   box-shadow: 2px 2px 0px 0px --wofi-color3;
@@ -135,8 +135,8 @@ window {
   color: --wofi-color0;
   border-top: 2px solid --wofi-color3;
   border-left: 2px solid --wofi-color3;
-  border-right: 2px solid --wofi-color4;
-  border-bottom: 2px solid --wofi-color4;
+  border-right: 2px solid --wofi-color5;
+  border-bottom: 2px solid --wofi-color5;
   box-shadow: 1px 1px 0px 0px --wofi-color1 inset;
   text-shadow: none;
   background-color: --wofi-color2;
@@ -147,8 +147,8 @@ window {
 #img {
   filter: grayscale(100%);
   padding: 2px 2px;
-  border-left: 1px solid --wofi-color4;
-  border-top: 1px solid --wofi-color4;
+  border-left: 1px solid --wofi-color5;
+  border-top: 1px solid --wofi-color5;
   border-bottom: 1px solid --wofi-color1;
   border-right: 1px solid --wofi-color1;
   box-shadow: 1px 1px 1px 0px --wofi-color3;

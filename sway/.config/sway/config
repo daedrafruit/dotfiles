@@ -24,14 +24,14 @@ output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
 # tabborder focused text curr-split
 
 #catppuccin
-client.focused #11111b #45475a #cdd6f4 #45475a
-client.unfocused #11111b #1e1e2e #cdd6f4 #1e1e2e
+client.focused #000000 #c0c0c0 #000000 #000000
+client.unfocused #000000 #808080 #000000 #000000
 
 #output * bg /usr/share/backgrounds/tiling/tiling-cats.png tile
 #output * bg /usr/share/backgrounds/poolsuite/poolside-fm-poolsuite-os.png fill
 #output * bg /usr/share/backgrounds/poolsuite/poolside-fm-pacific-breeze.png fill
-output * bg /usr/share/backgrounds/Konachan.com - 191428 sakamoto.jpg fill
-#output * bg /usr/share/backgrounds/lapfox/edited/greenhouse1.png fill
+#output * bg /usr/share/backgrounds/Konachan.com - 191428 sakamoto.jpg fill
+output * bg /usr/share/backgrounds/lapfox/edited/greenhouse1.png fill
 #output * bg /usr/share/backgrounds/miku/Konachan.com - 380881 aqua_eyes aqua_hair bodysuit camera earth garter hatsune_miku kelezi long_hair planet space stars thighhighs twintails vocaloid.jpg fill
 #output * bg /usr/share/backgrounds/catppuccin/Catppuccin_Mocha_Mauve_Horizontal.png fill
 #output * bg /home/daedr/Pictures/backgrounds/lapfox/_SNDWRK-gh/greenhouse - _SNDWRK-gh - Wallpaper G.png fill

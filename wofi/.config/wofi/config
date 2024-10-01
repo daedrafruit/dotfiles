@@ -1,6 +1,6 @@
 hide_scroll=true
 line_wrap = word_char
-colors = /home/daedr/.config/wofi/catppuccin.css
+colors = /home/daedr/.config/wofi/win95.css
 dynamic_lines = true
 image_size = 20
 insensitive=true
