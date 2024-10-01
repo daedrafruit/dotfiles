@@ -33,5 +33,10 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+# load blesh
+[[ $- == *i* ]] && source /usr/share/blesh/ble.sh
+
+# load atuin
+# [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
+

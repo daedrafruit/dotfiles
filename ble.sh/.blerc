@@ -1,0 +1,16 @@
+bleopt default_keymap=vi
+function blerc/vim-mode-hook {
+	ble-bind -m vi_nmap --cursor 2
+	ble-bind -m vi_imap --cursor 5
+	ble-bind -m vi_omap --cursor 4
+	ble-bind -m vi_xmap --cursor 2
+	bleopt keymap_vi_mode_show=
+}
+
+blehook/eval-after-load keymap_vi blerc/vim-mode-hook
+
+
+bleopt color_scheme=base16
+ble-face -s syntax_error              underline,bg=transparent
+ble-face -s auto_complete 						fg=#585b70
+ble-face -s region_insert             fg=blue,bg=transparent
