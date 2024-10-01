@@ -23,17 +23,17 @@ output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
 
 # tabborder focused text curr-split
 #poolsuite
-#client.focused #000000 #f9efe4 #000000 #c2b9b1
-#client.unfocused #000000 #c2b9b1 #000000 #c2b9b1
+client.focused #000000 #f9efe4 #000000 #c2b9b1
+client.unfocused #000000 #c2b9b1 #000000 #c2b9b1
 
 #catppuccin
-client.focused #11111b #45475a #cdd6f4 #45475a
-client.unfocused #11111b #1e1e2e #cdd6f4 #1e1e2e
+#client.focused #11111b #45475a #cdd6f4 #45475a
+#client.unfocused #11111b #1e1e2e #cdd6f4 #1e1e2e
 
 #output * bg /usr/share/backgrounds/tiling/tiling-cats.png tile
 #output * bg /usr/share/backgrounds/poolsuite/poolside-fm-poolsuite-os.png fill
-#output * bg /usr/share/backgrounds/poolsuite/poolside-fm-pacific-breeze.png fill
-output * bg /usr/share/backgrounds/Konachan.com - 191428 sakamoto.jpg fill
+output * bg /usr/share/backgrounds/poolsuite/poolside-fm-pacific-breeze.png fill
+#output * bg /usr/share/backgrounds/Konachan.com - 191428 sakamoto.jpg fill
 #output * bg /usr/share/backgrounds/lapfox/edited/greenhouse1.png fill
 #output * bg /usr/share/backgrounds/miku/Konachan.com - 380881 aqua_eyes aqua_hair bodysuit camera earth garter hatsune_miku kelezi long_hair planet space stars thighhighs twintails vocaloid.jpg fill
 #output * bg /usr/share/backgrounds/catppuccin/Catppuccin_Mocha_Mauve_Horizontal.png fill

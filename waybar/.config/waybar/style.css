@@ -1,3 +1,4 @@
+/*
 @define-color red #f38ba8;
 @define-color light-red #eba0ac;
 @define-color green #a6e3a1;
@@ -7,8 +8,7 @@
 @define-color background2 #1e1e2e;
 @define-color shadow #11111b;
 @define-color sheen #313244;
-
-/*
+*/
 @define-color grey #c2b9b1;
 @define-color red #f25a67;
 @define-color light-red #f25a67;
@@ -19,7 +19,6 @@
 @define-color background2 #f9efe4;
 @define-color shadow #141414;
 @define-color sheen #ffffff;
-*/
 
 * {
 	margin: 1px 2px 2px 1px;
