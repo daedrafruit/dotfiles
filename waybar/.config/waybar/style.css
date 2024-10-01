@@ -8,19 +8,6 @@
 @define-color shadow #11111b;
 @define-color sheen #313244;
 
-/*
-@define-color grey #c2b9b1;
-@define-color red #f25a67;
-@define-color light-red #f25a67;
-@define-color green #26b562;
-
-@define-color text #141414;
-@define-color background #c2b9b1;
-@define-color background2 #f9efe4;
-@define-color shadow #141414;
-@define-color sheen #ffffff;
-*/
-
 * {
 	margin: 1px 2px 2px 1px;
 	border-radius: 0;
