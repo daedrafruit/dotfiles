@@ -31,6 +31,9 @@
 	color: @text;
 }
 
+#tray menu {
+	background-color: @background;
+}
 
 window#waybar {
   background-color: @background;
@@ -44,6 +47,8 @@ window#waybar {
 	border-bottom: 2px solid @background;
 }
 
+#tray menu,
+tooltip,
 #workspaces button,
 #mode,
 #battery,
@@ -71,11 +76,6 @@ window#waybar {
 
 #network.disconnected { padding: 2px 8px 2px 12px; }
 
-tooltip {
-	font-size: 12px;
-  background-color: @background2;
-  border: 1px solid @shadow; 
-}
 
 #workspaces button.focused,
 #clock,

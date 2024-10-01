@@ -13,4 +13,6 @@ blehook/eval-after-load keymap_vi blerc/vim-mode-hook
 bleopt color_scheme=base16
 ble-face -s syntax_error              underline,bg=transparent
 ble-face -s auto_complete 						fg=#585b70
+
+# comes up when using cd menu
 ble-face -s region_insert             fg=blue,bg=transparent
