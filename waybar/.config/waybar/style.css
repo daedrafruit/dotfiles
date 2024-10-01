@@ -35,6 +35,7 @@ window#waybar {
 	border-bottom: 2px solid @shadow2;
 }
 
+#custom-start,
 #tray menu,
 tooltip,
 #workspaces button,
@@ -51,6 +52,9 @@ tooltip,
 	border-right: 2px solid @shadow2;
 	border-bottom: 2px solid @shadow2;
 	box-shadow: 2px 2px 0px 0px @shadow;
+}
+
+#custom-start {
 }
 
 #mode,
