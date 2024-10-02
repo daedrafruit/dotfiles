@@ -31,11 +31,11 @@ output eDP-1 resolution 1920x1080 position 0,0
 output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
 
 # class                 border  backgr. text    indica. child_border
-client.focused 					#11111b #45475a #cdd6f4 #45475a
+client.focused 					#11111b #45475a #cdd6f4 #45475a	#45475a
 client.focused_inactive #808080 #c0c0c0 #000000 #808080 #808080
-client.unfocused 				#11111b #1e1e2e #cdd6f4 #1e1e2e
-client.urgent           #000080 #000080 #000080 #000080 #000080
-client.placeholder      #000000 #0c0c0c #000000 #000000 #000000
+client.unfocused 				#11111b #1e1e2e #cdd6f4 #1e1e2e #1e1e2e
+client.urgent 					#11111b #1e1e2e #cdd6f4 #1e1e2e #1e1e2e
+client.placeholder 			#11111b #1e1e2e #cdd6f4 #1e1e2e #1e1e2e
 client.background       #c0c0c0
 
 
@@ -193,9 +193,6 @@ for_window [class="Pavucontrol"] floating enable
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
-
-    # Toggle the current focus between tiling and floating mode
-    bindsym $mod+w floating toggle, resize set 1600 800
 
 		for_window [app_id=$term], floating enable, resize set 800 600
 
