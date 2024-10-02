@@ -3,7 +3,16 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
+set $term kitty
 
+set $mod Mod4
+
+set $left h
+set $down j
+set $up k
+set $right l
+
+set $menu /home/daedr/.config/waybar/start.sh 
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
@@ -21,11 +30,23 @@ input "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" {
 output eDP-1 resolution 1920x1080 position 0,0
 output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
 
-# tabborder focused text curr-split
+# class                 border  backgr. text    indica. child_border
+client.focused 					#11111b #45475a #cdd6f4 #45475a
+client.focused_inactive #808080 #c0c0c0 #000000 #808080 #808080
+client.unfocused 				#11111b #1e1e2e #cdd6f4 #1e1e2e
+client.urgent           #000080 #000080 #000080 #000080 #000080
+client.placeholder      #000000 #0c0c0c #000000 #000000 #000000
+client.background       #c0c0c0
 
-#catppuccin
-client.focused #11111b #45475a #cdd6f4 #45475a
-client.unfocused #11111b #1e1e2e #cdd6f4 #1e1e2e
+
+font MxPlus IBM VGA 8x16 12
+
+# Gaps
+#gaps inner 10px
+#gaps outer 3px
+
+default_border normal 2
+
 
 
 #output * bg /usr/share/backgrounds/tiling/tiling-cats.png tile
@@ -56,17 +77,6 @@ for_window [class="Pavucontrol"] floating enable
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
-set $mod Mod4
-# Home row direction keys, like vim
-set $left h
-set $down j
-set $up k
-set $right l
-# Your preferred terminal emulator
-set $term kitty
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened on the original workspace that the command was run on.
-set $menu wofi -I --show drun 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -115,7 +125,6 @@ set $menu wofi -I --show drun
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-
 #
 # Moving around:
 #
@@ -188,8 +197,12 @@ set $menu wofi -I --show drun
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
 
+		for_window [app_id=$term], floating enable, resize set 800 600
+
     # Swap focus between the tiling area and the floating area
     bindsym $mod+space focus mode_toggle
+		bindsym $mod+u [floating] move to workspace 11
+		bindsym $mod+i [floating] move to workspace current, focus floating
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
