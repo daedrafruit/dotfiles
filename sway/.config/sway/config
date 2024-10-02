@@ -188,12 +188,13 @@ for_window [class="Pavucontrol"] floating enable
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
+    #bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
+    bindsym $mod+w floating toggle, resize set 1600 800
 		for_window [app_id=$term], floating enable, resize set 800 600
 
     # Swap focus between the tiling area and the floating area
