@@ -195,7 +195,7 @@ for_window [class="Pavucontrol"] floating enable
     bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+w floating toggle, resize set 1600 800
 
 		for_window [app_id=$term], floating enable, resize set 800 600
 
