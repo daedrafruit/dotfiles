@@ -13,8 +13,6 @@ export QT_QPA_PLATFORM=xcb;
 #ranger
 export RANGER_LOAD_DEFAULT_RC=false;
 
-export EDITOR=nvim;
-
 # ensure gtk theme doesnt effect waybar appearance
 alias waybar="GTK_THEME=Adwaita waybar"
 
