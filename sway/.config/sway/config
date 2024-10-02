@@ -3,7 +3,16 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
+set $term kitty
 
+set $mod Mod4
+
+set $left h
+set $down j
+set $up k
+set $right l
+
+set $menu wofi -I --show drun 
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
@@ -21,13 +30,14 @@ input "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" {
 output eDP-1 resolution 1920x1080 position 0,0
 output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
 
-# class                 border  backgr. text    indic.  child_border
+# class                 border  backgr. text    indica. child_border
 client.focused          #c0c0c0 #000080 #ffffff #c0c0c0 #c0c0c0
 client.focused_inactive #808080 #c0c0c0 #000000 #808080 #808080
 client.unfocused        #808080 #c0c0c0 #000000 #808080 #808080
 client.urgent           #000080 #000080 #000080 #000080 #000080
 client.placeholder      #000000 #0c0c0c #000000 #000000 #000000
 client.background       #c0c0c0
+
 
 font MxPlus IBM VGA 8x16 12
 
@@ -38,7 +48,6 @@ font MxPlus IBM VGA 8x16 12
 default_border normal 2
 
 
-for_window [class="Pavucontrol"] floating enable
 
 #output * bg /usr/share/backgrounds/tiling/tiling-cats.png tile
 #output * bg /usr/share/backgrounds/poolsuite/poolside-fm-poolsuite-os.png fill
@@ -51,17 +60,6 @@ output * bg /usr/share/backgrounds/lapfox/edited/greenhouse1.png fill
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
-set $mod Mod4
-# Home row direction keys, like vim
-set $left h
-set $down j
-set $up k
-set $right l
-# Your preferred terminal emulator
-set $term kitty
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened on the original workspace that the command was run on.
-set $menu wofi -I --show drun 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -173,17 +171,21 @@ set $menu wofi -I --show drun
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
+#    bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+w floating toggle, resize set 1600 800
+
+		for_window [app_id=$term], floating enable, resize set 800 600
 
     # Swap focus between the tiling area and the floating area
     bindsym $mod+space focus mode_toggle
+		bindsym $mod+u [floating] move to workspace 11
+		bindsym $mod+i [floating] move to workspace current, focus floating
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
