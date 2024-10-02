@@ -12,7 +12,7 @@ set $down j
 set $up k
 set $right l
 
-set $menu wofi -I --show drun 
+set $menu /home/daedr/.config/waybar/start.sh 
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
