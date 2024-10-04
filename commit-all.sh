@@ -5,9 +5,10 @@ BRANCHES=(
 	win95
 )
 
-ORIGINALBRANCH=$(git status | head -n1 | cut -c13-)
+ORIGINALBRANCH=$(git symbolic-ref --short HEAD)
 git commit -m "$1" &&
-CHERRYCOMMIT=$(git log -n1 | head -n1 | cut -c8-) &&
+git push &&
+CHERRYCOMMIT=$(git log -n1 --pretty=format:%H) &&
 
 for BRANCH in "${BRANCHES[@]}"; do
     git stash &&
