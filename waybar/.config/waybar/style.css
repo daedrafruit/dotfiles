@@ -4,9 +4,7 @@
 
 @define-color text #cdd6f4;
 @define-color border #313244;
-@define-color background-t rgba(16, 17, 27, 0.95);
-@define-color background-o rgb(30, 30, 46);
-@define-color shadow #000000;
+@define-color background-t rgba(17, 17, 27, 0.95);
 
 * {
 	margin: 1px 2px 1px 1px;

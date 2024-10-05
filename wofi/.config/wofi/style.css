@@ -2,87 +2,42 @@
 
 /*
 text = color0
-background = color1
-background2 = color2
-shadow = color3
-sheen = color4
+border = color1
+backround = color2
+background2 = color3
 */
 
 * {
-  outline: none;
+	font-family: "JetBrains Mono Nerd Font";
+  border-radius: 0px;
+  font-size: 17px;
+  color: --wofi-color0;
+	background: none;
 }
 
 window {
+  background-color: rgba(--wofi-rgb-color3, 0.75);
   padding: 0px 0px 0px 2px;
-  color: --wofi-color0;
-  font-family: "MxPlus IBM VGA 8x16";
-  font-size: 17px;
-
-  background-color: --wofi-color1;
-  background-image: 
-    linear-gradient(to right, --wofi-color2 1px, transparent 1px),
-    linear-gradient(to bottom, --wofi-color2 1px, transparent 1px);
-  background-size: 2px 2px; 
-
-	border-top: 2px solid --wofi-color4;
-	border-left: 2px solid --wofi-color4;
-	border-right: 2px solid --wofi-color1;
-	border-bottom: 2px solid --wofi-color3;
-	border-bottom: 2px solid --wofi-color1;
+	border-radius: 20px;
+	border: 3px solid --wofi-color1;
 }
 
 #input {
-  padding: 5px 5px;
+	background: none;
+  padding: 2px 8px;
   margin: 5px 3px;
-  background-color: --wofi-color2;
-  color: --wofi-color0;
-  border-radius: 0px;
-  font-family: "MxPlus IBM VGA 8x16";
-  font-size: 17px;
-  border-top: 2px solid --wofi-color3;
-  border-left: 2px solid --wofi-color3;
-  border-right: 2px solid --wofi-color4;
-  border-bottom: 2px solid --wofi-color4;
-  box-shadow: 1px 1px 0px 0px --wofi-color1 inset;
+	border-radius: 10px;
+	border: 2px solid --wofi-color1;
 }
 
 #input:selected {
   background-color: --wofi-color2;
-}
-
-#inner-box {
-  padding: 3px 3px;
-  margin: 5px 5px;
-  background-color: --wofi-color1;
-
-  background-image: 
-    linear-gradient(to right, --wofi-color2 1px, transparent 1px),
-    linear-gradient(to bottom, --wofi-color2 1px, transparent 1px);
-  background-size: 2px 2px; 
-  color: --wofi-color0;
-  font-family: "MxPlus IBM VGA 8x16";
-  font-size: 17px;
-  border-top: 2px solid --wofi-color3;
-  border-left: 2px solid --wofi-color3;
-  border-right: 2px solid --wofi-color4;
-  border-bottom: 2px solid --wofi-color4;
-  box-shadow: 1px 1px 0px 0px --wofi-color1 inset;
-  outline: none;
-  width: 100%;
+	border: 3px solid --wofi-color1;
 }
 
 #outer-box {
-  padding: 5px 5px;
+  padding: 5px 5px 0px 5px;
   margin: 5px 3px;
-  background-color: --wofi-color2;
-  color: --wofi-color0;
-  font-family: "MxPlus IBM VGA 8x16";
-  border-top: 2px solid --wofi-color4;
-  border-left: 2px solid --wofi-color4;
-  border-right: 2px solid --wofi-color1;
-  border-bottom: 2px solid --wofi-color1;
-  box-shadow: 2px 2px 0px 0px --wofi-color3;
-  margin-right: 5px;
 }
 
 #scroll {
@@ -91,80 +46,47 @@ window {
 }
 
 #text {
+  color: #7f849c;
   margin-left: 10px;
-	font-family: "MxPlus IBM VGA 8x16";
-  font-size: 17px;
   border: none;
-  color: --wofi-color0;
   outline: none;
   word-wrap: break-word;
+	font-weight: bold;
+}
+
+#entry {
+	border-radius: 2px;
+  margin: 3px 1px;
+  outline: none;
+  width: 90%;
+}
+
+
+#entry:selected {
+	background-color: rgba(--wofi-rgb-color0, 1);
+	background-color: --wofi-color2;
+	background: none;
+  width: 90%;
+}
+
+#entry:selected #text {
+  color: --wofi-color0;
+	background: none;
 }
 
 #entry.activatable #text {
   padding: 5px 5px;
   margin: 5px 3px;
-  background-color: --wofi-color2;
-  color: --wofi-color0;
-  font-family: "MxPlus IBM VGA 8x16";
-  font-size: 17px;
-  border-top: 2px solid --wofi-color4;
-  border-left: 2px solid --wofi-color4;
-  border-right: 2px solid --wofi-color1;
-  border-bottom: 2px solid --wofi-color1;
-  box-shadow: 2px 2px 0px 0px --wofi-color3;
   outline: none;
   width: 90%;
 }
 
-#entry {
-	border-radius: 0px;
-  margin: 3px 1px;
-  background-color: --wofi-color2;
-  color: --wofi-color0;
-  font-family: "MxPlus IBM VGA 8x16";
-  border-top: 2px solid --wofi-color4;
-  border-left: 2px solid --wofi-color4;
-  border-right: 2px solid --wofi-color1;
-  border-bottom: 2px solid --wofi-color1;
-  box-shadow: 2px 2px 0px 0px --wofi-color3;
-  outline: none;
-  width: 90%;
-}
-
-#entry:selected {
-  color: --wofi-color0;
-  border-top: 2px solid --wofi-color3;
-  border-left: 2px solid --wofi-color3;
-  border-right: 2px solid --wofi-color4;
-  border-bottom: 2px solid --wofi-color4;
-  box-shadow: 1px 1px 0px 0px --wofi-color1 inset;
-  text-shadow: none;
-  background-color: --wofi-color2;
-  outline: none;
-  width: 90%;
-}
 
 #img {
-  filter: grayscale(100%);
   padding: 2px 2px;
-  border-left: 1px solid --wofi-color4;
-  border-top: 1px solid --wofi-color4;
-  border-bottom: 1px solid --wofi-color1;
-  border-right: 1px solid --wofi-color1;
-  box-shadow: 1px 1px 1px 0px --wofi-color3;
   background: none;
-  outline: none;
 }
 
 #img:selected {
-  box-shadow: 2px 2px 1px 0px --wofi-color3;
 }
 
-#entry:selected #text {
-  font-family: "MxPlus IBM VGA 8x16";
-  font-size: 17px;
-  color: --wofi-color0;
-  text-shadow: none;
-  outline: none;
-  width: 90%;
-}
