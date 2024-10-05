@@ -3,6 +3,7 @@ BRANCHES=(
 	catppuccin95
 	poolsuite95
 	win95
+	neo-catppuccin
 )
 
 ORIGINALBRANCH=$(git symbolic-ref --short HEAD)
