@@ -12,11 +12,9 @@ CHERRYCOMMIT=$(git log -n1 --pretty=format:%H) &&
 git push &&
 
 for BRANCH in "${BRANCHES[@]}"; do
-    git stash &&
     git checkout "$BRANCH" &&
-		git pull &&
+    git pull &&
     git cherry-pick "$CHERRYCOMMIT" &&
-		git push &&
-    git checkout "$ORIGINALBRANCH" &&
-    git stash pop
+    git push &&
+    git checkout "$ORIGINALBRANCH"
 done
