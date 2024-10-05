@@ -31,11 +31,12 @@ output eDP-1 resolution 1920x1080 position 0,0
 output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
 
 # class                 border  backgr. text    indica. child_border
-client.focused 					#11111b #45475a #cdd6f4 #45475a
-client.focused_inactive #808080 #c0c0c0 #000000 #808080 #808080
-client.unfocused 				#11111b #1e1e2e #cdd6f4 #1e1e2e
-client.urgent           #000080 #000080 #000080 #000080 #000080
-client.placeholder      #000000 #0c0c0c #000000 #000000 #000000
+client.focused 					#11111b #45475a #cdd6f4 #45475a	#45475a
+client.focused_inactive #11111b #313244 #cdd6f4 #313244 #313244
+
+client.unfocused 				#11111b #1e1e2e #cdd6f4 #1e1e2e #1e1e2e
+client.urgent 					#11111b #1e1e2e #cdd6f4 #1e1e2e #1e1e2e
+client.placeholder 			#11111b #1e1e2e #cdd6f4 #1e1e2e #1e1e2e
 client.background       #c0c0c0
 
 
@@ -71,8 +72,6 @@ shadows enable
 shadow_blur_radius 5
 
 shadow_color #000000
-
-for_window [class="Pavucontrol"] floating enable
 
 ### Variables
 #
@@ -119,9 +118,10 @@ for_window [class="Pavucontrol"] floating enable
 		bindsym XF86MonBrightnessUp exec brightnessctl set +20%
 		bindsym XF86MonBrightnessDown exec brightnessctl set 20%-
 
-		bindsym $mod+c exec "cd ~/dotfiles && git checkout catppuccin95 && swaymsg reload"
-		bindsym $mod+x exec "cd ~/dotfiles && git checkout poolsuite95 && swaymsg reload"
-		bindsym $mod+z exec "cd ~/dotfiles && git checkout win95 && swaymsg reload"
+		bindsym $mod+c exec "cd ~/dotfiles && git checkout neo-catppuccin && swaymsg reload"
+		bindsym $mod+x exec "cd ~/dotfiles && git checkout catppuccin95 && swaymsg reload"
+		bindsym $mod+z exec "cd ~/dotfiles && git checkout poolsuite95 && swaymsg reload"
+#		bindsym $mod+z exec "cd ~/dotfiles && git checkout win95 && swaymsg reload"
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
@@ -188,16 +188,13 @@ for_window [class="Pavucontrol"] floating enable
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
+    #bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
-    # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
-
-		for_window [app_id=$term], floating enable, resize set 800 600
+    bindsym $mod+w floating toggle, resize set 1600 800
 
     # Swap focus between the tiling area and the floating area
     bindsym $mod+space focus mode_toggle
