@@ -45,7 +45,7 @@ font MxPlus IBM VGA 8x16 12
 #output * bg /usr/share/backgrounds/tiling/tiling-cats.png tile
 #output * bg /usr/share/backgrounds/poolsuite/poolside-fm-poolsuite-os.png fill
 #output * bg /usr/share/backgrounds/poolsuite/poolside-fm-pacific-breeze.png fill
-#output * bg /usr/share/backgrounds/Konachan.com - 191428 sakamoto.jpg fill
+output * bg /usr/share/backgrounds/Konachan.com - 191428 sakamoto.jpg fill
 
 #output * bg /usr/share/backgrounds/lapfox/edited/greenhouse1.png fill
 output * bg /home/daedr/Pictures/backgrounds/lapfox/_SNDWRK-gh/greenhouse - _SNDWRK-gh - Wallpaper G.png fill
@@ -53,7 +53,7 @@ output * bg /home/daedr/Pictures/backgrounds/lapfox/_SNDWRK-gh/greenhouse - _SND
 #output * bg /usr/share/backgrounds/catppuccin/Catppuccin_Mocha_Mauve_Horizontal.png fill
 
 # Gaps
-gaps inner 8px
+gaps inner 10px
 gaps outer 3px
 
 # remove title from windows and set border to 2px

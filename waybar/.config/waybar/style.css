@@ -4,14 +4,14 @@
 
 @define-color text #cdd6f4;
 @define-color border #313244;
-@define-color background-t rgba(17, 17, 27, 0.95);
+@define-color background-t rgba(11, 11, 18, 0.85);
+/*@define-color background-t rgba(17, 17, 27, 0.85);*/
 
 * {
 	margin: 1px 2px 1px 1px;
 	border-radius: 5px;
 	font-family: "JetBrains Mono Nerd Font";
 	font-size: 15px;
-	color: @text;
 }
 
 #tray menu {
@@ -19,6 +19,7 @@
 }
 
 window#waybar {
+	color: @text;
 	background-color: @background-t;
 	margin: 0px;
 	border-radius: 0px;
@@ -52,7 +53,12 @@ window#waybar {
 	padding: 0px 4px;
 }
 
+#workspaces button {
+	color: #7f849c;
+}
+
 #workspaces button.focused {
+	color: @text;
 	font-weight: bold;
 }
 
