@@ -54,7 +54,6 @@
     },
     "network": {
         // "interface": "wlp2s0", // (Optional) To force the use of this interface
-<<<<<<< HEAD
         "format-wifi": " ",
         "format-ethernet": " ",
         "format-disconnected": "⚠ ",
