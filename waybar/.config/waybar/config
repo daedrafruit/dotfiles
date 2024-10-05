@@ -32,13 +32,6 @@
             "weeks-pos": "right",
             "on-scroll": 1,
             "on-click-right": "mode",
-            "format": {
-                "months": "<span color='#c2b9b1'><b>{}</b></span>",
-                "days": "<span color='#c2b9b1'><b>{}</b></span>",
-                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
-                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-                "today": "<span color='#f25a67'><b><u>{}</u></b></span>"
-            }
         },
     },
     "cpu": {
@@ -61,6 +54,7 @@
     },
     "network": {
         // "interface": "wlp2s0", // (Optional) To force the use of this interface
+<<<<<<< HEAD
         "format-wifi": " ",
         "format-ethernet": " ",
         "format-disconnected": "⚠ ",
