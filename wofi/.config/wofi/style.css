@@ -16,7 +16,7 @@ background2 = color3
 }
 
 window {
-  background-color: rgba(--wofi-rgb-color3, 0.75);
+  background-color: rgba(--wofi-rgb-color3, 0.9);
   padding: 0px 0px 0px 2px;
 	border-radius: 20px;
 	border: 3px solid --wofi-color1;
