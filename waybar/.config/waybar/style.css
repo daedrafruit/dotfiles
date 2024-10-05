@@ -3,53 +3,28 @@
 @define-color green #a6e3a1;
 
 @define-color text #cdd6f4;
-@define-color background #11111b;
-@define-color background2 #1e1e2e;
-@define-color shadow #11111b;
-@define-color sheen #313244;
+@define-color border #313244;
+@define-color background-t rgba(16, 17, 27, 0.95);
+@define-color background-o rgb(30, 30, 46);
+@define-color shadow #000000;
 
 * {
-	margin: 1px 2px 2px 1px;
-	border-radius: 0;
-	/* https://int10h.org/oldschool-pc-fonts/download/ */
-	font-family: "MxPlus IBM VGA 8x16", "JetBrains Mono Nerd Font";
-	font-size: 17px;
-	min-height: 0;
+	margin: 1px 2px 1px 1px;
+	border-radius: 5px;
+	font-family: "JetBrains Mono Nerd Font";
+	font-size: 15px;
 	color: @text;
 }
 
 #tray menu {
-	background-color: @background;
+	background-color: @border;
 }
 
 window#waybar {
-  background-color: @background;
-  background-image: 
-    linear-gradient(to right, @background2 1px, transparent 1px),
-    linear-gradient(to bottom, @background2 1px, transparent 1px);
-  background-size: 2px 2px; 
-	border-top: 2px solid @sheen;
-	border-left: 2px solid @sheen;
-	border-right: 2px solid @background;
-	border-bottom: 2px solid @background;
-}
-
-#tray menu,
-tooltip,
-#workspaces button,
-#mode,
-#battery,
-#cpu,
-#memory,
-#network,
-#pulseaudio {
-	background: @background2;
-	margin: 3px 2px;
-	border-top: 2px solid @sheen;
-	border-left: 2px solid @sheen;
-	border-right: 2px solid @background;
-	border-bottom: 2px solid @background;
-	box-shadow: 2px 2px 0px 0px @shadow;
+	background-color: @background-t;
+	margin: 0px;
+	border-radius: 0px;
+	border-bottom: 1px solid @border;
 }
 
 #mode,
@@ -58,43 +33,28 @@ tooltip,
 #memory,
 #network,
 #pulseaudio {
-	padding: 2px 16px 2px 6px;
+	padding: 0px 16px 0px 6px;
 }
 
-#network.disconnected { padding: 2px 8px 2px 12px; }
+#network.disconnected { padding: 0px 8px 0px 12px; }
 
-
-#workspaces button.focused,
-#clock,
-#tray,
-#window,
-#mode,
-#custom-spotify {
-	background: @background2;
-	border-top: 2px solid @shadow;
-	border-left: 2px solid @shadow;
-	border-right: 2px solid @sheen;
-	border-bottom: 2px solid @sheen;
-	box-shadow: 1px 1px 0px 0px @background inset;
-}
 
 #clock,
 #tray,
 #window,
 #mode,
 #custom-spotify {
-	padding: 1px 10px;
+	padding: 0px 10px;
 } 
 
-#window { margin: 3px 100px 3px 100px; }
+#window { margin: 0px 100px 0px 100px; }
 
 #workspaces button, #workspaces button.focused {
-	margin: 1px 3px 1px 2px;
-	padding: 3px 4px;
+	margin: 0px 3px 0px 2px;
+	padding: 0px 4px;
 }
 
 #workspaces button.focused {
-	background: @background2;
 	font-weight: bold;
 }
 
@@ -114,7 +74,6 @@ tooltip,
 #battery.warning:not(.charging) { color: @red; }
 
 #battery.critical:not(.charging) {
-	background: @background;
 	color: @light-red;
 }
 
