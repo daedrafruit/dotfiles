@@ -48,7 +48,7 @@ window#waybar {
 
 #window { margin: 0px 100px 0px 100px; }
 
-#workspaces button, #workspaces button.focused {
+#workspaces button, #workspaces button.focused, #workspaces button.active {
 	margin: 0px 3px 0px 2px;
 	padding: 0px 4px;
 }
@@ -57,7 +57,7 @@ window#waybar {
 	color: #7f849c;
 }
 
-#workspaces button.focused {
+#workspaces button.focused, #workspaces button.active {
 	color: @text;
 	font-weight: bold;
 }
