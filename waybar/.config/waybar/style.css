@@ -89,13 +89,17 @@ tooltip,
 
 #window { margin: 3px 100px 3px 100px; }
 
-#workspaces button, #workspaces button.focused {
-	margin: 1px 3px 1px 2px;
-	padding: 3px 4px;
+#workspaces button, #workspaces button.focused, #workspaces button.active {
+	margin: 0px 3px 0px 2px;
+	padding: 0px 4px;
 }
 
-#workspaces button.focused {
-	background: @background2;
+#workspaces button {
+	color: #7f849c;
+}
+
+#workspaces button.focused, #workspaces button.active {
+	color: @text;
 	font-weight: bold;
 }
 
