@@ -14,6 +14,7 @@ git push &&
 for BRANCH in "${BRANCHES[@]}"; do
     git stash &&
     git checkout "$BRANCH" &&
+		git pull &&
     git cherry-pick "$CHERRYCOMMIT" &&
 		git push &&
     git checkout "$ORIGINALBRANCH" &&
