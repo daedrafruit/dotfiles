@@ -7,6 +7,8 @@
 export VISUAL=nvim;
 export EDITOR=nvim;
 
+export SDL_VIDEODRIVER=wayland;
+
 #matlab
 export QT_QPA_PLATFORM=xcb;
 
@@ -15,13 +17,6 @@ export RANGER_LOAD_DEFAULT_RC=false;
 
 # ensure gtk theme doesnt effect waybar appearance
 alias waybar="GTK_THEME=Adwaita waybar"
-
-#for flameshot
-export SDL_VIDEODRIVER=wayland;
-export _JAVA_AWT_WM_NONREPARENTING=1;
-#export QT_QPA_PLATFORM=wayland;
-export XDG_CURRENT_DESKTOP=sway;
-export XDG_SESSION_DESKTOP=sway;
 
 #export GTK_THEME=Tokyonight-Dark
 

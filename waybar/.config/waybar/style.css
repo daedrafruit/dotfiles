@@ -15,7 +15,19 @@
 }
 
 #tray menu {
-	background-color: @border;
+	background-color: @background-t;
+	color: @text;
+}
+
+#tray menu {
+	background-color: @background-t;
+	color: @text;
+}
+
+
+#tray menu menuitem:hover {
+  background-color: @text;
+  color: @background-t;
 }
 
 window#waybar {
