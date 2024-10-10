@@ -1,4 +1,4 @@
-hide_scroll=true
+hide_scroll = true
 line_wrap = word_char
 colors = /home/daedr/.config/wofi/colors.css
 dynamic_lines = false
@@ -8,5 +8,5 @@ matching = multi-contains
 term = kitty
 prompt = Run...
 location = 0
-width = 33%
-height = 33%
+width = 600
+height = 350
