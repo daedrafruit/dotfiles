@@ -13,7 +13,7 @@ if [ -z "$wofi_running" ]; then
 
 	case $op in
 		"tasks")
-			kitty -e btop
+			hyprctl dispatch exec "[float;size 50% 75%;]" ~/dotfiles/wofi/.config/wofi/scripts/btp.sh
 			;;
 		"hibernate")
 			systemctl hibernate
