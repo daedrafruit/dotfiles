@@ -33,6 +33,7 @@ input "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" {
 output eDP-1 disable
 #output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
 output HDMI-A-1 resolution 1920x1080@240Hz position 0,0
+#output HDMI-A-1 resolution 1920x1080@60Hz position 0,0
 
 # class                 border  backgr. text    indica. child_border
 client.focused 					#11111b #45475a #cdd6f4 #45475a	#45475a
@@ -62,6 +63,7 @@ blur enable
 blur_passes 2
 blur_radius 1
 blur_xray disable
+
 #application blur
 layer_effects "waybar" blur enable
 layer_effects "wofi" blur enable
@@ -69,18 +71,19 @@ layer_effects "wofi" blur enable
 layer_effects "wofi" corner_radius 20 
 
 # Gaps
-gaps inner 4px
-gaps outer 4px
+gaps inner 6px
+#gaps outer 0px
+
+corner_radius 4
 
 # remove title from windows and set border to 2px
 default_border pixel 1
 default_floating_border pixel 1
 default_dim_inactive 0.1
-corner_radius 3
 shadows enable
 shadow_blur_radius 5
-
 shadow_color #000000
+
 
 bindsym $mod+return exec $term
 
