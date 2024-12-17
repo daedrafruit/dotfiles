@@ -18,7 +18,7 @@ if [ -z "$wofi_running" ]; then
 		"hibernate")
 			systemctl hibernate
 			;;
-		"poweroff")
+		"shutdown")
 			systemctl poweroff
 			;;
 		"restart")
