@@ -12,7 +12,9 @@ set $down j
 set $up k
 set $right l
 
-set $menu /home/daedr/.config/waybar/start.sh 
+set $menu /home/daedr/.config/wofi/scripts/runmenu.sh 
+set $powermenu /home/daedr/.config/wofi/scripts/powermenu.sh 
+
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
@@ -27,8 +29,10 @@ input "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" {
 	dwt disabled
 }
 
-output eDP-1 resolution 1920x1080 position 0,0
-output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
+#output eDP-1 resolution 1920x1080 position 0,0
+output eDP-1 disable
+#output HDMI-A-1 resolution 2560x1440@144Hz position 1920,0
+output HDMI-A-1 resolution 1920x1080@240Hz position 0,0
 
 # class                 border  backgr. text    indica. child_border
 client.focused 					#11111b #45475a #cdd6f4 #45475a	#45475a
@@ -45,10 +49,10 @@ font MxPlus IBM VGA 8x16 12
 #output * bg /usr/share/backgrounds/tiling/tiling-cats.png tile
 #output * bg /usr/share/backgrounds/poolsuite/poolside-fm-poolsuite-os.png fill
 #output * bg /usr/share/backgrounds/poolsuite/poolside-fm-pacific-breeze.png fill
-output * bg /usr/share/backgrounds/Konachan.com - 191428 sakamoto.jpg fill
+#output * bg /usr/share/backgrounds/Konachan.com - 191428 sakamoto.jpg fill
 
 #output * bg /usr/share/backgrounds/lapfox/edited/greenhouse1.png fill
-#output * bg /home/daedr/Pictures/backgrounds/lapfox/_SNDWRK-gh/greenhouse - _SNDWRK-gh - Wallpaper G.png fill
+output * bg /home/daedr/Pictures/backgrounds/lapfox/_SNDWRK-gh/greenhouse - _SNDWRK-gh - Wallpaper G.png fill
 #output * bg /usr/share/backgrounds/miku/Konachan.com - 380881 aqua_eyes aqua_hair bodysuit camera earth garter hatsune_miku kelezi long_hair planet space stars thighhighs twintails vocaloid.jpg fill
 #output * bg /usr/share/backgrounds/catppuccin/Catppuccin_Mocha_Mauve_Horizontal.png fill
 
@@ -89,6 +93,7 @@ shadow_color #000000
     bindsym $mod+Shift+q kill
 
     bindsym $mod+d exec $menu
+		bindsym Mod1+ctrl+delete exec $powermenu
 
     floating_modifier $mod normal
 
@@ -96,7 +101,7 @@ shadow_color #000000
 
     # reload sway configuration file
     bindsym $mod+Shift+c reload
-		
+	
 		# flameshot
     bindsym $mod+Shift+s exec flameshot gui --raw | wl-copy
     bindsym print exec flameshot full --raw | wl-copy
