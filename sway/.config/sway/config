@@ -56,6 +56,12 @@ output * bg /home/daedr/Pictures/backgrounds/lapfox/_SNDWRK-gh/greenhouse - _SND
 #output * bg /usr/share/backgrounds/miku/Konachan.com - 380881 aqua_eyes aqua_hair bodysuit camera earth garter hatsune_miku kelezi long_hair planet space stars thighhighs twintails vocaloid.jpg fill
 #output * bg /usr/share/backgrounds/catppuccin/Catppuccin_Mocha_Mauve_Horizontal.png fill
 
+#blur
+blur enable
+blur_passes 2
+blur_radius 1
+blur_xray disable
+
 # Gaps
 gaps inner 10px
 gaps outer 3px
@@ -89,6 +95,9 @@ shadow_color #000000
 		bindsym $mod+slash exec $term -e tmux a -t term
 #		bindsym $mod+pipe exec $term -e bash -c 'tmux a || tmux new'
 
+		#screenshots
+		bindsym print exec grim - | wl-copy
+		bindsym $mod+Shift+s exec grim -g "$(slurp -b 00000050 -c cdd6f4 )" - | wl-copy
 
     bindsym $mod+Shift+q kill
 
@@ -102,9 +111,6 @@ shadow_color #000000
     # reload sway configuration file
     bindsym $mod+Shift+c reload
 	
-		# flameshot
-    bindsym $mod+Shift+s exec flameshot gui --raw | wl-copy
-    bindsym print exec flameshot full --raw | wl-copy
 
 		# run udiskie to mount usb devices
 		bindsym $mod+m exec udiskie --no-notify --tray
