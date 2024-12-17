@@ -44,7 +44,8 @@ client.placeholder 			#11111b #1e1e2e #cdd6f4 #1e1e2e #1e1e2e
 client.background       #c0c0c0
 
 
-font MxPlus IBM VGA 8x16 12
+#font MxPlus IBM VGA 8x16 12
+font JetBrains Mono Nerd Font 9.5
 
 #output * bg /usr/share/backgrounds/tiling/tiling-cats.png tile
 #output * bg /usr/share/backgrounds/poolsuite/poolside-fm-poolsuite-os.png fill
@@ -63,15 +64,15 @@ blur_radius 1
 blur_xray disable
 
 # Gaps
-gaps inner 10px
-gaps outer 3px
+gaps inner 4px
+gaps outer 4px
 
 # remove title from windows and set border to 2px
 default_border pixel 1
 default_floating_border pixel 1
 default_dim_inactive 0.1
 
-corner_radius 8
+corner_radius 3
 shadows enable
 shadow_blur_radius 5
 
