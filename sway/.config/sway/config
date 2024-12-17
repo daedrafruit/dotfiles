@@ -62,6 +62,11 @@ blur enable
 blur_passes 2
 blur_radius 1
 blur_xray disable
+#application blur
+layer_effects "waybar" blur enable
+layer_effects "wofi" blur enable
+#set corner radius to match wofi config
+layer_effects "wofi" corner_radius 20 
 
 # Gaps
 gaps inner 4px
@@ -71,178 +76,156 @@ gaps outer 4px
 default_border pixel 1
 default_floating_border pixel 1
 default_dim_inactive 0.1
-
 corner_radius 3
 shadows enable
 shadow_blur_radius 5
 
 shadow_color #000000
 
-### Variables
-#
-# Logo key. Use Mod1 for Alt.
-### Output configuration
-#
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#
-# Example configuration:
-#
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
-#
-# You can get the names of your outputs by running: swaymsg -t get_outputs
-    bindsym $mod+return exec $term
+bindsym $mod+return exec $term
 
-		# open tmux to term session
-		bindsym $mod+slash exec $term -e tmux a -t term
-#		bindsym $mod+pipe exec $term -e bash -c 'tmux a || tmux new'
+# open tmux to term session
+bindsym $mod+slash exec $term -e tmux a -t term
+#bindsym $mod+pipe exec $term -e bash -c 'tmux a || tmux new'
 
-		#screenshots
-		bindsym print exec grim - | wl-copy
-		bindsym $mod+Shift+s exec grim -g "$(slurp -b 00000050 -c cdd6f4 )" - | wl-copy
+#screenshots
+bindsym print exec grim - | wl-copy
+bindsym $mod+Shift+s exec grim -g "$(slurp -b 00000050 -c cdd6f4 )" - | wl-copy
 
-    bindsym $mod+Shift+q kill
+bindsym $mod+Shift+q kill
 
-    bindsym $mod+d exec $menu
-		bindsym Mod1+ctrl+delete exec $powermenu
+bindsym $mod+d exec $menu
+bindsym Mod1+ctrl+delete exec $powermenu
 
-    floating_modifier $mod normal
+floating_modifier $mod normal
 
-		input * xkb_options "ctrl:nocaps"
+input * xkb_options "ctrl:nocaps"
 
-    # reload sway configuration file
-    bindsym $mod+Shift+c reload
-	
+# reload sway configuration file
+bindsym $mod+Shift+c reload
 
-		# run udiskie to mount usb devices
-		bindsym $mod+m exec udiskie --no-notify --tray
 
-		bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
-		bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
-		bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
-		bindsym XF86AudioMicMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+# run udiskie to mount usb devices
+bindsym $mod+m exec udiskie --no-notify --tray
 
-		bindsym XF86MonBrightnessUp exec brightnessctl set +20%
-		bindsym XF86MonBrightnessDown exec brightnessctl set 20%-
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
-		bindsym $mod+c exec "cd ~/dotfiles && git checkout neo-catppuccin && swaymsg reload"
-		bindsym $mod+x exec "cd ~/dotfiles && git checkout catppuccin95 && swaymsg reload"
-		bindsym $mod+z exec "cd ~/dotfiles && git checkout poolsuite95 && swaymsg reload"
+bindsym XF86MonBrightnessUp exec brightnessctl set +20%
+bindsym XF86MonBrightnessDown exec brightnessctl set 20%-
+
+bindsym $mod+c exec "cd ~/dotfiles && git checkout neo-catppuccin && swaymsg reload"
+bindsym $mod+x exec "cd ~/dotfiles && git checkout catppuccin95 && swaymsg reload"
+bindsym $mod+z exec "cd ~/dotfiles && git checkout poolsuite95 && swaymsg reload"
 #		bindsym $mod+z exec "cd ~/dotfiles && git checkout win95 && swaymsg reload"
 
-    # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+# Exit sway (logs you out of your Wayland session)
+bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
-    # Move your focus around
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
+# Move your focus around
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
 
-    # Or use $mod+[up|down|left|right]
-    bindsym $mod+Left focus left
-    bindsym $mod+Down focus down
-    bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
+# Or use $mod+[up|down|left|right]
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 
-    # Move the focused window with the same, but add Shift
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
-    # Ditto, with arrow keys
-    bindsym $mod+Shift+Left move left
-    bindsym $mod+Shift+Down move down
-    bindsym $mod+Shift+Up move up
-    bindsym $mod+Shift+Right move right
+# Move the focused window with the same, but add Shift
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+# Ditto, with arrow keys
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
 #
 # Workspaces:
 #
-    # Switch to workspace
-    bindsym $mod+1 workspace number 1
-    bindsym $mod+2 workspace number 2
-    bindsym $mod+3 workspace number 3
-    bindsym $mod+4 workspace number 4
-    bindsym $mod+5 workspace number 5
-    bindsym $mod+6 workspace number 6
-    bindsym $mod+7 workspace number 7
-    bindsym $mod+8 workspace number 8
-    bindsym $mod+9 workspace number 9
-    bindsym $mod+0 workspace number 10
-    # Move focused container to workspace
-    bindsym $mod+Shift+1 move container to workspace number 1
-    bindsym $mod+Shift+2 move container to workspace number 2
-    bindsym $mod+Shift+3 move container to workspace number 3
-    bindsym $mod+Shift+4 move container to workspace number 4
-    bindsym $mod+Shift+5 move container to workspace number 5
-    bindsym $mod+Shift+6 move container to workspace number 6
-    bindsym $mod+Shift+7 move container to workspace number 7
-    bindsym $mod+Shift+8 move container to workspace number 8
-    bindsym $mod+Shift+9 move container to workspace number 9
-    bindsym $mod+Shift+0 move container to workspace number 10
-    # Note: workspaces can have any name you want, not just numbers.
-    # We just use 1-10 as the default.
-#
-# Layout stuff:
-#
-    # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
-    # respectively.
-    bindsym $mod+v splith
-    bindsym $mod+b splitv
+# Switch to workspace
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
 
-    # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    #bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
 
-    # Make the current focus fullscreen
-    bindsym $mod+f fullscreen
+bindsym $mod+v splith
+bindsym $mod+b splitv
 
-    bindsym $mod+w floating toggle, resize set 1600 800
+# Switch the current container between different layout styles
+bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
 
-    # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
-		bindsym $mod+u [floating] move to workspace 11
-		bindsym $mod+i [floating] move to workspace current, focus floating
+# Make the current focus fullscreen
+bindsym $mod+f fullscreen
 
-    # Move focus to the parent container
-    bindsym $mod+a focus parent
-#
+bindsym $mod+w floating toggle, resize set 1600 800
+
+# Swap focus between the tiling area and the floating area
+bindsym $mod+space focus mode_toggle
+bindsym $mod+u [floating] move to workspace 11
+bindsym $mod+i [floating] move to workspace current, focus floating
+
+# Move focus to the parent container
+bindsym $mod+a focus parent
+
+
+
 # Scratchpad:
-#
-    # Sway has a "scratchpad", which is a bag of holding for windows.
-    # You can send windows there and get them back later.
+bindsym $mod+Shift+minus move scratchpad
 
-    # Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
-
-    # Show the next scratchpad window or hide the focused scratchpad window.
-    # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
 #
 # Resizing containers:
 #
 mode "resize" {
-    # left will shrink the containers width
-    # right will grow the containers width
-    # up will shrink the containers height
-    # down will grow the containers height
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
+# left will shrink the containers width
+# right will grow the containers width
+# up will shrink the containers height
+# down will grow the containers height
+bindsym $left resize shrink width 10px
+bindsym $down resize grow height 10px
+bindsym $up resize shrink height 10px
+bindsym $right resize grow width 10px
 
-    # Ditto, with arrow keys
-    bindsym Left resize shrink width 10px
-    bindsym Down resize grow height 10px
-    bindsym Up resize shrink height 10px
-    bindsym Right resize grow width 10px
+# Ditto, with arrow keys
+bindsym Left resize shrink width 10px
+bindsym Down resize grow height 10px
+bindsym Up resize shrink height 10px
+bindsym Right resize grow width 10px
 
-    # Return to default mode
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+# Return to default mode
+bindsym Return mode "default"
+bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
 
@@ -251,7 +234,7 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-		swaybar_command waybar
+swaybar_command waybar
 }
 
 include /etc/sway/config.d/*
