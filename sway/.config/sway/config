@@ -15,9 +15,16 @@ set $right l
 set $menu /home/daedr/.config/wofi/scripts/runmenu.sh 
 set $powermenu /home/daedr/.config/wofi/scripts/powermenu.sh 
 
-exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+exec systemctl --user import-environment WAYLAND_DISPLAY SWAYSOCK I3SOCK \
+  XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XDG_CONFIG_HOME XDG_DATA_HOME \
+  XDG_CACHE_HOME XDG_STATE_HOME
+
 exec hash dbus-update-activation-environment 2>/dev/null && \
-     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+  dbus-update-activation-environment --systemd WAYLAND_DISPLAY SWAYSOCK \
+  I3SOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XDG_CONFIG_HOME XDG_DATA_HOME \
+  XDG_CACHE_HOME XDG_STATE_HOME
+
 #run tmux in background so that sessions can resurrect
 exec --no-startup-id tmux
 
