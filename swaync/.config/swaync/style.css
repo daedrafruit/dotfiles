@@ -1,15 +1,15 @@
-@define-color cc-bg rgba(17, 17, 27, 0.7);
-@define-color noti-border-color rgba(255, 255, 255, 0.15);
+@define-color cc-bg rgba(11, 11, 18, 0.85);
+@define-color noti-border-color rgb(49, 50, 68);
 @define-color noti-bg rgba(17, 17, 27, 0.8);
 @define-color noti-bg-opaque rgb(17, 17, 27);
 @define-color noti-bg-darker rgb(11, 11, 18);
 @define-color noti-bg-hover rgb(17, 17, 27);
 @define-color noti-bg-hover-opaque rgb(17, 17, 27);
 @define-color noti-bg-focus rgba(68, 68, 68, 0.6);
-@define-color noti-close-bg rgba(255, 255, 255, 0.1);
-@define-color noti-close-bg-hover rgba(255, 255, 255, 0.15);
-@define-color text-color rgb(255, 255, 255);
-@define-color text-color-disabled rgb(150, 150, 150);
+@define-color noti-close-bg rgba(205, 214, 244, 0.1);
+@define-color noti-close-bg-hover rgba(205, 214, 244, 0.15);
+@define-color text-color rgb(205, 214, 244);
+@define-color text-color-disabled rgb(147, 153, 178);
 /*dnd on color*/
 @define-color bg-selected rgb(69, 71, 90);
 .notification-row {
