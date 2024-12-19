@@ -10,3 +10,4 @@ prompt = Run...
 location = 0
 width = 600
 height = 350
+normal_window = true
