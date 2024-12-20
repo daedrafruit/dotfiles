@@ -8,9 +8,10 @@ export VISUAL=nvim;
 export EDITOR=nvim;
 
 export SDL_VIDEODRIVER=wayland;
+export QT_QPA_PLATFORM=wayland;
 
 #matlab
-export QT_QPA_PLATFORM=xcb;
+#export QT_QPA_PLATFORM=xcb;
 
 #ranger
 export RANGER_LOAD_DEFAULT_RC=false;
