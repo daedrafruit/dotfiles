@@ -1,0 +1,45 @@
+
+(process:2198): Gtk-WARNING **: 10:30:48.501: Locale not supported by C library.
+	Using the fallback 'C' locale.
+[2024-12-21 10:30:48.528] [info] Using configuration file /home/daedr/.config/waybar/config
+[2024-12-21 10:30:48.528] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[2024-12-21 10:30:48.528] [info] Using CSS file /home/daedr/.config/waybar/style.css
+[2024-12-21 10:30:48.533] [warning] module sway/workspaces: Disabling module "sway/workspaces", Socket path is empty
+[2024-12-21 10:30:48.534] [info] Hyprland IPC starting
+[2024-12-21 10:30:48.534] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-21 10:30:48.535] [warning] module sway/mode: Disabling module "sway/mode", Socket path is empty
+[2024-12-21 10:30:48.539] [warning] module sway/window: Disabling module "sway/window", Socket path is empty
+[2024-12-21 10:30:48.542] [warning] No battery named BAT1
+[2024-12-21 10:30:48.542] [warning] module clock: Disabling module "clock", locale::facet::_S_create_c_locale name not valid
+[2024-12-21 10:30:48.550] [warning] module sway/workspaces: Disabling module "sway/workspaces", Socket path is empty
+[2024-12-21 10:30:48.551] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-21 10:30:48.552] [warning] module sway/mode: Disabling module "sway/mode", Socket path is empty
+[2024-12-21 10:30:48.554] [warning] module sway/window: Disabling module "sway/window", Socket path is empty
+[2024-12-21 10:30:48.557] [warning] No battery named BAT1
+[2024-12-21 10:30:48.557] [warning] module clock: Disabling module "clock", locale::facet::_S_create_c_locale name not valid
+[2024-12-21 10:30:48.563] [info] Bar configured (width: 2560, height: 32) for output: DP-2
+[2024-12-21 10:30:48.563] [info] Bar configured (width: 683, height: 32) for output: DP-3
+[2024-12-21 10:30:48.566] [info] Bar configured (width: 683, height: 32) for output: DP-3
+
+(process:2289): Gtk-WARNING **: 10:32:02.869: Locale not supported by C library.
+	Using the fallback 'C' locale.
+[2024-12-21 10:32:02.895] [info] Using configuration file /home/daedr/.config/waybar/config
+[2024-12-21 10:32:02.896] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[2024-12-21 10:32:02.896] [info] Using CSS file /home/daedr/.config/waybar/style.css
+[2024-12-21 10:32:02.900] [warning] module sway/workspaces: Disabling module "sway/workspaces", Socket path is empty
+[2024-12-21 10:32:02.900] [info] Hyprland IPC starting
+[2024-12-21 10:32:02.901] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-21 10:32:02.902] [warning] module sway/mode: Disabling module "sway/mode", Socket path is empty
+[2024-12-21 10:32:02.907] [warning] module sway/window: Disabling module "sway/window", Socket path is empty
+[2024-12-21 10:32:02.909] [warning] No battery named BAT1
+[2024-12-21 10:32:02.910] [warning] module clock: Disabling module "clock", locale::facet::_S_create_c_locale name not valid
+[2024-12-21 10:32:02.918] [warning] module sway/workspaces: Disabling module "sway/workspaces", Socket path is empty
+[2024-12-21 10:32:02.919] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-21 10:32:02.921] [warning] module sway/mode: Disabling module "sway/mode", Socket path is empty
+[2024-12-21 10:32:02.924] [warning] module sway/window: Disabling module "sway/window", Socket path is empty
+[2024-12-21 10:32:02.926] [warning] No battery named BAT1
+[2024-12-21 10:32:02.926] [warning] module clock: Disabling module "clock", locale::facet::_S_create_c_locale name not valid
+[2024-12-21 10:32:02.933] [info] Bar configured (width: 2560, height: 33) for output: DP-2
+[2024-12-21 10:32:02.933] [info] Bar configured (width: 683, height: 33) for output: DP-3
+[2024-12-21 10:32:02.936] [info] Bar configured (width: 683, height: 33) for output: DP-3
+Gdk-Message: 10:47:19.163: Error reading events from display: Connection reset by peer
