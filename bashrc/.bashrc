@@ -10,6 +10,10 @@ export EDITOR=nvim;
 export SDL_VIDEODRIVER=wayland;
 export QT_QPA_PLATFORM=wayland;
 
+export TERM=xterm-256color
+
+export QT_QPA_PLATFORMTHEME=qt6ct
+
 #matlab
 #export QT_QPA_PLATFORM=xcb;
 
@@ -35,4 +39,3 @@ PS1='[\u@\h \W]\$ '
 # load atuin
 # [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
-
