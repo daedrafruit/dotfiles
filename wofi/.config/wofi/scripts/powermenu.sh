@@ -5,7 +5,7 @@ if [ -z "$wofi_running" ]; then
 
 	# use zero-width spaces to manipulate alphabetical sorting
 	Z=$'\u200B'
-	options=$( echo -e "${Z}${Z}${Z}${Z}${Z}${Z}  Tasks\n${Z}${Z}${Z}${Z}${Z}󰋊  Hibernate\n${Z}${Z}${Z}${Z}  Sleep\n${Z}${Z}${Z}  Restart\n${Z}${Z}  Logout\n${Z}  Shutdown")
+	options=$( echo -e "${Z}${Z}${Z}${Z}${Z}${Z}  Tasks\n${Z}${Z}${Z}${Z}${Z}󰋊  Hibernate\n${Z}${Z}${Z}${Z}  Sleep\n${Z}${Z}${Z}  Reboot\n${Z}${Z}  Logout\n${Z}  Shutdown")
 
 	op=$(echo -e "$options" | wofi -i --dmenu --sort-order alphabetical --width 300 --height 275)
 
@@ -21,7 +21,7 @@ if [ -z "$wofi_running" ]; then
 		"shutdown")
 			systemctl poweroff
 			;;
-		"restart")
+		"reboot")
 			systemctl reboot
 			;;
 		"sleep")
