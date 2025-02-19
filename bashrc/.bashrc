@@ -11,7 +11,7 @@ export SDL_VIDEODRIVER=wayland;
 export QT_QPA_PLATFORM=wayland;
 
 export TERM=xterm-256color
-
+export GTK_THEME=catppuccin-mocha
 export QT_QPA_PLATFORMTHEME=qt6ct
 
 #matlab
