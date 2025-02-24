@@ -111,7 +111,8 @@
             "car": "",
             "default": ["", ""]
         },
-        "on-click": "pavucontrol"
+				//set theme because waybar is set to open with default theme, as it behaves better with css themeing
+        "on-click": "GTK_THEME=catppuccin-mocha pavucontrol"
     },
     "custom/spotify": {
         "format": " {}",
