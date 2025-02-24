@@ -96,6 +96,7 @@
         "format-disconnected": "Disconnected ⚠",
         "tooltip-format": "{signalStrength}%",
 				"on-click": "kitty nmtui"
+//				"on-click": "nm-applet"
     },
     "pulseaudio": {
         //"scroll-step": 1,
