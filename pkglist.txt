@@ -14,7 +14,6 @@ bluez-utils 5.79-1
 brightnessctl 0.5.1-3
 btop 1.4.0-4
 discord 0.0.87-1
-discord-canary 0.0.598-1
 dmenu 5.3-3
 dosfstools 4.2-5
 duplicacy 3.2.4-1
@@ -42,7 +41,7 @@ jdk-openjdk 23.0.2.u7-1
 jre17-openjdk 17.0.14.u7-1
 jre8-openjdk 8.442.u06-1
 kitty 0.39.1-1
-libreoffice-still 24.8.5-1
+libreoffice-still 24.8.5-3
 linux 6.13.4.arch1-1
 linux-firmware 20250210.5bc5868b-1
 linux-headers 6.13.4.arch1-1
@@ -54,7 +53,7 @@ multimc-bin 1.6-3
 neofetch 7.1.0-2
 neovim 0.10.4-2
 network-manager-applet 1.36.0-1
-networkmanager 1.50.2-1
+networkmanager 1.50.3-1
 nm-connection-editor 1.36.0-1
 ntfs-3g 2022.10.3-1
 nvidia-dkms 570.86.16-2
@@ -79,7 +78,7 @@ qt5-wayland 5.15.16+kde+r59-3
 qt5ct 1.9-1
 qt6-svg 6.8.2-1
 qt6ct 0.9-13
-ranger 1.9.4-3
+ranger 1.9.4-4
 reflector 2023-3
 renoise-demo 3.4.4-1
 ripgrep 14.1.1-1
