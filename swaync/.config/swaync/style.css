@@ -1,6 +1,6 @@
 @define-color cc-bg rgba(11, 11, 18, 0.85);
 @define-color noti-border-color rgb(49, 50, 68);
-@define-color noti-bg rgba(17, 17, 27, 0.8);
+@define-color noti-bg rgba(17, 17, 27, 0.9);
 @define-color noti-bg-opaque rgb(17, 17, 27);
 @define-color noti-bg-darker rgb(11, 11, 18);
 @define-color noti-bg-hover rgb(17, 17, 27);
@@ -12,6 +12,11 @@
 @define-color text-color-disabled rgb(147, 153, 178);
 /*dnd on color*/
 @define-color bg-selected rgb(69, 71, 90);
+
+* {
+	font-family: "JetBrains Mono Nerd Font", "Noto Color Emoji";
+}
+
 .notification-row {
   outline: none;
 }
@@ -137,6 +142,7 @@
   /* Notification body */
   font-size: 15px;
   font-weight: normal;
+	font-family: "Adaiwata Sans";
   background: transparent;
   color: @text-color;
   text-shadow: none;
