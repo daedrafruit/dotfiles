@@ -32,6 +32,25 @@
 			"format-icons": {
 					"11": "Scratch",
 			},
+			"format": "{icon} {windows}",
+			"window-rewrite-default": "",
+			"window-rewrite": {
+				"class<firefox>": "",
+				"class<discord>": "",
+				"class<steam>": "",
+				"class<steam> title<Steam>": "",
+				"class<kitty>": "󰄛",
+				"title<*tmux.*>": "",
+				"class<doublecmd>": "",
+				"class<REAPER>": "",
+				"class<REAPER> title<.*REAPER v.*>": "󰋅",
+				"class<obsidian>": "󰠮",
+				"class<spotify>": "",
+				"class<wofi>": "",
+				"title<*MultiMC.*>": "󰍳",
+				"class<blueman-manager>": "",
+				"class<org.pulseaudio.pavucontrol>": ""
+			},
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"

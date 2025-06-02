@@ -57,8 +57,8 @@ window#waybar {
 #window { margin: 0px 100px 0px 100px; }
 
 #workspaces button, #workspaces button.focused, #workspaces button.active {
-	margin: 0px 3px 0px 2px;
-	padding: 0px 4px;
+	margin: 0px 3px 0px 0px;
+	padding: 0px 10px 0px 5px;
 }
 
 #workspaces button {
