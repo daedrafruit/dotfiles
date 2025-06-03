@@ -20,10 +20,12 @@
 	color: @text;
 }
 
-
 #tray menu menuitem:hover {
   background-color: @text;
   color: @background-t;
+}
+tooltip {
+
 }
 
 window#waybar {
@@ -53,6 +55,8 @@ window#waybar {
 #custom-spotify {
 	padding: 0px 10px;
 } 
+
+
 
 #window { margin: 0px 100px 0px 100px; }
 

@@ -65,11 +65,18 @@
         "calendar": {
             "mode": "month",
             "mode-mon-col": 3,
-            "weeks-pos": "right",
+            "weeks-pos": "",
             "on-scroll": 1,
             "on-click-right": "mode",
+						"format": {
+								"months":     "<span color='#cdd6f4'><b>{}</b></span>",
+								//"days":       "<span color='#cdd6f4'><b>{}</b></span>",
+								//"weeks":      "<span color='#89b4fa'><b>W{}</b></span>",
+								"weekdays":   "<span color='#b4befe'><b>{}</b></span>",
+								"today":      "<span color='#89b4fa'><b>{}</b></span>"
+								},
+						},
         },
-    },
     "cpu": {
         "format": "{usage}% "
     },
