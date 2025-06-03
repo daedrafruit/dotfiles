@@ -72,8 +72,8 @@
 								"months":     "<span color='#cdd6f4'><b>{}</b></span>",
 								//"days":       "<span color='#cdd6f4'><b>{}</b></span>",
 								//"weeks":      "<span color='#89b4fa'><b>W{}</b></span>",
-								"weekdays":   "<span color='#b4befe'><b>{}</b></span>",
-								"today":      "<span color='#89b4fa'><b>{}</b></span>"
+								"weekdays":   "<span color='#94e2d5'><b>{}</b></span>",
+								"today":      "<span color='#a6e3a1'><b>{}</b></span>"
 								},
 						},
         },
