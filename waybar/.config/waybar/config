@@ -6,7 +6,7 @@
     // "width": 1366, // Waybar width
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "hyprland/workspaces", "sway/mode", "custom/spotify"],
-    "modules-center": ["sway/window", "hyprland/window"],
+    //"modules-center": ["sway/window", "hyprland/window"],
     "modules-right": [
 			"custom/notification",
 			"pulseaudio",
@@ -44,6 +44,15 @@
 				"class<doublecmd>": "",
 				"class<REAPER>": "",
 				"class<REAPER> title<.*REAPER v.*>": "󰋅",
+				"class<>": "",
+				"class<soffice>": "",
+				"class<libreoffice-writer>": "",
+				"class<libreoffice-math>": "",
+				"class<libreoffice-draw>": "",
+				"class<libreoffice-calc>": "",
+				"class<libreoffice-base>": "",
+				"class<libreoffice-impress>": "",
+				"class<libreoffice-startcenter>": "",
 				"class<obsidian>": "󰠮",
 				"class<spotify>": "",
 				"class<wofi>": "",
@@ -121,8 +130,7 @@
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-disconnected": "Disconnected ⚠",
         "tooltip-format": "{signalStrength}%",
-				"on-click": "kitty nmtui"
-//				"on-click": "nm-applet"
+				"on-click": "pkill nm-applet || nm-applet"
     },
     "pulseaudio": {
         //"scroll-step": 1,
@@ -139,7 +147,7 @@
             "default": ["", ""]
         },
 				//set theme because waybar is set to open with default theme, as it behaves better with css themeing
-        "on-click": "GTK_THEME=catppuccin-mocha pavucontrol"
+				"on-click": "pkill pavucontrol || pavucontrol"
     },
     "custom/spotify": {
         "format": " {}",
