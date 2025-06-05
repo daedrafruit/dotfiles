@@ -1,16 +1,17 @@
 #!/bin/sh
+# use zero-width spaces to manipulate alphabetical sorting
 Z=$'\u200B'
 options=$( echo -e "\
-  Tasks
-  Lock
-󰤄  Sleep
-󰋊  Hibernate
-  Logout
-  Reboot
-  Shutdown
+${Z}${Z}${Z}${Z}${Z}${Z}${Z}  Tasks
+${Z}${Z}${Z}${Z}${Z}${Z}  Lock
+${Z}${Z}${Z}${Z}${Z}󰤄  Sleep
+${Z}${Z}${Z}${Z}󰋊  Hibernate
+${Z}${Z}${Z}  Logout
+${Z}${Z}  Reboot
+${Z}  Shutdown
 ")
 
-op=$(echo -e "$options" | wofi -i --dmenu --width 300 --height 310)
+op=$(echo -e "$options" | wofi -i --dmenu --sort-order alphabetical --width 300 --height 310)
 
 op=$(echo "$op" | awk '{print tolower($2)}')
 
