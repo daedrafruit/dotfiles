@@ -1,6 +1,6 @@
 @define-color cc-bg rgba(11, 11, 18, 0.85);
 @define-color noti-border-color rgb(49, 50, 68);
-@define-color noti-bg rgba(17, 17, 27, 0.9);
+@define-color noti-bg rgba(17, 17, 27, 0.97);
 @define-color noti-bg-opaque rgb(17, 17, 27);
 @define-color noti-bg-darker rgb(11, 11, 18);
 @define-color noti-bg-hover rgb(17, 17, 27);
@@ -108,7 +108,6 @@
 .notification-row .notification-background .notification .notification-default-action .notification-content .image {
   /* Notification Primary Image */
   -gtk-icon-effect: none;
-  border-radius: 100px;
   /* Size in px */
   margin: 4px;
 }
@@ -127,6 +126,18 @@
   background: transparent;
   color: @text-color;
   text-shadow: none;
+	margin-left: 7px;
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-content .text-box .body {
+  /* Notification body */
+	margin-left: 7px;
+  font-size: 15px;
+  font-weight: normal;
+	font-family: "Adaiwata Sans";
+  background: transparent;
+  color: @text-color;
+  text-shadow: none;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .text-box .time {
@@ -137,16 +148,6 @@
   color: @text-color;
   text-shadow: none;
   margin-right: 30px;
-}
-
-.notification-row .notification-background .notification .notification-default-action .notification-content .text-box .body {
-  /* Notification body */
-  font-size: 15px;
-  font-weight: normal;
-	font-family: "Adaiwata Sans";
-  background: transparent;
-  color: @text-color;
-  text-shadow: none;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content progressbar {
