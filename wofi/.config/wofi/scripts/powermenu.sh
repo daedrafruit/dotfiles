@@ -17,7 +17,7 @@ op=$(echo "$op" | awk '{print tolower($2)}')
 
 case $op in
 	"tasks")
-		hyprctl dispatch exec "[float;size 50% 75%;]" ~/dotfiles/wofi/.config/wofi/scripts/btp.sh
+		hyprctl dispatch exec "[float;size 50% 88%;]" ~/dotfiles/wofi/.config/wofi/scripts/btp.sh
 		;;
 	"hibernate")
 		systemctl hibernate

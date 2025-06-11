@@ -22,8 +22,17 @@ export RANGER_LOAD_DEFAULT_RC=false;
 
 export XDG_CURRENT_DESKTOP=Hyprland
 
+export NNN_PLUG='p:preview-tui'
+export NNN_TRASH='trash'
+#automatic options for nnn
+alias nnn="nnn -a -U -u -P p"
+
 # ensure gtk theme doesnt effect waybar appearance
 alias waybar="GTK_THEME=Adwaita waybar"
+alias proton9="
+STEAM_COMPAT_DATA_PATH=~/.local/share/Steam/steamapps/compatdata \
+STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam \
+~/.local/share/Steam/steamapps/common/Proton\ 9.0\ \(Beta\)/proton run"
 
 #export GTK_THEME=Tokyonight-Dark
 
