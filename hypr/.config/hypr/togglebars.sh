@@ -1,0 +1,1 @@
+grep -q '^enabled = false' ~/.config/hypr/hyprland.conf && sed -i 's/^enabled = false/# enabled = false/' ~/.config/hypr/hyprland.conf || sed -i 's/^# enabled = false/enabled = false/' ~/.config/hypr/hyprland.conf
