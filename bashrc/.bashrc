@@ -27,6 +27,12 @@ export NNN_TRASH='trash'
 #automatic options for nnn
 alias nnn="nnn -a -U -u -P p"
 
+alias sysu="sudo pacman -Syu && yay -Syu"
+alias fsysu="sudo pacman -Syu --noconfirm && yay -Syu --noconfirm"
+alias sysclean="sudo pacman -Rns $(pacman -Qdtq)"
+alias sysclean="sudo pacman -Rns $(pacman -Qdtq)"
+alias upkglist="pacman -Qe > ~/dotfiles/pkglist.txt"
+
 # ensure gtk theme doesnt effect waybar appearance
 alias waybar="GTK_THEME=Adwaita waybar"
 alias proton9="
@@ -48,3 +54,5 @@ PS1='[\u@\h \W]\$ '
 # load atuin
 # [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
+
+
