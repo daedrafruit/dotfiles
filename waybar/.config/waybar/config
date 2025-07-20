@@ -58,7 +58,8 @@
 				"class<wofi>": "",
 				"title<*MultiMC.*>": "󰍳",
 				"class<blueman-manager>": "",
-				"class<org.pulseaudio.pavucontrol>": ""
+				"class<org.pulseaudio.pavucontrol>": "",
+				"class<org.kde.filelight>": ""
 			},
     },
     "sway/mode": {
