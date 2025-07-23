@@ -27,9 +27,9 @@ export NNN_TRASH='trash'
 #automatic options for nnn
 alias nnn="nnn -a -U -u -P p"
 
-alias sysu="sudo pacman -Syu && yay && yay --devel --answerclean ALL"
-alias fsysu=" sudo pacman -Syu --noconfirm && yay --noconfirm && yay --devel --answerclean ALL --noconfirm"
-alias sysclean="sudo pacman -Rns $(pacman -Qdtq) && yay -Sc"
+alias sysu="sudo pacman -Syu && yay && yay --devel --answerclean ALL && hyprpm update"
+alias fsysu=" sudo pacman -Syu --noconfirm && yay --noconfirm && yay --devel --answerclean ALL --noconfirm && hyprpm update"
+alias sysclean="sudo pacman -Rns $(pacman -Qdtq) ; yay -Sc"
 alias upkglist="pacman -Qe > ~/dotfiles/pkglist.txt"
 
 # ensure gtk theme doesnt effect waybar appearance
