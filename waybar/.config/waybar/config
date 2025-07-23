@@ -148,7 +148,7 @@
             "default": ["", ""]
         },
 				//set theme because waybar is set to open with default theme, as it behaves better with css themeing
-				"on-click": "pkill pavucontrol || GTK_THEME=catppuccin-mocha pavucontrol"
+				"on-click": "pkill pavucontrol || pavucontrol"
     },
     "custom/spotify": {
         "format": " {}",
