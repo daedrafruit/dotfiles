@@ -1,8 +1,8 @@
 :root {
 	--cc-bg: rgba(11, 11, 18, 0.85);
 	--noti-border-color: rgba(69, 71, 90, 1);
-	--noti-bg: 17, 17, 27;
-	--noti-bg-alpha: 0.97;
+	--noti-bg: 11, 11, 18;
+	--noti-bg-alpha: 0.93;
 	--noti-bg-darker: rgb(11, 11, 18);
 	--noti-bg-hover: rgb(17, 17, 27);
 	--noti-bg-focus: rgba(68, 68, 68, 0.0);
@@ -295,9 +295,9 @@
 
 .control-center {
   /* The Control Center which contains the old notifications + widgets */
+	border: 0.5px solid var(--noti-border-color);
   background: var(--cc-bg);
   color: var(--text-color);
-  border-radius: 12px;
 }
 
 .control-center .control-center-list-placeholder {
