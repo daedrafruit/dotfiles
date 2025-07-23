@@ -11,7 +11,7 @@ ${Z}${Z}  Reboot
 ${Z}  Shutdown
 ")
 
-op=$(echo -e "$options" | wofi -i --dmenu --sort-order alphabetical --width 300 --height 310)
+op=$(echo -e "$options" | wofi -i --dmenu --sort-order alphabetical --width 300 --height 255)
 
 op=$(echo "$op" | awk '{print tolower($2)}')
 
