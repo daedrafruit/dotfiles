@@ -3,7 +3,6 @@
 #
 
 # If not running interactively, don't do anything
-
 export VISUAL=nvim;
 export EDITOR=nvim;
 
@@ -11,16 +10,9 @@ export SDL_VIDEODRIVER=wayland;
 export QT_QPA_PLATFORM=wayland;
 
 export TERM=xterm-256color
-#export GTK_THEME=catppuccin-mocha
-export QT_QPA_PLATFORMTHEME=qt6ct
-
-#matlab
-#export QT_QPA_PLATFORM=xcb;
 
 #ranger
 export RANGER_LOAD_DEFAULT_RC=false;
-
-export XDG_CURRENT_DESKTOP=Hyprland
 
 export NNN_PLUG='p:preview-tui'
 export NNN_TRASH='trash'
