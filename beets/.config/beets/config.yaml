@@ -1,0 +1,61 @@
+library: ~/Music/Tools/Beets/musiclibrary.db
+directory: ~/Music/Tools/Beets/fallback-directory
+
+plugins:
+    #- copyartifacts
+    - convert
+    #- missing
+    #- badfiles
+    - inline
+
+paths:
+    default:
+        #album artist/[year] (if any) album (if no album, use title)/disc#- (if any) track# (if no #, use 01.) first contributing artist (; separated) - title
+        %if{$grouping,${grouping}/}$albumartist/%if{$tinyyear,[$tinyyear] }%if{$album,$album,$title}/%if{$multidisc,${rdisc}-}%if{$track,$track.,01.} %first{$artist} - $title
+
+asciify_paths: yes
+
+item_fields:
+    #remove leading zeroes
+    rdisc:
+        str(disc).lstrip('0')
+
+    # pip install tinytag
+    multidisc: |
+        from tinytag import TinyTag
+        tag: TinyTag = TinyTag.get(path)
+        if not tag.disc_total: return 0
+        if tag.disc_total > 1: return 1
+    tinyyear: |
+        from tinytag import TinyTag
+        tag: TinyTag = TinyTag.get(path)
+        if not tag.year: return 0
+        # only get first 4 characters (cuts out month/day)
+        return tag.year[:4]
+
+replace:
+    '[\\/]': ' ' # slashes
+    '[\x00-\x1f]': ' ' # control characters
+    '^\.': _
+    '[<>:"\?\*\|]': _
+    '\.$': _
+    '\s+$': ''
+    '^\s+': ''
+    '^-': _
+
+import:
+    copy: no
+    move: no
+    autotag: no
+
+copyartifacts:
+    print_ignored: yes
+
+convert:
+    format: mp3
+    formats:
+        mp3:
+            command: ffmpeg -i $source -y -acodec libmp3lame -ab 320k $dest
+            extension: mp3
+
+
