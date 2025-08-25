@@ -2,7 +2,7 @@ library: ~/Music/Tools/Beets/musiclibrary.db
 directory: ~/Music/Tools/Beets/fallback-directory
 
 plugins:
-    #- copyartifacts
+    - copyartifacts
     - convert
     #- missing
     #- badfiles
@@ -10,8 +10,8 @@ plugins:
 
 paths:
     default:
-        #album artist/[year] (if any) album (if no album, use title)/disc#- (if any) track# (if no #, use 01.) first contributing artist (; separated) - title
-        %if{$grouping,${grouping}/}$albumartist/%if{$tinyyear,[$tinyyear] }%if{$album,$album,$title}/%if{$multidisc,${rdisc}-}%if{$track,$track.,01.} %first{$artist} - $title
+        #%if{$grouping,${grouping}/}
+        %if{$lapfox, L/LAPFOX, $albumartistchar}/$albumartist/%if{$tinyyear,[$tinyyear] }%if{$album,$album,$title}/%if{$multidisc,${rdisc}-}%if{$track,$track.,01.} %first{$artist} - $title
 
 asciify_paths: yes
 
@@ -19,6 +19,19 @@ item_fields:
     #remove leading zeroes
     rdisc:
         str(disc).lstrip('0')
+
+    lapfox: |
+        if grouping == 'LAPFOX':
+            return True
+    albumartistchar: |
+        from unidecode import unidecode
+        ascii_artist = unidecode(albumartist)
+        char = ascii_artist[:1]
+        if char.isdigit():
+            return '0-9'
+        if char.isalpha():
+            return char.upper()
+        return '#'
 
     # pip install tinytag
     multidisc: |
