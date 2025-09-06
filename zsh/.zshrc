@@ -1,61 +1,87 @@
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# p10k init
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-##################
-# zsh extentions #
-##################
-export ZSH="$HOME/.oh-my-zsh"
+# zinit init
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+if [ ! -d "$ZINIT_HOME" ]; then
+   mkdir -p "$(dirname $ZINIT_HOME)"
+   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+source "${ZINIT_HOME}/zinit.zsh"
 
-ZSH_THEME="alanpeabody"
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#585b70"
 
-plugins=(
-	git
-	#fzf
-	z
-	colored-man-pages
+###########
+# plugins #
+###########
 
-	# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-	zsh-autosuggestions
-	# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-	zsh-syntax-highlighting
-	# git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
-	zsh-history-substring-search
-)
-source $ZSH/oh-my-zsh.sh
+# p10k
+zinit ice depth=1; zinit light romkatv/powerlevel10k
 
-# history substring search bindings
+zinit light zsh-users/zsh-syntax-highlighting
+
+zinit light zsh-users/zsh-autosuggestions
+zsh_autosuggest_highlight_style="fg=#585b70"
+
+zinit light zsh-users/zsh-history-substring-search
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
+history_substring_search_highlight_found="fg=green,bold"
 
-HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND="fg=green,bold"
+# oh-my-zsh plugins
+zinit snippet OMZP::command-not-found
+zinit snippet OMZP::git
+zinit snippet OMZP::z
+zinit snippet OMZP::colored-man-pages
+zinit snippet OMZP::colorize
+
 
 
 ##########
 # config #
 ##########
-export NNN_PLUG='p:preview-tui'
-export NNN_TRASH='trash'
+
+# history
+HISTSIZE=50000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+setopt appendhistory
+setopt sharehistory
+setopt extended_history       
+setopt hist_expire_dups_first 
+setopt hist_ignore_dups       
+setopt hist_ignore_space      
+setopt hist_verify
+
+# shell integrations
+eval "$(atuin init zsh --disable-up-arrow)"
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# env
+export nnn_plug='p:preview-tui'
+export nnn_trash='trash'
 #automatic options for nnn
 
-export NNN_PLUG='p:preview-tui'
-export NNN_TRASH='trash'
+export nnn_plug='p:preview-tui'
+export nnn_trash='trash'
 
+# aliases
+
+alias rm="rm -i"
 #automatic options for nnn
-alias nnn="nnn -a -U -u -P p"
+alias nnn="nnn -a -u -u -p p"
 
 alias beet='~/Music/Tools/Beets/venv/bin/beet'
-alias beet-auto='find ~/Music/Downloads/ -type f -name "*.flac" -exec bash -c ~/Music/Tools/prog-to-baseline-jpeg.sh "$0" {} \; ; beet -d ~/Music/Library import --move ~/Music/Downloads && mv ~/Music/Downloads/* ~/Music/Tools/Backups/Artifacts/'
-alias eyed3='~/Music/Tools/eyed3/venv/bin/eyeD3'
+alias beet-auto='find ~/Music/Downloads/ -type f -name "*.flac" -exec bash -c ~/Music/Tools/prog-to-baseline-jpeg.sh "$0" {} \; ; beet -d ~/Music/Library import --move ~/Music/Downloads && mv ~/Music/Downloads/* ~/Music/Tools/Backups/artifacts/'
+alias eyed3='~/Music/Tools/eyed3/venv/bin/eyed3'
 alias tidal-dl-ng='~/Music/Tools/tidal-dl-ng/venv/bin/tidal-dl-ng'
 #alias rip='~/Music/Tools/streamrip/venv/bin/rip'
 
 alias elastic-m3u='~/Music/Tools/elastic-m3u/venv/bin/python ~/Music/Tools/elastic-m3u/elastic-m3u.py'
-alias tidal-dl='~/Music/Tools/Tidal-dl/venv/bin/tidal-dl'
+alias tidal-dl='~/Music/Tools/tidal-dl/venv/bin/tidal-dl'
 
+alias sysu="sudo pacman -Syu && yay && yay --devel --answerclean all"
+alias fsysu="sudo pacman -Syu --noconfirm && yay --noconfirm && yay --devel --answerclean all --noconfirm"
+alias sysclean="sudo pacman -qdtq | sudo pacman -Rns - ; yay -sc"
 
-alias sysu="sudo pacman -Syu && yay && yay --devel --answerclean ALL"
-alias fsysu="sudo pacman -Syu --noconfirm && yay --noconfirm && yay --devel --answerclean ALL --noconfirm"
-alias sysclean="sudo pacman -Qdtq | sudo pacman -Rns - ; yay -Sc"
-
-. "$HOME/.atuin/bin/env"
-eval "$(atuin init zsh --disable-up-arrow)"
