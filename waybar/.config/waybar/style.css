@@ -20,6 +20,9 @@
 	color: @text;
 }
 
+window#waybar.empty {
+	padding: 1000px;
+}
 #tray menu menuitem:hover {
   background-color: @text;
   color: @background-t;
@@ -50,15 +53,10 @@ window#waybar {
 
 #clock,
 #tray,
-#window,
 #mode,
 #custom-spotify {
 	padding: 0px 10px;
 } 
-
-
-
-#window { margin: 0px 100px 0px 100px; }
 
 #workspaces button, #workspaces button.focused, #workspaces button.active {
 	margin: 0px 3px 0px 0px;
@@ -76,7 +74,7 @@ window#waybar {
 
 #workspaces button:hover {
 	background-color: @text;
-	color: #000000;
+	color: @background-t;
 }
 
 #custom-spotify {
@@ -84,7 +82,7 @@ window#waybar {
 }
 
 #custom-spotify#text {
-	background-color: #000000;
+	background-color: @background-t;
 	padding: 0px 3px;
 }
 

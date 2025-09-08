@@ -81,7 +81,15 @@ alias tidal-dl-ng='~/Music/Tools/tidal-dl-ng/venv/bin/tidal-dl-ng'
 alias elastic-m3u='~/Music/Tools/elastic-m3u/venv/bin/python ~/Music/Tools/elastic-m3u/elastic-m3u.py'
 alias tidal-dl='~/Music/Tools/tidal-dl/venv/bin/tidal-dl'
 
-alias sysu="sudo pacman -Syu && yay && yay --devel --answerclean all"
-alias fsysu="sudo pacman -Syu --noconfirm && yay --noconfirm && yay --devel --answerclean all --noconfirm"
-alias sysclean="sudo pacman -qdtq | sudo pacman -Rns - ; yay -sc"
+alias sysu="sudo pacman -Syu && yay && yay --devel --answerclean ALL && hyprpm update"
+alias fsysu=" sudo pacman -Syu --noconfirm && yay --noconfirm && yay --devel --answerclean ALL --noconfirm && hyprpm update"
+alias sysclean="sudo pacman -Rns $(pacman -Qdtq) ; yay -Sc"
+alias upkglist="pacman -Qe > ~/dotfiles/pkglist.txt"
+#
+# ensure gtk theme doesnt effect waybar appearance
+alias waybar="GTK_THEME=Adwaita waybar"
+alias proton9="
+STEAM_COMPAT_DATA_PATH=~/.local/share/Steam/steamapps/compatdata \
+STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam \
+~/.local/share/Steam/steamapps/common/Proton\ 9.0\ \(Beta\)/proton run"
 
