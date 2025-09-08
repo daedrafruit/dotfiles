@@ -16,7 +16,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 # plugins #
 ###########
 
-# p10k
+# p10k (theme)
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 zinit light zsh-users/zsh-syntax-highlighting
@@ -37,10 +37,16 @@ zinit snippet OMZP::colored-man-pages
 zinit snippet OMZP::colorize
 
 
-
 ##########
 # config #
 ##########
+
+# navigate paths without cd
+setopt autocd
+
+# expand abbreviated paths completion (e.g. /h/d -> /home/daedr)
+autoload -Uz compinit
+compinit
 
 # history
 HISTSIZE=50000
