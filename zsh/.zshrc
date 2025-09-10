@@ -18,6 +18,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 # p10k (theme)
 zinit ice depth=1; zinit light romkatv/powerlevel10k
+zinit ice depth=1; zinit light jeffreytse/zsh-vi-mode
 
 zinit light zsh-users/zsh-syntax-highlighting
 
@@ -61,7 +62,15 @@ setopt hist_ignore_space
 setopt hist_verify
 
 # shell integrations
-eval "$(atuin init zsh --disable-up-arrow)"
+# zsh-vi-mode atuin compatibility
+if command -v atuin &> /dev/null; then
+    function my_init() {
+        eval "$(atuin init zsh --disable-up-arrow)"
+    }
+    zvm_after_init_commands+=(my_init)
+fi
+#eval "$(atuin init zsh --disable-up-arrow)"
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # env
