@@ -41,7 +41,9 @@ zinit snippet OMZP::colorize
 ##########
 # config #
 ##########
-
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
 # navigate paths without cd
 setopt autocd
 
@@ -62,7 +64,11 @@ setopt hist_ignore_space
 setopt hist_verify
 
 # shell integrations
+<<<<<<< HEAD
 # zsh-vi-mode atuin compatibility
+=======
+# atuin + zsh-vi-mode compatibility
+>>>>>>> 388eb82bb2e27d552fe69520cd4291bcfd5dcaf6
 if command -v atuin &> /dev/null; then
     function my_init() {
         eval "$(atuin init zsh --disable-up-arrow)"
