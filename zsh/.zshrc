@@ -65,7 +65,7 @@ setopt hist_verify
 
 # shell integrations
 # zsh-vi-mode atuin compatibility
-. "$HOME/.atuin/bin/env"
+. "$HOME/.atuin/bin/env" &> /dev/null
 if command -v atuin &> /dev/null; then
     function my_init() {
         eval "$(atuin init zsh --disable-up-arrow)"
