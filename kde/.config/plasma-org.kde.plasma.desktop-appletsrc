@@ -203,7 +203,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][26][Applets][53][Configuration][General]
-launchers=preferred://filemanager,preferred://browser
+launchers=preferred://filemanager,preferred://browser,applications:org.kde.konsole.desktop
 
 [Containments][26][General]
 AppletOrder=52;53;50;31;44
