@@ -106,8 +106,8 @@ ForegroundVisited=108,112,134
 
 [General]
 ColorSchemeHash=d0bc99729818c14edd1a0a86510546bd750da6fb
-TerminalApplication=kitty
-TerminalService=kitty.desktop
+TerminalApplication=konsole
+TerminalService=org.kde.konsole.desktop
 
 [KDE]
 AnimationDurationFactor=0.17677669529663687
