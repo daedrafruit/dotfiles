@@ -1,6 +1,7 @@
 [Desktops]
 Id_1=16d7c6df-f712-45e3-9b23-4a169f47d5f6
 Id_10=1ac60466-cde9-4228-a6c0-29e34a0ac7d1
+Id_11=739a6141-c808-4c84-b8ee-0806b17665b7
 Id_2=3ad6f41e-adfa-4ffd-8e07-3e6a5ecbbd7c
 Id_3=4f967f60-62d5-4927-8f15-26a2f6f228c8
 Id_4=cfdaa6b6-f4e6-451a-986b-760e8acdedde
@@ -9,7 +10,8 @@ Id_6=8d790691-dc07-4950-b654-8386eb54bf43
 Id_7=db89cd7a-5208-4db9-b84e-ab0455054991
 Id_8=fe31e295-5057-4b45-8a42-c119185e35a1
 Id_9=78bcb759-143a-400d-916c-fa2b386dba34
-Number=10
+Name_11=New Desktop
+Number=11
 Rows=1
 
 [Effect-blur]
@@ -17,8 +19,7 @@ BlurStrength=11
 NoiseStrength=4
 
 [Plugins]
-krohnkiteEnabled=false
-kwin4_effect_shapecornersEnabled=false
+krohnkiteEnabled=true
 slideEnabled=false
 
 [Round-Corners]
@@ -73,6 +74,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][4f967f60-62d5-4927-8f15-26a2f6f228c8][75aa3da5-e1fd-4c30-a1c7-351f3a9900b2]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][739a6141-c808-4c84-b8ee-0806b17665b7][412af561-94eb-4c0f-88d4-706a5f6a9ce3]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][78bcb759-143a-400d-916c-fa2b386dba34][412af561-94eb-4c0f-88d4-706a5f6a9ce3]
