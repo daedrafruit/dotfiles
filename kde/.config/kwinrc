@@ -18,7 +18,6 @@ NoiseStrength=4
 
 [Plugins]
 krohnkiteEnabled=true
-kwin4_effect_shapecornersEnabled=false
 slideEnabled=false
 
 [Round-Corners]

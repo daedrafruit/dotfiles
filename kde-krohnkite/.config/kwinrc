@@ -17,7 +17,8 @@ BlurStrength=11
 NoiseStrength=4
 
 [Plugins]
-krohnkiteEnabled=true
+krohnkiteEnabled=false
+kwin4_effect_shapecornersEnabled=false
 slideEnabled=false
 
 [Round-Corners]
