@@ -16,6 +16,9 @@ Rows=1
 BlurStrength=11
 NoiseStrength=4
 
+[Effect-overview]
+BorderActivate=9
+
 [Plugins]
 krohnkiteEnabled=false
 kwin4_effect_shapecornersEnabled=false
