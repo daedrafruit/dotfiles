@@ -105,35 +105,40 @@ ForegroundPositive=166,227,161
 ForegroundVisited=108,112,134
 
 [General]
+ColorScheme=Catppuccin
 ColorSchemeHash=d0bc99729818c14edd1a0a86510546bd750da6fb
-TerminalApplication=konsole
-TerminalService=org.kde.konsole.desktop
+LastUsedCustomAccentColor=61,174,233
 
 [KDE]
-AnimationDurationFactor=0.17677669529663687
 LookAndFeelPackage=org.kde.breezedark.desktop
 ShowDeleteCommand=false
 
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
-Breadcrumb Navigation=true
+Breadcrumb Navigation=false
 Decoration position=2
 Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
-Show hidden files=false
-Sort by=Name
+Show hidden files=true
+Sort by=Date
 Sort directories first=true
 Sort hidden files last=false
-Sort reversed=false
+Sort reversed=true
 Speedbar Width=140
 View Style=Simple
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
 
 [PreviewSettings]
 EnableRemoteFolderThumbnail=false
 MaximumRemoteSize=0
+
+[Shortcuts]
+Quit=Ctrl+Q; Meta+Alt+Q
 
 [WM]
 activeBackground=24,24,37

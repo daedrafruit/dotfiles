@@ -1,11 +1,18 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
-switch-to-activity-e3ebee3f-36ae-461c-bf65-8e262f3ebb97=none,none,Switch to activity "Default"
+switch-to-activity-e5846917-7041-4b07-8808-c817e955b961=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
 Switch to Last-Used Keyboard Layout=none,Meta+Alt+L,Switch to Last-Used Keyboard Layout
 Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
+
+[Strawberry]
+_k_friendly_name=Strawberry
+next_track=none,none,Next track
+play_pause=none,none,Play/Pause
+prev_track=none,none,Previous track
+stop=none,none,Stop
 
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
@@ -38,7 +45,7 @@ Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,Activate Window Dema
 Cycle Overview=none,none,Cycle through Overview and Grid View
 Cycle Overview Opposite=none,none,Cycle through Grid View and Overview
 Decrease Opacity=none,,Decrease Opacity of Active Window by 5%
-Edit Tiles=Meta+T,Meta+T,Toggle Tiles Editor
+Edit Tiles=none,Meta+T,Toggle Tiles Editor
 Expose=Ctrl+F9,Ctrl+F9,Toggle Present Windows (Current desktop)
 ExposeAll=Ctrl+F10\tLaunch (C),Ctrl+F10\tLaunch (C),Toggle Present Windows (All desktops)
 ExposeClass=Ctrl+F7,Ctrl+F7,Toggle Present Windows (Window class)
@@ -63,8 +70,8 @@ KrohnkiteMonocleLayout=Meta+M,none,Krohnkite: Monocle Layout
 KrohnkiteNextLayout=Meta+\\\\,none,Krohnkite: Next Layout
 KrohnkitePreviousLayout=Meta+|,none,Krohnkite: Previous Layout
 KrohnkiteQuarterLayout=none,none,Krohnkite: Quarter Layout
-KrohnkiteRotate=none,none,Krohnkite: Rotate
-KrohnkiteRotatePart=none,none,Krohnkite: Rotate Part
+KrohnkiteRotate=Meta+R,none,Krohnkite: Rotate
+KrohnkiteRotatePart=Meta+Shift+R,none,Krohnkite: Rotate Part
 KrohnkiteSetMaster=none,none,Krohnkite: Set master
 KrohnkiteShiftDown=Meta+Alt+J,none,Krohnkite: Move Down/Next
 KrohnkiteShiftLeft=Meta+Alt+H,none,Krohnkite: Move Left
@@ -97,9 +104,9 @@ Switch One Desktop to the Left=Meta+Ctrl+Left,Meta+Ctrl+Left,Switch One Desktop 
 Switch One Desktop to the Right=Meta+Ctrl+Right,Meta+Ctrl+Right,Switch One Desktop to the Right
 Switch Window Down=Meta+Alt+Down,Meta+Alt+Down,Switch to Window Below
 Switch Window Left=Meta+Alt+Left,Meta+Alt+Left,Switch to Window to the Left
-Switch Window Right=none,Meta+Alt+Right,Switch to Window to the Right
+Switch Window Right=Meta+Alt+Right,Meta+Alt+Right,Switch to Window to the Right
 Switch Window Up=Meta+Alt+Up,Meta+Alt+Up,Switch to Window Above
-Switch to Desktop 1=Meta+1\tCtrl+F1,Ctrl+F1,Switch to Desktop 1
+Switch to Desktop 1=Ctrl+F1\tMeta+1,Ctrl+F1,Switch to Desktop 1
 Switch to Desktop 10=none,,Switch to Desktop 10
 Switch to Desktop 11=none,,Switch to Desktop 11
 Switch to Desktop 12=none,,Switch to Desktop 12
@@ -110,10 +117,10 @@ Switch to Desktop 16=none,,Switch to Desktop 16
 Switch to Desktop 17=none,,Switch to Desktop 17
 Switch to Desktop 18=none,,Switch to Desktop 18
 Switch to Desktop 19=none,,Switch to Desktop 19
-Switch to Desktop 2=Ctrl+F2\tMeta+2,Ctrl+F2,Switch to Desktop 2
+Switch to Desktop 2=Meta+2\tCtrl+F2,Ctrl+F2,Switch to Desktop 2
 Switch to Desktop 20=none,,Switch to Desktop 20
-Switch to Desktop 3=Meta+3\tCtrl+F3,Ctrl+F3,Switch to Desktop 3
-Switch to Desktop 4=Ctrl+F4\tMeta+4,Ctrl+F4,Switch to Desktop 4
+Switch to Desktop 3=Ctrl+F3\tMeta+3,Ctrl+F3,Switch to Desktop 3
+Switch to Desktop 4=Meta+4\tCtrl+F4,Ctrl+F4,Switch to Desktop 4
 Switch to Desktop 5=Meta+5,,Switch to Desktop 5
 Switch to Desktop 6=Meta+6,,Switch to Desktop 6
 Switch to Desktop 7=Meta+7,,Switch to Desktop 7
@@ -137,7 +144,7 @@ Switch to Screen to the Left=none,,Switch to Screen to the Left
 Switch to Screen to the Right=none,,Switch to Screen to the Right
 Toggle Night Color=none,none,Suspend/Resume Night Light
 Toggle Window Raise/Lower=none,,Toggle Window Raise/Lower
-Walk Through Windows=Alt+Tab,Meta+Tab\tAlt+Tab,Walk Through Windows
+Walk Through Windows=Meta+Tab\tAlt+Tab,Meta+Tab\tAlt+Tab,Walk Through Windows
 Walk Through Windows (Reverse)=Meta+Shift+Tab\tAlt+Shift+Tab,Meta+Shift+Tab\tAlt+Shift+Tab,Walk Through Windows (Reverse)
 Walk Through Windows Alternative=none,none,Walk Through Windows Alternative
 Walk Through Windows Alternative (Reverse)=none,none,Walk Through Windows Alternative (Reverse)
@@ -147,11 +154,11 @@ Walk Through Windows of Current Application Alternative=none,none,Walk Through W
 Walk Through Windows of Current Application Alternative (Reverse)=none,none,Walk Through Windows of Current Application Alternative (Reverse)
 Window Above Other Windows=none,,Keep Window Above Others
 Window Below Other Windows=none,,Keep Window Below Others
-Window Close=Alt+F4\tMeta+Alt+Q,Alt+F4,Close Window
-Window Custom Quick Tile Bottom=none,,Custom Quick Tile Window to the Bottom
-Window Custom Quick Tile Left=none,,Custom Quick Tile Window to the Left
-Window Custom Quick Tile Right=none,,Custom Quick Tile Window to the Right
-Window Custom Quick Tile Top=none,,Custom Quick Tile Window to the Top
+Window Close=Alt+F4,Alt+F4,Close Window
+Window Custom Quick Tile Bottom=Meta+Down,,Custom Quick Tile Window to the Bottom
+Window Custom Quick Tile Left=Meta+Left,,Custom Quick Tile Window to the Left
+Window Custom Quick Tile Right=Meta+Right,,Custom Quick Tile Window to the Right
+Window Custom Quick Tile Top=Meta+Up,,Custom Quick Tile Window to the Top
 Window Fullscreen=Meta+F11,,Make Window Fullscreen
 Window Grow Horizontal=none,,Expand Window Horizontally
 Window Grow Vertical=none,,Expand Window Vertically
@@ -170,19 +177,19 @@ Window One Desktop to the Left=Meta+Ctrl+Shift+Left,Meta+Ctrl+Shift+Left,Window 
 Window One Desktop to the Right=Meta+Ctrl+Shift+Right,Meta+Ctrl+Shift+Right,Window One Desktop to the Right
 Window One Screen Down=none,,Move Window One Screen Down
 Window One Screen Up=none,,Move Window One Screen Up
-Window One Screen to the Left=none,,Move Window One Screen to the Left
-Window One Screen to the Right=none,,Move Window One Screen to the Right
-Window Operations Menu=Alt+F3,Alt+F3,Window Menu
+Window One Screen to the Left=Meta+Shift+H,,Move Window One Screen to the Left
+Window One Screen to the Right=Meta+Shift+L,,Move Window One Screen to the Right
+Window Operations Menu=none,Alt+F3,Window Menu
 Window Pack Down=none,,Move Window Down
 Window Pack Left=none,,Move Window Left
 Window Pack Right=none,,Move Window Right
 Window Pack Up=none,,Move Window Up
-Window Quick Tile Bottom=Meta+Down,Meta+Down,Quick Tile Window to the Bottom
+Window Quick Tile Bottom=none,Meta+Down,Quick Tile Window to the Bottom
 Window Quick Tile Bottom Left=none,,Quick Tile Window to the Bottom Left
 Window Quick Tile Bottom Right=none,,Quick Tile Window to the Bottom Right
-Window Quick Tile Left=Meta+Left,Meta+Left,Quick Tile Window to the Left
-Window Quick Tile Right=Meta+Right,Meta+Right,Quick Tile Window to the Right
-Window Quick Tile Top=Meta+Up,Meta+Up,Quick Tile Window to the Top
+Window Quick Tile Left=none,Meta+Left,Quick Tile Window to the Left
+Window Quick Tile Right=none,Meta+Right,Quick Tile Window to the Right
+Window Quick Tile Top=none,Meta+Up,Quick Tile Window to the Top
 Window Quick Tile Top Left=none,,Quick Tile Window to the Top Left
 Window Quick Tile Top Right=none,,Quick Tile Window to the Top Right
 Window Raise=none,,Raise Window
@@ -258,7 +265,7 @@ powerProfile=Battery\tMeta+B,Battery\tMeta+B,Switch Power Profile
 [plasmashell]
 Slideshow Wallpaper Next Image=none,,Next Wallpaper Image
 _k_friendly_name=plasmashell
-activate application launcher=Meta\tAlt+F1,Meta\tAlt+F1,Activate Application Launcher
+activate application launcher=Meta,Meta\tAlt+F1,Activate Application Launcher
 activate task manager entry 1=none,Meta+1,Activate Task Manager Entry 1
 activate task manager entry 10=none,,Activate Task Manager Entry 10
 activate task manager entry 2=none,Meta+2,Activate Task Manager Entry 2
@@ -269,6 +276,7 @@ activate task manager entry 6=none,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=none,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=none,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=none,Meta+9,Activate Task Manager Entry 9
+activate widget 7=none,none,Activate System Tray Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels
@@ -276,8 +284,8 @@ cycleNextAction=none,,Next History Item
 cyclePrevAction=none,,Previous History Item
 edit_clipboard=none,,Edit Contents…
 manage activities=Meta+Q,Meta+Q,Show Activity Switcher
-next activity=Meta+A,none,Walk through activities
-previous activity=Meta+Shift+A,none,Walk through activities (Reverse)
+next activity=none,none,Walk through activities
+previous activity=none,none,Walk through activities (Reverse)
 repeat_action=none,,Manually Invoke Action on Current Clipboard
 show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop
 show-barcode=none,,Show Barcode…
@@ -286,13 +294,21 @@ switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
 
+[services][net.local.spectacle-2.desktop]
+_launch=Meta+Shift+S
+
 [services][org.kde.konsole.desktop]
 _launch=Ctrl+Alt+T\tMeta+Return
 
 [services][org.kde.krunner.desktop]
-_launch=Meta+D\tAlt+F2\tSearch\tAlt+Space
+_launch=Search\tAlt+Space\tMeta+D
 
 [services][org.kde.spectacle.desktop]
-RecordRegion=Meta+Shift+R
-RectangularRegionScreenShot=Meta+Shift+Print\tMeta+Shift+S
+ActiveWindowScreenShot=none
+CurrentMonitorScreenShot=Print
+RecordRegion=none
+RecordScreen=none
+RecordWindow=none
+RectangularRegionScreenShot=Meta+Shift+S
+WindowUnderCursorScreenShot=Alt+Print
 _launch=none
