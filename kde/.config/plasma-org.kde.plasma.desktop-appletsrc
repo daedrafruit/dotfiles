@@ -258,6 +258,25 @@ positions={"1920x1080":[],"2560x1440":[]}
 Image=/usr/share/wallpapers/ScarletTree/
 SlidePaths=/usr/share/wallpapers/
 
+[Containments][26][Applets][31]
+popupHeight=432
+popupWidth=432
+
+[Containments][26][Applets][31][Applets][48][Configuration]
+PreloadWeight=55
+
+[Containments][26][Applets][52][Configuration]
+PreloadWeight=100
+popupHeight=510
+popupWidth=647
+
+[Containments][26][Applets][53]
+immutability=1
+plugin=org.kde.plasma.icontasks
+
+[Containments][26][Applets][53][Configuration][General]
+launchers=preferred://filemanager,preferred://browser,applications:steam.desktop,file:///usr/share/applications/discord.desktop,applications:org.kde.konsole.desktop
+
 [Containments][28]
 activityId=
 formfactor=2
