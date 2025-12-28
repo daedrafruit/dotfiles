@@ -1,0 +1,16 @@
+[General]
+historyBehavior=ImmediateCompletion
+
+[Plugins]
+baloosearchEnabled=false
+browserhistoryEnabled=false
+browsertabsEnabled=false
+krunner_bookmarksrunnerEnabled=false
+krunner_colorsEnabled=false
+krunner_dictionaryEnabled=false
+krunner_katesessionsEnabled=false
+org.kde.activities2Enabled=false
+org.kde.datetimeEnabled=false
+
+[Plugins][Favorites]
+plugins=krunner_sessions,krunner_powerdevil,krunner_services,krunner_systemsettings

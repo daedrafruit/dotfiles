@@ -1,8 +1,8 @@
-[1d21eae0-2397-4b83-970c-ffb965e64f01]
+[General]
+count=1
+rules=ec234fcb-b7ac-4a99-80e3-df342b3d0e47
+
+[ec234fcb-b7ac-4a99-80e3-df342b3d0e47]
 Description=krohnkite minimum window size
 minsizerule=2
 types=1
-
-[General]
-count=1
-rules=1d21eae0-2397-4b83-970c-ffb965e64f01
