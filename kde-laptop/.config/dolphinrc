@@ -1,5 +1,5 @@
 [DetailsMode]
-PreviewSize=32
+PreviewSize=22
 
 [General]
 BrowseThroughArchives=true
@@ -16,6 +16,3 @@ MenuBar=Disabled
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,glycin-heif,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,jxl,glycin-jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,librsvg,glycin-svg,svgthumbnail
-
-[Search]
-What=FileContents

@@ -5,7 +5,7 @@ floating=1
 thickness=44
 
 [PlasmaViews][Panel 26]
-floating=0
+floating=1
 panelOpacity=0
 
 [PlasmaViews][Panel 26][Defaults]

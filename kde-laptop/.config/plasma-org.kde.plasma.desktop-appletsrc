@@ -82,7 +82,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][26][Applets][31][Applets][39][Configuration]
-PreloadWeight=55
+PreloadWeight=80
 
 [Containments][26][Applets][31][Applets][40]
 immutability=1
@@ -141,7 +141,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][26][Applets][31][Applets][51][Configuration]
-PreloadWeight=72
+PreloadWeight=64
 
 [Containments][26][Applets][31][Applets][52]
 immutability=1
@@ -225,4 +225,4 @@ wallpaperplugin=org.kde.image
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=
+screenMapping=desktop:/Roms,0,e3ebee3f-36ae-461c-bf65-8e262f3ebb97,desktop:/Animal Crossing - Wild World (USA) (Rev 1).nds,0,e3ebee3f-36ae-461c-bf65-8e262f3ebb97,desktop:/rg35xx_bac,0,e3ebee3f-36ae-461c-bf65-8e262f3ebb97
