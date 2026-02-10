@@ -18,7 +18,29 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 # p10k (theme)
 zinit ice depth=1; zinit light romkatv/powerlevel10k
+
+# vi mode
 zinit ice depth=1; zinit light jeffreytse/zsh-vi-mode
+# fix home/end keys 
+# from https://github.com/jeffreytse/zsh-vi-mode/pull/179/files
+typeset -A key
+key[Home]=${terminfo[khome]}
+key[End]=${terminfo[kend]}
+key[Insert]=${terminfo[kich1]}
+key[Delete]=${terminfo[kdch1]}
+key[Up]=${terminfo[kcuu1]}
+key[Down]=${terminfo[kcud1]}
+key[Left]=${terminfo[kcub1]}
+key[Right]=${terminfo[kcuf1]}
+key[PageUp]=${terminfo[kpp]}
+key[PageDown]=${terminfo[knp]}
+# setup key accordingly
+zvm_bindkey viins "${key[Home]}"  beginning-of-line
+zvm_bindkey vicmd "${key[Home]}"  beginning-of-line
+zvm_bindkey viins "${key[End]}"  end-of-line
+zvm_bindkey vicmd "${key[End]}"  end-of-line
+zvm_bindkey viins "${key[Delete]}" delete-char
+zvm_bindkey vicmd "${key[Delete]}" delete-char
 
 zinit light zsh-users/zsh-syntax-highlighting
 
