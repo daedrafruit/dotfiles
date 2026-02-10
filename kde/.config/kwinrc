@@ -11,6 +11,7 @@ EdgeBarrier=0
 BorderActivate=9
 
 [Plugins]
+blurEnabled=true
 krohnkiteEnabled=true
 slideEnabled=false
 

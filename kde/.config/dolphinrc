@@ -2,16 +2,12 @@
 PreviewSize=22
 
 [DetailsMode]
-PreviewSize=22
+PreviewSize=16
 RightPadding=0
 
 [ExtractDialog]
 2 screens: Height=540
 2 screens: Width=1256
-
-[FileDialogSize]
-2 screens: Height=720
-2 screens: Width=1280
 
 [General]
 BrowseThroughArchives=true
@@ -19,6 +15,9 @@ GlobalViewProps=false
 ShowFullPath=true
 Version=202
 ViewPropsTimestamp=2025,7,16,22,10,35.274
+
+[InformationPanel]
+showHovered=false
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
@@ -29,6 +28,3 @@ MenuBar=Disabled
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
-
-[Search]
-What=FileContents

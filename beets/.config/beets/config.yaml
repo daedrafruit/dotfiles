@@ -2,7 +2,7 @@ library: ~/Music/Tools/Beets/musiclibrary.db
 directory: ~/Music/Tools/Beets/fallback-directory
 
 plugins:
-    - copyartifacts
+#    - copyartifacts
     - convert
     #- missing
     #- badfiles

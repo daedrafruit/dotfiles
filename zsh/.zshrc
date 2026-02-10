@@ -78,6 +78,8 @@ fi
 
 # aliases
 
+alias sysclean="sudo pacman -Rns $(pacman -Qdtq) ; yay -Sc"
+
 alias beet='~/Music/Tools/Beets/venv/bin/beet'
 alias beet-auto='find ~/Music/Downloads/ -type f -name "*.flac" -exec bash -c ~/Music/Tools/prog-to-baseline-jpeg.sh "$0" {} \; ; beet -d ~/Music/Library import --move ~/Music/Downloads && mv ~/Music/Downloads/* ~/Music/Tools/Backups/artifacts/'
 
