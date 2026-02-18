@@ -30,19 +30,22 @@ ActiveOutlineUseCustom=false
 ActiveOutlineUsePalette=true
 ActiveSecondOutlineUseCustom=false
 ActiveSecondOutlineUsePalette=true
+AnimationDuration=0
 DisableOutlineMaximize=false
 DisableOutlineTile=false
 DisableRoundMaximize=false
 DisableRoundTile=false
+InactiveCornerRadius=4
 InactiveOutlineAlpha=75
-InactiveOutlineThickness=2
+InactiveOutlineThickness=1.75
 InactiveOutlineUseCustom=false
 InactiveOutlineUsePalette=true
 InactiveSecondOutlineThickness=0
 InactiveSecondOutlineUseCustom=false
 InactiveSecondOutlineUsePalette=true
-OutlineThickness=2
+OutlineThickness=1.75
 SecondOutlineThickness=0
+Size=4
 
 [Script-krohnkite]
 noTileBorder=true
