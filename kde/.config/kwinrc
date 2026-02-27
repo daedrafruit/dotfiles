@@ -37,21 +37,21 @@ tiledWindowsLayer=1
 
 [TabBox]
 HighlightWindows=false
+LayoutName=thumbnail_grid
 
 [TabBoxAlternative]
 HighlightWindows=false
 ShowTabBox=false
 
-[Tiling]
-padding=4
-
 [Tiling][c53b6333-16b6-4db6-b7b5-2bc11b3a67a6][]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][c53b6333-16b6-4db6-b7b5-2bc11b3a67a6][d862e904-4a4b-4a8e-9854-41f5000f916c]
-tiles={"layoutDirection":"horizontal","tiles":[{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.46875},{"width":0.5312499999999958}]}
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.46875},{"width":0.53125}]}
 
 [Tiling][c53b6333-16b6-4db6-b7b5-2bc11b3a67a6][ddb85fdb-f226-419b-9b2b-40e4bee48694]
+padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][c53b6333-16b6-4db6-b7b5-2bc11b3a67a6][f19c34ac-b65b-401e-97e4-9e8792b256c8]
