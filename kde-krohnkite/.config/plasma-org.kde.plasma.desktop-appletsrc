@@ -16,6 +16,9 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][25][Configuration]
+PreloadWeight=10
+
 [Containments][25][General]
 positions={"1920x1080":[]}
 
@@ -146,7 +149,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][26][Applets][31][Applets][47][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][26][Applets][31][Applets][48]
 immutability=1
@@ -160,7 +163,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][26][Applets][31][Applets][51][Configuration]
-PreloadWeight=8
+PreloadWeight=0
 
 [Containments][26][Applets][31][Applets][52]
 immutability=1
