@@ -20,27 +20,20 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # vi mode
-zinit ice depth=1; zinit light jeffreytse/zsh-vi-mode
 # fix home/end keys 
+function zvm_after_init() {
+  bindkey -M viins '^[[1~' beginning-of-line
+  bindkey -M vicmd '^[[1~' beginning-of-line
+
+  bindkey -M viins '^[[4~' end-of-line
+  bindkey -M vicmd '^[[4~' end-of-line
+
+  bindkey -M viins '^[[3~' delete-char
+  bindkey -M vicmd '^[[3~' delete-char
+}
+
+zinit ice depth=1; zinit light jeffreytse/zsh-vi-mode
 # from https://github.com/jeffreytse/zsh-vi-mode/pull/179/files
-typeset -A key
-key[Home]=${terminfo[khome]}
-key[End]=${terminfo[kend]}
-key[Insert]=${terminfo[kich1]}
-key[Delete]=${terminfo[kdch1]}
-key[Up]=${terminfo[kcuu1]}
-key[Down]=${terminfo[kcud1]}
-key[Left]=${terminfo[kcub1]}
-key[Right]=${terminfo[kcuf1]}
-key[PageUp]=${terminfo[kpp]}
-key[PageDown]=${terminfo[knp]}
-# setup key accordingly
-zvm_bindkey viins "${key[Home]}"  beginning-of-line
-zvm_bindkey vicmd "${key[Home]}"  beginning-of-line
-zvm_bindkey viins "${key[End]}"  end-of-line
-zvm_bindkey vicmd "${key[End]}"  end-of-line
-zvm_bindkey viins "${key[Delete]}" delete-char
-zvm_bindkey vicmd "${key[Delete]}" delete-char
 
 zinit light zsh-users/zsh-syntax-highlighting
 
@@ -63,9 +56,6 @@ zinit snippet OMZP::colorize
 ##########
 # config #
 ##########
-bindkey  "^[[H"   beginning-of-line
-bindkey  "^[[F"   end-of-line
-bindkey  "^[[3~"  delete-char
 # navigate paths without cd
 setopt autocd
 
