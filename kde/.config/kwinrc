@@ -44,6 +44,7 @@ HighlightWindows=false
 ShowTabBox=false
 
 [Tiling][c53b6333-16b6-4db6-b7b5-2bc11b3a67a6][]
+padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][c53b6333-16b6-4db6-b7b5-2bc11b3a67a6][d862e904-4a4b-4a8e-9854-41f5000f916c]
