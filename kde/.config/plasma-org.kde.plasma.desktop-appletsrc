@@ -27,7 +27,7 @@ positions={"1920x1080":["1","17"],"2560x1440":["1","23","desktop:/brute.py","0",
 sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/ScarletTree/
+Image=file:///home/daedr/Pictures/wallpapers/wallhaven-n6qwv6.png
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][2]
@@ -55,31 +55,6 @@ fontWeight=400
 DialogHeight=540
 DialogWidth=720
 
-[Containments][2][Applets][21]
-immutability=1
-plugin=org.kde.plasma.showdesktop
-
-[Containments][2][Applets][3]
-immutability=1
-plugin=org.kde.plasma.kickoff
-
-[Containments][2][Applets][3][Configuration]
-popupHeight=520
-popupWidth=661
-
-[Containments][2][Applets][3][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][2][Applets][3][Configuration][General]
-favoritesPortedToKAstats=true
-icon=/home/daedr/.local/share/icons/icons8-arch-linux-50.png
-systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
-
-[Containments][2][Applets][4]
-immutability=1
-plugin=org.kde.plasma.pager
-
 [Containments][2][Applets][5]
 immutability=1
 plugin=org.kde.plasma.icontasks
@@ -92,6 +67,23 @@ DialogWidth=720
 highlightWindows=true
 launchers=applications:org.kde.konsole.desktop,applications:firefox.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:org.kde.dolphin.desktop,applications:steam.desktop,applications:obsidian.desktop,file:///usr/share/applications/discord.desktop,applications:org.strawberrymusicplayer.strawberry.desktop
 wheelEnabled=AdjustVolume
+
+[Containments][2][Applets][53]
+immutability=1
+plugin=org.kde.plasma.kickoff
+transient=true
+
+[Containments][2][Applets][53][Configuration]
+popupHeight=510
+popupWidth=647
+
+[Containments][2][Applets][53][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][2][Applets][53][Configuration][General]
+favoritesPortedToKAstats=true
+systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][2][Applets][6]
 immutability=1
@@ -195,12 +187,12 @@ DialogWidth=720
 [Containments][2][Applets][7][General]
 disabledStatusNotifiers=Discover Notifier_org.kde.DiscoverNotifier
 extraItems=org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.cameraindicator,org.kde.plasma.bluetooth,org.kde.plasma.volume,org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.kdeconnect,org.kde.plasma.notifications,org.kde.plasma.battery
-hiddenItems=org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.nicotine_plus.Nicotine,Arch-Update,octopi-notifier
+hiddenItems=org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.nicotine_plus.Nicotine,Arch-Update,octopi-notifier,Easy Effects,org.kde.plasma.battery
 knownItems=org.kde.plasma.weather,org.kde.plasma.clipboard,org.kde.plasma.keyboardlayout,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.networkmanagement,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.vault,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.cameraindicator,org.kde.plasma.bluetooth,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.mediacontroller,org.kde.kscreen,org.kde.kdeconnect
-shownItems=org.kde.plasma.notifications,org.kde.plasma.battery
+shownItems=org.kde.plasma.notifications
 
 [Containments][2][General]
-AppletOrder=3;4;5;6;7;20;21
+AppletOrder=5;6;7;20
 
 [Containments][25]
 ItemGeometries-1920x1080=
@@ -218,7 +210,7 @@ wallpaperplugin=org.kde.image
 positions={"1920x1080":[],"2560x1440":[]}
 
 [Containments][25][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/ScarletTree/
+Image=file:///home/daedr/Pictures/wallpapers/wallhaven-1pj829.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][28]
@@ -229,27 +221,6 @@ lastScreen=1
 location=4
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
-
-[Containments][28][Applets][29]
-immutability=1
-plugin=org.kde.plasma.kickoff
-
-[Containments][28][Applets][29][Configuration]
-popupHeight=509
-popupWidth=647
-
-[Containments][28][Applets][29][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][28][Applets][29][Configuration][General]
-favoritesPortedToKAstats=true
-icon=/home/daedr/Pictures/archlinux-artwork-1.6/icons8-arch-linux-50.png
-systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
-
-[Containments][28][Applets][30]
-immutability=1
-plugin=org.kde.plasma.pager
 
 [Containments][28][Applets][31]
 immutability=1
@@ -277,7 +248,7 @@ popupHeight=451
 popupWidth=560
 
 [Containments][28][General]
-AppletOrder=29;30;31;32;46
+AppletOrder=31;32;46
 
 [ScreenMapping]
 itemsOnDisabledScreens=
