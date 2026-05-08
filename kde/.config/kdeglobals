@@ -50,7 +50,7 @@ ForegroundVisited=108,112,134
 
 [Colors:Selection]
 BackgroundAlternate=161,172,227
-BackgroundNormal=77,61,253
+BackgroundNormal=166,227,161
 DecorationFocus=17,17,27
 DecorationHover=17,17,27
 ForegroundActive=17,17,27
@@ -105,13 +105,14 @@ ForegroundPositive=166,227,161
 ForegroundVisited=108,112,134
 
 [General]
-ColorScheme=Catppuccin
-ColorSchemeHash=d0bc99729818c14edd1a0a86510546bd750da6fb
+ColorSchemeHash=5dfac481bb9cd1a35098d6ef356254050b3c0346
 LastUsedCustomAccentColor=61,174,233
 
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
 ShowDeleteCommand=false
+contrast=4
+frameContrast=0.2
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -129,6 +130,9 @@ Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=140
 View Style=Detail
+
+[KScreen]
+ScreenScaleFactors=DP-1=1;DP-2=1;
 
 [KShortcutsDialog Settings]
 Dialog Size=600,480

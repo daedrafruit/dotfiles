@@ -14,6 +14,10 @@ play_pause=none,none,Play/Pause
 prev_track=none,none,Previous track
 stop=none,none,Stop
 
+[com.anthropic.claude-desktop]
+DB286F0E03FC1F0E70D6F890A1B90A21-Ctrl+Alt+Space=Ctrl+Alt+Space,Ctrl+Alt+Space,Claude shortcut: Ctrl+Alt+Space
+_k_friendly_name=Claude
+
 [kaccess]
 Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility

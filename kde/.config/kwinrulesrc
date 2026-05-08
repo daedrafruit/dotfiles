@@ -1,6 +1,30 @@
 [General]
-count=1
-rules=ec234fcb-b7ac-4a99-80e3-df342b3d0e47
+count=2
+rules=ec234fcb-b7ac-4a99-80e3-df342b3d0e47,e8cdb720-bc57-4165-a206-d3807fcc8822
+
+[e8106bac-71bd-4fc0-9092-b9f76d4714f1]
+maximizehorizrule=3
+maximizevertrule=3
+position=0,151
+positionrule=3
+size=1920,1036
+sizerule=3
+wmclass=firefox
+wmclassmatch=1
+
+[e8cdb720-bc57-4165-a206-d3807fcc8822]
+Description=Settings for firefox
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+position=0,151
+positionrule=3
+size=1920,1036
+sizerule=3
+wmclass=firefox
+wmclasscomplete=true
+wmclassmatch=2
 
 [ec234fcb-b7ac-4a99-80e3-df342b3d0e47]
 Description=krohnkite minimum window size
