@@ -265,6 +265,17 @@ seekforwardmedia=Media Fast Forward,Media Fast Forward,Media playback seek forwa
 seekforwardmedialong=,,Media playback seek forward 30s
 stopmedia=Media Stop,Media Stop,Stop media playback
 
+[org.chromium.Chromium]
+379957AB912D2704A99C3308CC4AAA53-MediaStop=,none,Electron shortcut MediaStop
+5D7E0FDA6216911D588802A735FD62A4-MediaPlayPause=,none,Electron shortcut MediaPlayPause
+6C6159FF4D8F0A8D97C9FA2C4395B40F-MediaPlayPause=,none,Electron shortcut MediaPlayPause
+8C13F09DC5662BE987E016F9FCD9863E-MediaPrevTrack=,none,Electron shortcut MediaPrevTrack
+A05C8D3EC3998A8BDEA99D3B36F8505F-MediaNextTrack=,none,Electron shortcut MediaNextTrack
+BA43FBDCCD2C9443F535BB31056C56B6-MediaStop=,none,Electron shortcut MediaStop
+D60ABBA70D03E1E02D04CC7E56B8B798-MediaPrevTrack=,none,Electron shortcut MediaPrevTrack
+EBB78D2EE26007D46F1F3188D779311B-MediaNextTrack=,none,Electron shortcut MediaNextTrack
+_k_friendly_name=org.chromium.Chromium
+
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
 Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Decrease Screen Brightness
@@ -322,7 +333,6 @@ _launch=Search\tAlt+Space\tMeta+D
 [services][org.kde.spectacle.desktop]
 ActiveWindowScreenShot=none
 CurrentMonitorScreenShot=Print
-OpenWithoutScreenshot=
 RecordRegion=none
 RecordScreen=none
 RecordWindow=none

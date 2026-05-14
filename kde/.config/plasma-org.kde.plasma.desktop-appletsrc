@@ -65,8 +65,24 @@ DialogWidth=720
 
 [Containments][2][Applets][5][Configuration][General]
 highlightWindows=true
-launchers=applications:org.kde.konsole.desktop,applications:firefox.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:org.kde.dolphin.desktop,applications:steam.desktop,applications:obsidian.desktop,file:///usr/share/applications/discord.desktop,applications:org.strawberrymusicplayer.strawberry.desktop
+launchers=applications:org.kde.konsole.desktop,applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.kate.desktop,applications:steam.desktop,applications:obsidian.desktop,file:///usr/share/applications/discord.desktop,applications:feishin.desktop
 wheelEnabled=AdjustVolume
+
+[Containments][2][Applets][52]
+immutability=1
+plugin=org.kde.plasma.kickoff
+
+[Containments][2][Applets][52][Configuration]
+popupHeight=509
+popupWidth=665
+
+[Containments][2][Applets][52][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][2][Applets][52][Configuration][General]
+favoritesPortedToKAstats=true
+systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][2][Applets][6]
 immutability=1
@@ -175,7 +191,7 @@ knownItems=org.kde.plasma.weather,org.kde.plasma.clipboard,org.kde.plasma.keyboa
 shownItems=org.kde.plasma.notifications
 
 [Containments][2][General]
-AppletOrder=5;6;7;20
+AppletOrder=52;5;6;7;20
 
 [Containments][25]
 ItemGeometries-1920x1080=
@@ -215,7 +231,7 @@ DialogWidth=720
 
 [Containments][28][Applets][31][Configuration][General]
 highlightWindows=true
-launchers=applications:org.kde.konsole.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:steam.desktop,applications:obsidian.desktop,applications:discord.desktop,applications:org.strawberrymusicplayer.strawberry.desktop
+launchers=applications:org.kde.konsole.desktop,applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.kate.desktop,applications:steam.desktop,applications:obsidian.desktop,applications:discord.desktop,applications:feishin.desktop
 wheelEnabled=AdjustVolume
 
 [Containments][28][Applets][32]
@@ -230,9 +246,184 @@ plugin=org.kde.plasma.digitalclock
 popupHeight=451
 popupWidth=560
 
+[Containments][28][Applets][58]
+immutability=1
+plugin=org.kde.plasma.systemmonitor.cpucore
+
+[Containments][28][Applets][58][Configuration]
+CurrentPreset=org.kde.plasma.systemmonitor
+popupHeight=381
+popupWidth=300
+
+[Containments][28][Applets][58][Configuration][Appearance]
+chartFace=org.kde.ksysguard.barchart
+title=Individual Core Usage
+
+[Containments][28][Applets][58][Configuration][SensorColors]
+cpu/cpu.*/usage=166,227,161
+cpu/cpu0/usage=166,227,161
+cpu/cpu1/usage=161,227,181
+cpu/cpu10/usage=227,161,183
+cpu/cpu11/usage=227,164,161
+cpu/cpu12/usage=227,189,161
+cpu/cpu13/usage=227,214,161
+cpu/cpu14/usage=216,227,161
+cpu/cpu15/usage=191,227,161
+cpu/cpu2/usage=161,227,205
+cpu/cpu3/usage=161,224,227
+cpu/cpu4/usage=161,199,227
+cpu/cpu5/usage=161,174,227
+cpu/cpu6/usage=172,161,227
+cpu/cpu7/usage=197,161,227
+cpu/cpu8/usage=222,161,227
+cpu/cpu9/usage=227,161,207
+
+[Containments][28][Applets][58][Configuration][Sensors]
+highPrioritySensorIds=["cpu/cpu.*/usage"]
+totalSensors=["cpu/all/usage"]
+
+[Containments][28][Applets][59]
+immutability=1
+plugin=org.kde.plasma.systemmonitor.memory
+
+[Containments][28][Applets][59][Configuration]
+CurrentPreset=org.kde.plasma.systemmonitor
+popupHeight=235
+popupWidth=238
+
+[Containments][28][Applets][59][Configuration][Appearance]
+chartFace=org.kde.ksysguard.piechart
+title=Memory Usage
+
+[Containments][28][Applets][59][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][28][Applets][59][Configuration][SensorColors]
+memory/physical/used=166,227,161
+
+[Containments][28][Applets][59][Configuration][Sensors]
+highPrioritySensorIds=["memory/physical/used"]
+lowPrioritySensorIds=["memory/physical/total"]
+totalSensors=["memory/physical/usedPercent"]
+
+[Containments][28][Applets][62]
+immutability=1
+plugin=org.kde.plasma.systemmonitor.cpu
+
+[Containments][28][Applets][62][Configuration]
+CurrentPreset=org.kde.plasma.systemmonitor
+popupHeight=257
+popupWidth=215
+
+[Containments][28][Applets][62][Configuration][Appearance]
+chartFace=org.kde.ksysguard.piechart
+title=Total CPU Use
+
+[Containments][28][Applets][62][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][28][Applets][62][Configuration][SensorColors]
+cpu/all/usage=166,227,161
+
+[Containments][28][Applets][62][Configuration][Sensors]
+highPrioritySensorIds=["cpu/all/usage"]
+lowPrioritySensorIds=["cpu/all/averageFrequency","cpu/all/wait"]
+totalSensors=["cpu/all/averageTemperature","cpu/all/usage"]
+
+[Containments][28][Applets][63]
+immutability=1
+plugin=org.kde.plasma.systemmonitor.cpu
+
+[Containments][28][Applets][63][Configuration]
+CurrentPreset=org.kde.plasma.systemmonitor
+popupHeight=279
+popupWidth=222
+
+[Containments][28][Applets][63][Configuration][Appearance]
+chartFace=org.kde.ksysguard.piechart
+title=Total GPU Use
+
+[Containments][28][Applets][63][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][28][Applets][63][Configuration][SensorColors]
+cpu/all/usage=166,227,161
+gpu/gpu1/usage=168,227,161
+
+[Containments][28][Applets][63][Configuration][SensorLabels]
+gpu/gpu1/power=GPU Power
+gpu/gpu1/temperature=GPU Temperature
+gpu/gpu1/totalVram=GPU Total Video Memory
+gpu/gpu1/usage=GPU Usage
+gpu/gpu1/usedVram=GPU Video Memory Used
+
+[Containments][28][Applets][63][Configuration][Sensors]
+highPrioritySensorIds=["gpu/gpu1/usage"]
+lowPrioritySensorIds=["gpu/gpu1/power","gpu/gpu1/usedVram","gpu/gpu1/totalVram"]
+totalSensors=["gpu/gpu1/temperature","gpu/gpu1/usage"]
+
+[Containments][28][Applets][64]
+immutability=1
+plugin=org.kde.plasma.systemmonitor.net
+
+[Containments][28][Applets][64][Configuration]
+CurrentPreset=org.kde.plasma.systemmonitor
+popupHeight=195
+popupWidth=306
+
+[Containments][28][Applets][64][Configuration][Appearance]
+chartFace=org.kde.ksysguard.linechart
+title=Network Speed
+
+[Containments][28][Applets][64][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][28][Applets][64][Configuration][SensorColors]
+network/all/download=166,227,161
+network/all/upload=222,161,227
+
+[Containments][28][Applets][64][Configuration][Sensors]
+highPrioritySensorIds=["network/all/download","network/all/upload"]
+lowPrioritySensorIds=["network/enp9s0/ipv4address"]
+
+[Containments][28][Applets][65]
+immutability=1
+plugin=org.kde.plasma.systemmonitor.diskactivity
+
+[Containments][28][Applets][65][Configuration]
+CurrentPreset=org.kde.plasma.systemmonitor
+popupHeight=195
+popupWidth=175
+
+[Containments][28][Applets][65][Configuration][Appearance]
+chartFace=org.kde.ksysguard.linechart
+title=Hard Disk Activity
+
+[Containments][28][Applets][65][Configuration][SensorColors]
+disk/all/read=222,161,227
+disk/all/write=166,227,161
+
+[Containments][28][Applets][65][Configuration][Sensors]
+highPrioritySensorIds=["disk/all/write","disk/all/read"]
+
+[Containments][28][Applets][66]
+immutability=1
+plugin=org.kde.plasma.kickoff
+
+[Containments][28][Applets][66][Configuration]
+popupHeight=509
+popupWidth=647
+
+[Containments][28][Applets][66][Configuration][General]
+favoritesPortedToKAstats=true
+
 [Containments][28][General]
-AppletOrder=31;32;46
+AppletOrder=66;31;58;62;63;59;64;65;46;32
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/.env,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/notes,0,e5846917-7041-4b07-8808-c817e955b961
+screenMapping=desktop:/notes,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/.env,0,e5846917-7041-4b07-8808-c817e955b961
