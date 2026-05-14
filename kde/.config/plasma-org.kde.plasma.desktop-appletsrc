@@ -74,7 +74,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][52][Configuration]
 popupHeight=509
-popupWidth=665
+popupWidth=677
 
 [Containments][2][Applets][52][Configuration][ConfigDialog]
 DialogHeight=630
@@ -95,7 +95,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.systemtray
-popupHeight=438
+popupHeight=432
 popupWidth=432
 wallpaperplugin=org.kde.image
 
@@ -241,6 +241,14 @@ plugin=org.kde.plasma.digitalclock
 [Containments][28][Applets][46][Configuration]
 popupHeight=451
 popupWidth=560
+
+[Containments][28][Applets][46][Configuration][Appearance]
+fontFamily=Hack
+fontWeight=400
+
+[Containments][28][Applets][46][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
 
 [Containments][28][Applets][58]
 immutability=1
@@ -427,8 +435,8 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][28][Applets][66][Configuration]
-popupHeight=521
-popupWidth=661
+popupHeight=515
+popupWidth=655
 
 [Containments][28][Applets][66][Configuration][General]
 favoritesPortedToKAstats=true
@@ -442,4 +450,4 @@ AppletOrder=66;31;58;62;63;59;64;65;68;46
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/notes,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/.env,0,e5846917-7041-4b07-8808-c817e955b961
+screenMapping=desktop:/.env,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/notes,0,e5846917-7041-4b07-8808-c817e955b961

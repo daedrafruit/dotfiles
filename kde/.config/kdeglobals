@@ -108,6 +108,13 @@ ForegroundVisited=214,153,182
 ColorScheme=Everforest-claude
 ColorSchemeHash=5dfac481bb9cd1a35098d6ef356254050b3c0346
 LastUsedCustomAccentColor=61,174,233
+XftAntialias=true
+XftHintStyle=hintslight
+XftSubPixel=none
+font=Hack,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+menuFont=Hack,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+smallestReadableFont=Hack,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+toolBarFont=Hack,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 
 [Icons]
 Theme=oxygen
@@ -152,6 +159,7 @@ Theme=oxygen
 [WM]
 activeBackground=52,63,68
 activeBlend=61,72,77
+activeFont=Hack,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 activeForeground=211,198,170
 inactiveBackground=45,53,59
 inactiveBlend=52,63,68
