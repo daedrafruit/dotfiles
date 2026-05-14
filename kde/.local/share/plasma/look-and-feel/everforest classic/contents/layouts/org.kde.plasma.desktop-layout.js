@@ -63,8 +63,8 @@ var layout = {
                 {
                     "config": {
                         "/": {
-                            "popupHeight": "515",
-                            "popupWidth": "683"
+                            "popupHeight": "509",
+                            "popupWidth": "677"
                         },
                         "/ConfigDialog": {
                             "DialogHeight": "630",
@@ -127,11 +127,11 @@ var layout = {
                     "wallpaperplugin": "org.kde.image"
                 }
             },
-            "height": 2.4444444444444446,
+            "height": 2.75,
             "hiding": "normal",
             "location": "bottom",
-            "maximumLength": 106.66666666666667,
-            "minimumLength": 106.66666666666667,
+            "maximumLength": 120,
+            "minimumLength": 120,
             "offset": 0
         },
         {
@@ -380,11 +380,11 @@ var layout = {
                     "wallpaperplugin": "org.kde.image"
                 }
             },
-            "height": 2.4444444444444446,
+            "height": 2.75,
             "hiding": "normal",
             "location": "bottom",
-            "maximumLength": 142.22222222222223,
-            "minimumLength": 142.22222222222223,
+            "maximumLength": 160,
+            "minimumLength": 160,
             "offset": 0
         }
     ],
