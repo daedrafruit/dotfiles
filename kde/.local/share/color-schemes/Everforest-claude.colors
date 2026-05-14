@@ -1,11 +1,9 @@
 [ColorEffects:Disabled]
-ChangeSelectionColor=
 Color=56,56,56
 ColorAmount=0
 ColorEffect=0
 ContrastAmount=0.65
 ContrastEffect=1
-Enable=
 IntensityAmount=0.1
 IntensityEffect=2
 
@@ -105,49 +103,13 @@ ForegroundPositive=167,192,128
 ForegroundVisited=214,153,182
 
 [General]
-ColorScheme=Everforest-claude
-ColorSchemeHash=5dfac481bb9cd1a35098d6ef356254050b3c0346
-LastUsedCustomAccentColor=61,174,233
-
-[Icons]
-Theme=oxygen
+ColorScheme=BreezeClassic
+Name=Everforest
+TitlebarIsAccentColored=true
+shadeSortColumn=true
 
 [KDE]
-LookAndFeelPackage=org.kde.breezedark.desktop
-ShowDeleteCommand=false
 contrast=4
-frameContrast=0.2
-widgetStyle=Fusion
-
-[KFileDialog Settings]
-Allow Expansion=false
-Automatically select filename extension=true
-Breadcrumb Navigation=false
-Decoration position=0
-Show Full Path=false
-Show Inline Previews=true
-Show Preview=false
-Show Speedbar=true
-Show hidden files=true
-Sort by=Date
-Sort directories first=true
-Sort hidden files last=false
-Sort reversed=false
-Speedbar Width=140
-View Style=Detail
-
-[KScreen]
-ScreenScaleFactors=DP-1=1;DP-2=1;
-
-[KShortcutsDialog Settings]
-Dialog Size=600,480
-
-[PreviewSettings]
-EnableRemoteFolderThumbnail=false
-MaximumRemoteSize=0
-
-[Sounds]
-Theme=oxygen
 
 [WM]
 activeBackground=52,63,68

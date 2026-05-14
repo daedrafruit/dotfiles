@@ -65,7 +65,7 @@ DialogWidth=720
 
 [Containments][2][Applets][5][Configuration][General]
 highlightWindows=true
-launchers=applications:org.kde.konsole.desktop,applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.kate.desktop,applications:steam.desktop,applications:obsidian.desktop,file:///usr/share/applications/discord.desktop,applications:feishin.desktop
+launchers=applications:org.kde.konsole.desktop,applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.kate.desktop,applications:steam.desktop,file:///usr/share/applications/discord.desktop,applications:obsidian.desktop,applications:feishin.desktop
 wheelEnabled=AdjustVolume
 
 [Containments][2][Applets][52]
@@ -84,7 +84,7 @@ DialogWidth=810
 favoritesPortedToKAstats=true
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
-[Containments][2][Applets][6]
+[Containments][2][Applets][69]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
 
@@ -191,7 +191,7 @@ knownItems=org.kde.plasma.weather,org.kde.plasma.clipboard,org.kde.plasma.keyboa
 shownItems=org.kde.plasma.notifications
 
 [Containments][2][General]
-AppletOrder=52;5;6;7;20
+AppletOrder=52;5;7;69;20
 
 [Containments][25]
 ItemGeometries-1920x1080=
@@ -231,12 +231,8 @@ DialogWidth=720
 
 [Containments][28][Applets][31][Configuration][General]
 highlightWindows=true
-launchers=applications:org.kde.konsole.desktop,applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.kate.desktop,applications:steam.desktop,applications:obsidian.desktop,applications:discord.desktop,applications:feishin.desktop
+launchers=applications:org.kde.konsole.desktop,applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.kate.desktop,applications:steam.desktop,applications:discord.desktop,applications:obsidian.desktop,applications:feishin.desktop
 wheelEnabled=AdjustVolume
-
-[Containments][28][Applets][32]
-immutability=1
-plugin=org.kde.plasma.marginsseparator
 
 [Containments][28][Applets][46]
 immutability=1
@@ -258,6 +254,10 @@ popupWidth=300
 [Containments][28][Applets][58][Configuration][Appearance]
 chartFace=org.kde.ksysguard.barchart
 title=Individual Core Usage
+
+[Containments][28][Applets][58][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
 
 [Containments][28][Applets][58][Configuration][SensorColors]
 cpu/cpu.*/usage=166,227,161
@@ -325,11 +325,13 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][28][Applets][62][Configuration][SensorColors]
+cpu/all/averageFrequency=227,161,210
 cpu/all/usage=166,227,161
+cpu/all/wait=227,224,161
 
 [Containments][28][Applets][62][Configuration][Sensors]
 highPrioritySensorIds=["cpu/all/usage"]
-lowPrioritySensorIds=["cpu/all/averageFrequency","cpu/all/wait"]
+lowPrioritySensorIds=["cpu/all/maximumTemperature","cpu/all/averageFrequency","cpu/all/wait"]
 totalSensors=["cpu/all/averageTemperature","cpu/all/usage"]
 
 [Containments][28][Applets][63]
@@ -396,7 +398,7 @@ plugin=org.kde.plasma.systemmonitor.diskactivity
 
 [Containments][28][Applets][65][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-popupHeight=204
+popupHeight=226
 popupWidth=175
 
 [Containments][28][Applets][65][Configuration][Appearance]
@@ -408,6 +410,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][28][Applets][65][Configuration][SensorColors]
+cpu/cpu0/name=217,227,161
 disk/all/read=222,161,227
 disk/all/write=166,227,161
 
@@ -424,14 +427,18 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][28][Applets][66][Configuration]
-popupHeight=509
-popupWidth=647
+popupHeight=521
+popupWidth=661
 
 [Containments][28][Applets][66][Configuration][General]
 favoritesPortedToKAstats=true
 
+[Containments][28][Applets][68]
+immutability=1
+plugin=org.kde.plasma.marginsseparator
+
 [Containments][28][General]
-AppletOrder=66;31;58;62;63;59;64;65;46;32
+AppletOrder=66;31;58;62;63;59;64;65;68;46
 
 [ScreenMapping]
 itemsOnDisabledScreens=
