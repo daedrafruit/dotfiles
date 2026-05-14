@@ -252,7 +252,7 @@ plugin=org.kde.plasma.systemmonitor.cpucore
 
 [Containments][28][Applets][58][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-popupHeight=381
+popupHeight=504
 popupWidth=300
 
 [Containments][28][Applets][58][Configuration][Appearance]
@@ -403,12 +403,20 @@ popupWidth=175
 chartFace=org.kde.ksysguard.linechart
 title=Hard Disk Activity
 
+[Containments][28][Applets][65][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
 [Containments][28][Applets][65][Configuration][SensorColors]
 disk/all/read=222,161,227
 disk/all/write=166,227,161
 
+[Containments][28][Applets][65][Configuration][SensorLabels]
+disk/2b6292aa-6116-4ead-9e96-cd502090b69c/usedPercent=Used
+
 [Containments][28][Applets][65][Configuration][Sensors]
 highPrioritySensorIds=["disk/all/write","disk/all/read"]
+lowPrioritySensorIds=["disk/2b6292aa-6116-4ead-9e96-cd502090b69c/usedPercent"]
 
 [Containments][28][Applets][66]
 immutability=1
