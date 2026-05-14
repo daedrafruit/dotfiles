@@ -105,7 +105,6 @@ ForegroundPositive=166,227,161
 ForegroundVisited=108,112,134
 
 [General]
-ColorScheme=Catppuccin
 ColorSchemeHash=5dfac481bb9cd1a35098d6ef356254050b3c0346
 LastUsedCustomAccentColor=61,174,233
 XftAntialias=true
@@ -116,15 +115,11 @@ menuFont=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 smallestReadableFont=Noto Sans,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 toolBarFont=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 
-[Icons]
-Theme=breeze-dark
-
 [KDE]
-LookAndFeelPackage=org.kde.breezedark.desktop
+LookAndFeelPackage=catppuccin
 ShowDeleteCommand=false
 contrast=4
 frameContrast=0.2
-widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -154,7 +149,7 @@ EnableRemoteFolderThumbnail=false
 MaximumRemoteSize=0
 
 [Sounds]
-Theme=ocean
+Theme=oxygen
 
 [WM]
 activeBackground=24,24,37

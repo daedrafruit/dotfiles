@@ -37,7 +37,6 @@ tiledWindowsLayer=1
 
 [TabBox]
 HighlightWindows=false
-LayoutName=thumbnail_grid
 
 [TabBoxAlternative]
 HighlightWindows=false
@@ -67,7 +66,3 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Xwayland]
 Scale=1
-
-[org.kde.kdecoration2]
-library=org.kde.breeze
-theme=Breeze
