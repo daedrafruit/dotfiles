@@ -333,6 +333,7 @@ _launch=Search\tAlt+Space\tMeta+D
 [services][org.kde.spectacle.desktop]
 ActiveWindowScreenShot=none
 CurrentMonitorScreenShot=Print
+OpenWithoutScreenshot=
 RecordRegion=none
 RecordScreen=none
 RecordWindow=none

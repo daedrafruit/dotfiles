@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=New Color Scheme
+ColorScheme=Everforest-Hard-Dark
 Font=Hack,12,-1,7,400,0,0,0,0,0,0,0,0,0,0,1
 
 [General]

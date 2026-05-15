@@ -117,7 +117,7 @@ smallestReadableFont=Hack,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 toolBarFont=Hack,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 
 [KDE]
-LookAndFeelPackage=catppuccin
+LookAndFeelPackage=everforest classic
 ShowDeleteCommand=false
 contrast=4
 frameContrast=0.2
