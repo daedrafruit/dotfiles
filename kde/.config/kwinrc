@@ -7,13 +7,33 @@ Rows=1
 CornerBarrier=false
 EdgeBarrier=0
 
+[Effect-kwin4_effect_geometry_change]
+Duration=400
+
 [Effect-overview]
 BorderActivate=9
 
 [Plugins]
 blurEnabled=true
 krohnkiteEnabled=true
+kwin4_effect_geometry_changeEnabled=true
+kwin4_effect_shapecornersEnabled=false
 slideEnabled=false
+
+[Round-Corners]
+ActiveOutlineUseCustom=false
+ActiveOutlineUsePalette=true
+DisableOutlineFullScreen=false
+DisableOutlineTile=false
+DisableRoundMaximize=false
+DisableRoundTile=false
+InactiveOutlineAlpha=103
+InactiveOutlineThickness=1.5
+InactiveOutlineUseCustom=false
+InactiveOutlineUsePalette=true
+InactiveSecondOutlineThickness=0
+OutlineThickness=1.5
+SecondOutlineThickness=0
 
 [Script-krohnkite]
 binaryTreeLayoutOrder=5

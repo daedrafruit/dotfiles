@@ -450,4 +450,4 @@ AppletOrder=66;31;58;62;63;59;64;65;68;46
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/notes,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/.env,0,e5846917-7041-4b07-8808-c817e955b961
+screenMapping=desktop:/.env,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/notes,0,e5846917-7041-4b07-8808-c817e955b961
