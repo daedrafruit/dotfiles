@@ -18,11 +18,19 @@ Rows=1
 BlurStrength=11
 NoiseStrength=4
 
+[Effect-kwin4_effect_geometry_change]
+Duration=400
+
 [Effect-overview]
 BorderActivate=9
 
+[Effect-slide]
+SlideBackground=false
+
 [Plugins]
+blurEnabled=true
 krohnkiteEnabled=true
+kwin4_effect_geometry_changeEnabled=true
 slideEnabled=false
 
 [Round-Corners]
@@ -35,7 +43,7 @@ DisableOutlineMaximize=false
 DisableOutlineTile=false
 DisableRoundMaximize=false
 DisableRoundTile=false
-InactiveCornerRadius=4
+InactiveCornerRadius=6
 InactiveOutlineAlpha=75
 InactiveOutlineThickness=1.75
 InactiveOutlineUseCustom=false
@@ -45,7 +53,7 @@ InactiveSecondOutlineUseCustom=false
 InactiveSecondOutlineUsePalette=true
 OutlineThickness=1.75
 SecondOutlineThickness=0
-Size=4
+Size=6
 
 [Script-krohnkite]
 noTileBorder=true

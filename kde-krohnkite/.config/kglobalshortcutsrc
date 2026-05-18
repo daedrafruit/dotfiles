@@ -8,7 +8,7 @@ Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
 [kaccess]
-Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
+Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
 
 [kmix]
@@ -61,9 +61,9 @@ KrohnkiteGrowHeight=Meta+Ctrl+J,none,Krohnkite: Grow Height
 KrohnkiteIncrease=Meta+I,none,Krohnkite: Increase
 KrohnkiteMonocleLayout=Meta+M,none,Krohnkite: Monocle Layout
 KrohnkiteNextLayout=Meta+\\\\,none,Krohnkite: Next Layout
-KrohnkitePreviousLayout=Meta+|,none,Krohnkite: Previous Layout
+KrohnkitePreviousLayout=Meta+Alt+\\\\,none,Krohnkite: Previous Layout
 KrohnkiteQuarterLayout=none,none,Krohnkite: Quarter Layout
-KrohnkiteRotate=Meta+Alt+V,none,Krohnkite: Rotate
+KrohnkiteRotate=Meta+R,none,Krohnkite: Rotate
 KrohnkiteRotatePart=none,none,Krohnkite: Rotate Part
 KrohnkiteSetMaster=none,none,Krohnkite: Set master
 KrohnkiteShiftDown=Meta+Alt+J,none,Krohnkite: Move Down/Next
@@ -72,11 +72,11 @@ KrohnkiteShiftRight=Meta+Alt+L,none,Krohnkite: Move Right
 KrohnkiteShiftUp=Meta+Alt+K,none,Krohnkite: Move Up/Prev
 KrohnkiteShrinkHeight=Meta+Ctrl+K,none,Krohnkite: Shrink Height
 KrohnkiteShrinkWidth=Meta+Ctrl+H,none,Krohnkite: Shrink Width
-KrohnkiteSpiralLayout=Meta+Alt+T,none,Krohnkite: Spiral Layout
+KrohnkiteSpiralLayout=Meta+Alt+S,none,Krohnkite: Spiral Layout
 KrohnkiteSpreadLayout=none,none,Krohnkite: Spread Layout
 KrohnkiteStackedLayout=none,none,Krohnkite: Stacked Layout
 KrohnkiteStairLayout=none,none,Krohnkite: Stair Layout
-KrohnkiteTileLayout=none,none,Krohnkite: Tile Layout
+KrohnkiteTileLayout=Meta+Alt+T,none,Krohnkite: Tile Layout
 KrohnkiteToggleFloat=Meta+F,none,Krohnkite: Toggle Float
 KrohnkiteTreeColumnLayout=none,none,Krohnkite: Three Column Layout
 KrohnkitegrowWidth=Meta+Ctrl+L,none,Krohnkite: Grow Width
@@ -309,8 +309,6 @@ _launch=Meta+Return
 _launch=Meta+D\tAlt+F2\tSearch\tAlt+Space
 
 [services][org.kde.spectacle.desktop]
-CurrentMonitorScreenShot=
-OpenWithoutScreenshot=
 RecordRegion=Meta+Shift+R
 RectangularRegionScreenShot=Meta+Shift+Print\tMeta+Shift+S
 _launch=none

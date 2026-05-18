@@ -20,7 +20,7 @@ wallpaperplugin=org.kde.image
 positions={"1920x1080":[]}
 
 [Containments][25][Wallpaper][org.kde.image][General]
-Image=file:///home/daedr/Pictures/wallpapers/miku/miku-konachan-367154.jpg
+Image=/home/daedr/Pictures/wallpapers/miku/wallhaven-1pj829.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][26]
@@ -182,6 +182,9 @@ lastScreen=1
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
+
+[Containments][51][Wallpaper][org.kde.image][General]
+Image=/home/daedr/Pictures/wallpapers/miku/wallhaven-1pj829.jpg
 
 [ScreenMapping]
 itemsOnDisabledScreens=
