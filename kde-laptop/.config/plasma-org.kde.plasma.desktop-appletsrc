@@ -168,7 +168,6 @@ DialogWidth=810
 
 [Containments][26][Applets][52][Configuration][General]
 favoritesPortedToKAstats=true
-icon=/home/daedr/.local/share/icons/icons8-arch-linux-50.png
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][26][Applets][53]

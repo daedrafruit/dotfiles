@@ -1,4 +1,6 @@
 if status is-interactive
+  # remove greeting
+  set fish_greeting ""
 
   # plugins
   if not functions -q fisher
