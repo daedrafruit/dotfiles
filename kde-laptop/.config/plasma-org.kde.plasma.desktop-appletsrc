@@ -177,7 +177,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][26][Applets][53][Configuration][General]
-launchers=applications:org.kde.konsole.desktop,applications:firefox.desktop,preferred://filemanager,applications:discord.desktop,applications:steam.desktop,applications:obsidian.desktop
+launchers=applications:org.kde.konsole.desktop,applications:firefox.desktop,preferred://filemanager,applications:discord.desktop,applications:steam.desktop,applications:feishin.desktop,applications:org.kde.kate.desktop,applications:obsidian.desktop
 
 [Containments][26][General]
 AppletOrder=52;53;50;31;44
