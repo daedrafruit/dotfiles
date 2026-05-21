@@ -50,7 +50,7 @@ ForegroundVisited=108,112,134
 
 [Colors:Selection]
 BackgroundAlternate=161,172,227
-BackgroundNormal=77,61,253
+BackgroundNormal=166,227,161
 DecorationFocus=17,17,27
 DecorationHover=17,17,27
 ForegroundActive=17,17,27
@@ -105,7 +105,9 @@ ForegroundPositive=166,227,161
 ForegroundVisited=108,112,134
 
 [General]
-ColorSchemeHash=d0bc99729818c14edd1a0a86510546bd750da6fb
+AccentColor=0,0,0,0
+ColorSchemeHash=5dfac481bb9cd1a35098d6ef356254050b3c0346
+LastUsedCustomAccentColor=166,227,161
 TerminalApplication=konsole
 TerminalService=org.kde.konsole.desktop
 

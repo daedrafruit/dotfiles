@@ -15,4 +15,7 @@ Places Icons Static Size=22
 MenuBar=Disabled
 
 [PreviewSettings]
-Plugins=appimagethumbnail,audiothumbnail,glycin-heif,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,jxl,glycin-jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,librsvg,glycin-svg,svgthumbnail
+Plugins=appimagethumbnail,audiothumbnail,glycin-heif,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,glycin-jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,glycin-svg,svgthumbnail
+
+[UiSettings]
+ColorScheme=Catppuccin

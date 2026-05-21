@@ -89,10 +89,4 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # aliases
-
-alias sysclean="sudo pacman -Rns $(pacman -Qdtq) ; yay -Sc"
-
-alias beet='~/Music/Tools/Beets/venv/bin/beet'
-alias beet-auto='find ~/Music/Downloads/ -type f -name "*.flac" -exec bash -c ~/Music/Tools/prog-to-baseline-jpeg.sh "$0" {} \; ; beet -d ~/Music/Library import --move ~/Music/Downloads && mv ~/Music/Downloads/* ~/Music/Tools/Backups/artifacts/'
-
 alias elastic-m3u='~/Music/Tools/elastic-m3u/venv/bin/python ~/Music/Tools/elastic-m3u/elastic-m3u.py'
