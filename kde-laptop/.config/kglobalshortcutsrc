@@ -7,6 +7,13 @@ Switch to Last-Used Keyboard Layout=none,Meta+Alt+L,Switch to Last-Used Keyboard
 Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
+[feishin]
+85BB47E2569392CFF9B797955A3E0A3A-MediaPrevTrack=,none,feishin shortcut: MediaPrevTrack
+8D48CA1E2A2157F6FBF18F99955A5119-MediaStop=,none,feishin shortcut: MediaStop
+9A0A40582B3885A78A17D8E6D2595F24-MediaPlayPause=,none,feishin shortcut: MediaPlayPause
+CDB101A9492D37971AA078B139EC039C-MediaNextTrack=,none,feishin shortcut: MediaNextTrack
+_k_friendly_name=Feishin
+
 [kaccess]
 Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility

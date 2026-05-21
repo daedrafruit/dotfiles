@@ -44,12 +44,18 @@ OutlineThickness=2
 SecondOutlineThickness=0
 
 [Script-krohnkite]
-noTileBorder=true
-screenGapBetween=2
-screenGapBottom=2
-screenGapLeft=2
-screenGapRight=3
-screenGapTop=2
+binaryTreeLayoutOrder=0
+cascadeLayoutOrder=0
+columnsLayoutOrder=0
+floatingLayoutOrder=1
+monocleLayoutOrder=0
+quarterLayoutOrder=0
+spiralLayoutOrder=2
+spreadLayoutOrder=0
+stackedLayoutOrder=0
+stairLayoutOrder=0
+threeColumnLayoutOrder=0
+tileLayoutOrder=3
 
 [Tiling][16d7c6df-f712-45e3-9b23-4a169f47d5f6][412af561-94eb-4c0f-88d4-706a5f6a9ce3]
 padding=4
