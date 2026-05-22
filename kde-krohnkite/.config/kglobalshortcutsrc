@@ -302,6 +302,9 @@ switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
 
+[services][kitty.desktop]
+_launch=Meta+Return
+
 [services][net.local.kitty.desktop]
 _launch=Meta+Return
 
@@ -309,8 +312,6 @@ _launch=Meta+Return
 _launch=Meta+D\tAlt+F2\tSearch\tAlt+Space
 
 [services][org.kde.spectacle.desktop]
-CurrentMonitorScreenShot=
-OpenWithoutScreenshot=
 RecordRegion=Meta+Shift+R
 RectangularRegionScreenShot=Meta+Shift+Print\tMeta+Shift+S
 _launch=none
