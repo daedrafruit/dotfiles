@@ -20,7 +20,8 @@ wallpaperplugin=org.kde.image
 positions={"1920x1080":[]}
 
 [Containments][25][Wallpaper][org.kde.image][General]
-Image=file:///home/daedr/Pictures/wallpapers/miku/miku-konachan-367154.jpg
+Color=255,195,0
+Image=file:///home/daedr/Pictures/wallpapers/miku/wallhaven-1pj829.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][26]
@@ -120,9 +121,6 @@ plugin=org.kde.plasma.bluetooth
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
-[Containments][26][Applets][31][Applets][52][Configuration]
-PreloadWeight=0
-
 [Containments][26][Applets][31][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
@@ -160,7 +158,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][26][Applets][52][Configuration]
 popupHeight=510
-popupWidth=647
+popupWidth=665
 
 [Containments][26][Applets][52][Configuration][ConfigDialog]
 DialogHeight=630
@@ -179,7 +177,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][26][Applets][53][Configuration][General]
-launchers=preferred://browser,applications:org.kde.konsole.desktop,preferred://filemanager,applications:discord.desktop,applications:steam.desktop
+launchers=applications:org.kde.konsole.desktop,applications:firefox.desktop,preferred://filemanager,applications:discord.desktop,applications:steam.desktop,applications:feishin.desktop,applications:obsidian.desktop
 
 [Containments][26][General]
 AppletOrder=52;53;50;31;44
@@ -195,4 +193,4 @@ wallpaperplugin=org.kde.image
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/Animal Crossing - Wild World (USA) (Rev 1).nds,0,e3ebee3f-36ae-461c-bf65-8e262f3ebb97,desktop:/rg35xx_bac,0,e3ebee3f-36ae-461c-bf65-8e262f3ebb97,desktop:/Roms,0,e3ebee3f-36ae-461c-bf65-8e262f3ebb97
+screenMapping=desktop:/rg35xx_bac,0,e3ebee3f-36ae-461c-bf65-8e262f3ebb97,desktop:/Roms,0,e3ebee3f-36ae-461c-bf65-8e262f3ebb97,desktop:/Animal Crossing - Wild World (USA) (Rev 1).nds,0,e3ebee3f-36ae-461c-bf65-8e262f3ebb97

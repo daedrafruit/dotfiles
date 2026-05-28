@@ -7,6 +7,13 @@ Switch to Last-Used Keyboard Layout=none,Meta+Alt+L,Switch to Last-Used Keyboard
 Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
+[feishin]
+85BB47E2569392CFF9B797955A3E0A3A-MediaPrevTrack=,none,feishin shortcut: MediaPrevTrack
+8D48CA1E2A2157F6FBF18F99955A5119-MediaStop=,none,feishin shortcut: MediaStop
+9A0A40582B3885A78A17D8E6D2595F24-MediaPlayPause=,none,feishin shortcut: MediaPlayPause
+CDB101A9492D37971AA078B139EC039C-MediaNextTrack=,none,feishin shortcut: MediaNextTrack
+_k_friendly_name=Feishin
+
 [kaccess]
 Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
@@ -76,7 +83,7 @@ KrohnkiteSpiralLayout=Meta+Alt+S,none,Krohnkite: Spiral Layout
 KrohnkiteSpreadLayout=none,none,Krohnkite: Spread Layout
 KrohnkiteStackedLayout=none,none,Krohnkite: Stacked Layout
 KrohnkiteStairLayout=none,none,Krohnkite: Stair Layout
-KrohnkiteTileLayout=none,none,Krohnkite: Tile Layout
+KrohnkiteTileLayout=Meta+Alt+T,none,Krohnkite: Tile Layout
 KrohnkiteToggleFloat=Meta+F,none,Krohnkite: Toggle Float
 KrohnkiteTreeColumnLayout=none,none,Krohnkite: Three Column Layout
 KrohnkitegrowWidth=Meta+Ctrl+L,none,Krohnkite: Grow Width
@@ -253,6 +260,17 @@ seekbackwardmedialong=,,Media playback seek backward 30s
 seekforwardmedia=Media Fast Forward,Media Fast Forward,Media playback seek forward 5s
 seekforwardmedialong=,,Media playback seek forward 30s
 stopmedia=Media Stop,Media Stop,Stop media playback
+
+[org.chromium.Chromium]
+4D15301205FCC2C57FF2FBE657DE3EB5-MediaNextTrack=,none,Electron shortcut MediaNextTrack
+85BB47E2569392CFF9B797955A3E0A3A-MediaPrevTrack=,none,Electron shortcut MediaPrevTrack
+8D48CA1E2A2157F6FBF18F99955A5119-MediaStop=,none,Electron shortcut MediaStop
+8DE965D6170A1466B9888C18780D5006-MediaStop=,none,Electron shortcut MediaStop
+9A0A40582B3885A78A17D8E6D2595F24-MediaPlayPause=,none,Electron shortcut MediaPlayPause
+BD3C92BB9DC8A3B894D6713FBD14017A-MediaPrevTrack=,none,Electron shortcut MediaPrevTrack
+CDB101A9492D37971AA078B139EC039C-MediaNextTrack=,none,Electron shortcut MediaNextTrack
+F495E4E87A0A0DC6100CA2F8253BB994-MediaPlayPause=,none,Electron shortcut MediaPlayPause
+_k_friendly_name=org.chromium.Chromium
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
