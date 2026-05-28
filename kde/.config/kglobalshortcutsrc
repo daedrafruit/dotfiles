@@ -18,6 +18,13 @@ stop=none,none,Stop
 DB286F0E03FC1F0E70D6F890A1B90A21-Ctrl+Alt+Space=Ctrl+Alt+Space,Ctrl+Alt+Space,Claude shortcut: Ctrl+Alt+Space
 _k_friendly_name=Claude
 
+[feishin]
+379957AB912D2704A99C3308CC4AAA53-MediaStop=,none,feishin shortcut: MediaStop
+6C6159FF4D8F0A8D97C9FA2C4395B40F-MediaPlayPause=,none,feishin shortcut: MediaPlayPause
+8C13F09DC5662BE987E016F9FCD9863E-MediaPrevTrack=,none,feishin shortcut: MediaPrevTrack
+EBB78D2EE26007D46F1F3188D779311B-MediaNextTrack=,none,feishin shortcut: MediaNextTrack
+_k_friendly_name=Feishin
+
 [kaccess]
 Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility

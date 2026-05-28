@@ -16,7 +16,6 @@ BorderActivate=9
 [Plugins]
 blurEnabled=true
 krohnkiteEnabled=true
-kwin4_effect_geometry_changeEnabled=true
 kwin4_effect_shapecornersEnabled=false
 slideEnabled=false
 
@@ -66,11 +65,19 @@ ShowTabBox=false
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][c53b6333-16b6-4db6-b7b5-2bc11b3a67a6][1e281f90-31ae-46f4-b9d8-44138c66f732]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][c53b6333-16b6-4db6-b7b5-2bc11b3a67a6][d862e904-4a4b-4a8e-9854-41f5000f916c]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.46875},{"width":0.53125}]}
 
 [Tiling][c53b6333-16b6-4db6-b7b5-2bc11b3a67a6][ddb85fdb-f226-419b-9b2b-40e4bee48694]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][c53b6333-16b6-4db6-b7b5-2bc11b3a67a6][e04a16ce-b7db-4805-b477-dda58d3c9db4]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 

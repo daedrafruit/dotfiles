@@ -3,7 +3,7 @@ ColorScheme=Everforest-Hard-Dark
 Font=Hack,12,-1,7,400,0,0,0,0,0,0,0,0,0,0,1
 
 [General]
-Command=/usr/bin/zsh
+Command=/usr/bin/fish
 Name=Default windowed
 Parent=FALLBACK/
 
