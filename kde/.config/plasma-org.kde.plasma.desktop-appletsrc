@@ -44,8 +44,8 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][20][Configuration]
-popupHeight=451
-popupWidth=810
+popupHeight=457
+popupWidth=816
 
 [Containments][2][Applets][20][Configuration][Appearance]
 enabledCalendarPlugins=alternatecalendar,astronomicalevents
@@ -73,8 +73,8 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][52][Configuration]
-popupHeight=509
-popupWidth=688
+popupHeight=515
+popupWidth=694
 
 [Containments][2][Applets][52][Configuration][ConfigDialog]
 DialogHeight=630
@@ -196,6 +196,7 @@ AppletOrder=52;5;7;69;20
 [Containments][25]
 ItemGeometries-1920x1080=
 ItemGeometries-2560x1440=
+ItemGeometries-640x480=
 ItemGeometriesHorizontal=
 activityId=e5846917-7041-4b07-8808-c817e955b961
 formfactor=0
@@ -239,8 +240,8 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][28][Applets][46][Configuration]
-popupHeight=451
-popupWidth=560
+popupHeight=457
+popupWidth=566
 
 [Containments][28][Applets][46][Configuration][Appearance]
 fontFamily=Hack
@@ -256,8 +257,8 @@ plugin=org.kde.plasma.systemmonitor.cpucore
 
 [Containments][28][Applets][58][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-popupHeight=504
-popupWidth=306
+popupHeight=510
+popupWidth=312
 
 [Containments][28][Applets][58][Configuration][Appearance]
 chartFace=org.kde.ksysguard.barchart
@@ -296,8 +297,8 @@ plugin=org.kde.plasma.systemmonitor.memory
 
 [Containments][28][Applets][59][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-popupHeight=235
-popupWidth=238
+popupHeight=241
+popupWidth=244
 
 [Containments][28][Applets][59][Configuration][Appearance]
 chartFace=org.kde.ksysguard.piechart
@@ -321,8 +322,8 @@ plugin=org.kde.plasma.systemmonitor.cpu
 
 [Containments][28][Applets][62][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-popupHeight=257
-popupWidth=215
+popupHeight=263
+popupWidth=221
 
 [Containments][28][Applets][62][Configuration][Appearance]
 chartFace=org.kde.ksysguard.piechart
@@ -348,8 +349,8 @@ plugin=org.kde.plasma.systemmonitor.cpu
 
 [Containments][28][Applets][63][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-popupHeight=279
-popupWidth=222
+popupHeight=285
+popupWidth=228
 
 [Containments][28][Applets][63][Configuration][Appearance]
 chartFace=org.kde.ksysguard.piechart
@@ -381,8 +382,8 @@ plugin=org.kde.plasma.systemmonitor.net
 
 [Containments][28][Applets][64][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-popupHeight=195
-popupWidth=306
+popupHeight=201
+popupWidth=312
 
 [Containments][28][Applets][64][Configuration][Appearance]
 chartFace=org.kde.ksysguard.linechart
@@ -406,8 +407,8 @@ plugin=org.kde.plasma.systemmonitor.diskactivity
 
 [Containments][28][Applets][65][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-popupHeight=226
-popupWidth=175
+popupHeight=232
+popupWidth=181
 
 [Containments][28][Applets][65][Configuration][Appearance]
 chartFace=org.kde.ksysguard.linechart
@@ -435,8 +436,8 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][28][Applets][66][Configuration]
-popupHeight=515
-popupWidth=655
+popupHeight=521
+popupWidth=694
 
 [Containments][28][Applets][66][Configuration][General]
 favoritesPortedToKAstats=true
@@ -450,4 +451,4 @@ AppletOrder=66;31;58;62;63;59;64;65;68;46
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/notes,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/.env,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/home,0,e5846917-7041-4b07-8808-c817e955b961
+screenMapping=desktop:/notes,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/home,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/.env,0,e5846917-7041-4b07-8808-c817e955b961
