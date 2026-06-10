@@ -23,7 +23,7 @@ DialogWidth=1397
 [Containments][1][General]
 changedPositions={}
 lastResolution=1920x1080
-positions={"1920x1080":["1","17","desktop:/home","0","0"],"2560x1440":["1","23","desktop:/brute.py","0","6","desktop:/secretfile.txt.gz","0","7","desktop:/Archive.zip","0","4","desktop:/demo_time_space_diagram_full.png","0","11","desktop:/plot.py","0","5","desktop:/addons","0","16","desktop:/TI-Nspire Student Software.desktop","0","0","desktop:/TI-Nspire Student Software.lnk","0","2","desktop:/songs.txt","0","14","desktop:/tmp","0","13","desktop:/jdtls.sh","0","15","desktop:/lsp_signiture.lua","0","9","desktop:/manga-chat-gpt.py","0","10","desktop:/bms-song-comp.py","0","8","desktop:/jdtls.lua","0","17","desktop:/ogg.sh","0","12","desktop:/86Box-Linux-x86_64-b7777.AppImage","0","1","desktop:/demo_time_space_diagram_split.png","0","3"]}
+positions={"1920x1080":["1","17","desktop:/home","0","0","desktop:/Screenshot_20260605_182602.png","0","1"],"2560x1440":["1","23","desktop:/brute.py","0","6","desktop:/secretfile.txt.gz","0","7","desktop:/Archive.zip","0","4","desktop:/demo_time_space_diagram_full.png","0","11","desktop:/plot.py","0","5","desktop:/addons","0","16","desktop:/TI-Nspire Student Software.desktop","0","0","desktop:/TI-Nspire Student Software.lnk","0","2","desktop:/songs.txt","0","14","desktop:/tmp","0","13","desktop:/jdtls.sh","0","15","desktop:/lsp_signiture.lua","0","9","desktop:/manga-chat-gpt.py","0","10","desktop:/bms-song-comp.py","0","8","desktop:/jdtls.lua","0","17","desktop:/ogg.sh","0","12","desktop:/86Box-Linux-x86_64-b7777.AppImage","0","1","desktop:/demo_time_space_diagram_split.png","0","3"]}
 sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
@@ -451,4 +451,4 @@ AppletOrder=66;31;58;62;63;59;64;65;68;46
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/notes,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/home,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/.env,0,e5846917-7041-4b07-8808-c817e955b961
+screenMapping=desktop:/Screenshot_20260605_182602.png,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/notes,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/.env,0,e5846917-7041-4b07-8808-c817e955b961,desktop:/home,0,e5846917-7041-4b07-8808-c817e955b961
