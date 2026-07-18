@@ -135,9 +135,9 @@ Show hidden files=true
 Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
-Sort reversed=false
+Sort reversed=true
 Speedbar Width=140
-View Style=Detail
+View Style=DetailTree
 
 [KScreen]
 ScreenScaleFactors=DP-1=1;DP-2=1;

@@ -3,13 +3,16 @@ floating=1
 floatingApplets=0
 panelOpacity=2
 panelVisibility=0
+shell=org.kde.plasma.desktop
 
 [PlasmaViews][Panel 2][Defaults]
 thickness=44
 
 [PlasmaViews][Panel 28]
-floating=0
+floating=1
+floatingApplets=1
 panelVisibility=0
+shell=org.kde.plasma.desktop
 
 [PlasmaViews][Panel 28][Defaults]
 thickness=44

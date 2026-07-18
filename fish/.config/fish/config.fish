@@ -22,6 +22,8 @@ if status is-interactive
   bind \cr _atuin_search
   bind -M insert \cr _atuin_search
 
+  alias elastic-m3u "python /home/daedr/Music/zfs/Tools/elastic-m3u/elastic-m3u.py"
+
   alias hydrus-mount "sudo veracrypt --fs-options='umask=022,dmask=022' --pim=0 --keyfiles= --protect-hidden=no --mount /zfs/mnt/media/hydrus/db /media/veracrypt1"
   alias hydrus-umount "sleep 3; and sudo veracrypt --unmount /zfs/mnt/media/hydrus/db; and sleep 1; and veracrypt --list"
   #alias hydrus-fumount "(sudo kill -9 (lsof +D /media/veracrypt1 2>/dev/null | awk 'NR>1 {print \$2}')); and hydrus-umount"
